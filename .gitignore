@@ -1,4 +1,4 @@
-data/
+/data/
 results/**/*.csv
 run_all.log
 __pycache__/
