@@ -1,0 +1,62 @@
+[
+ {
+  "train_end": "2024-08-23",
+  "labels_end": "2025-12-30",
+  "fit_sec": 0.2,
+  "refit_date": "2026-01-02"
+ },
+ {
+  "train_end": "2024-09-18",
+  "labels_end": "2026-01-29",
+  "fit_sec": 0.2,
+  "refit_date": "2026-02-02"
+ },
+ {
+  "train_end": "2024-10-11",
+  "labels_end": "2026-02-26",
+  "fit_sec": 0.2,
+  "refit_date": "2026-03-02"
+ },
+ {
+  "train_end": "2024-11-11",
+  "labels_end": "2026-04-02",
+  "fit_sec": 0.2,
+  "refit_date": "2026-04-06"
+ },
+ {
+  "train_end": "2024-12-04",
+  "labels_end": "2026-04-30",
+  "fit_sec": 0.2,
+  "refit_date": "2026-05-04"
+ },
+ {
+  "train_end": "2024-12-27",
+  "labels_end": "2026-05-28",
+  "fit_sec": 0.2,
+  "refit_date": "2026-06-01"
+ },
+ {
+  "train_end": "2025-01-29",
+  "labels_end": "2026-07-02",
+  "fit_sec": 0.2,
+  "refit_date": "2026-07-06"
+ },
+ {
+  "train_end": "2025-02-21",
+  "labels_end": "2026-07-30",
+  "fit_sec": 0.2,
+  "refit_date": "2026-08-03"
+ },
+ {
+  "train_end": "2025-03-24",
+  "labels_end": "2026-09-03",
+  "fit_sec": 0.2,
+  "refit_date": "2026-09-07"
+ },
+ {
+  "train_end": "2025-04-16",
+  "labels_end": "2026-10-01",
+  "fit_sec": 0.2,
+  "refit_date": "2026-10-05"
+ }
+]

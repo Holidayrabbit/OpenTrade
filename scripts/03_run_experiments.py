@@ -286,11 +286,14 @@ def main():
         from qlib.data.dataset.handler import DataHandlerLP
 
         ds = build_dataset(args.market, D)
-        # 特征数(供 GRU d_feat)
+        # 特征数(供 GRU d_feat): 总列数 − label 列数(label 列名为表达式字符串而非 LABEL0)
         ds.segments = {"probe": (CFG["processor_fit_start"], CFG["processor_fit_end"])}
-        probe = ds.prepare("probe", data_key=DataHandlerLP.DK_I)
-        feat_cols = [c for c in probe.columns if c != "LABEL0"]
-        N_FEATURES[0] = len(feat_cols)
+        probe = ds.prepare("probe", data_key=DataHandlerLP.DK_L)
+        try:
+            n_label = ds.prepare("probe", col_set="label", data_key=DataHandlerLP.DK_L).shape[1]
+        except Exception:  # noqa: BLE001
+            n_label = 1
+        N_FEATURES[0] = max(len(probe.columns) - n_label, 1)
         log(f"features: {N_FEATURES[0]}")
 
         for variant in need_model:

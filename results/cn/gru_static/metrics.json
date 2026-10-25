@@ -1,0 +1,32 @@
+{
+ "market": "cn",
+ "model": "gru",
+ "config": {
+  "name": "A股·沪深300",
+  "topk": 8,
+  "cost_buy": 0.0008,
+  "cost_sell": 0.0013,
+  "ann_days": 252,
+  "universe_source": "csi300"
+ },
+ "backtest": [
+  "2026-01-05",
+  "2026-10-23"
+ ],
+ "n_calendar_days": 193,
+ "n_universe": 300,
+ "variant": "static",
+ "total_return": -0.236,
+ "annual_return": -0.2976,
+ "annual_vol": 0.3654,
+ "sharpe": -0.784,
+ "max_drawdown": -0.372,
+ "calmar": -0.8,
+ "weekly_win_rate": 0.475,
+ "ic": {
+  "mean_ic": 0.011,
+  "ic_ir": 0.067,
+  "ic_positive_rate": 0.5393,
+  "n_days": 191
+ }
+}

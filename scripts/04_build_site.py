@@ -59,7 +59,10 @@ def portfolio_navs(nav_dict_by_variant):
         if len(per_mkt) < 4:
             continue
         df = pd.DataFrame(per_mkt)
-        idx = df.index.union(sum([s.index for s in per_mkt.values()], pd.DatetimeIndex([]))).sort_values()
+        idx = None
+        for s in per_mkt.values():
+            idx = s.index if idx is None else idx.union(s.index)
+        idx = idx.sort_values()
         df = df.reindex(idx).ffill().bfill()
         rets = df.pct_change().fillna(0.0)
         port_ret = rets.mean(axis=1)

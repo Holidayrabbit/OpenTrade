@@ -174,11 +174,11 @@ function render(S,P,M){
   <div class="panel"><div id="chart-market" class="chart"></div></div>
   <div style="height:14px"></div>
   <div class="grid2">
-    <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">绩效指标(周度再训练变体)</div><div id="m-metrics"></div></div>
+    <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">绩效指标 · 全部策略对比</div><div id="m-metrics"></div></div>
     <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">预测力 IC(逐日 RankIC, 20日均值)</div><div id="chart-ic" class="chart-sm"></div></div>
   </div>
   <div style="height:14px"></div>
-  <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">最新一期持仓(周度再训练 · Top-K 等权)</div><div class="holdings" id="m-holdings"></div></div>
+  <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">最新一期调仓(周度再训练 · 绿=新买入 红=调出 · 持仓为 Top-K 等权)</div><div class="holdings" id="m-holdings"></div></div>
 
   <h2>方法与调研</h2>
   <div class="panel method">
@@ -222,9 +222,12 @@ function drawCharts(S,P,M){
         yAxis:{...baseOpt([]).yAxis,axisLabel:{color:"#8a93a6",formatter:v=>v.toFixed(2)}}});
     }
     const tr=(m.variants.weekly?.recent_trades||[]).filter(t=>t.date).slice(-1)[0];
-    const hold=tr?(tr.bought||[]):[];
-    document.getElementById("m-holdings").innerHTML=hold.length
-      ?hold.map(i=>`<span class="hchip">${instName(k,i)}</span>`).join(""):"<span style='color:var(--muted)'>–</span>";
+    let holdHtml="";
+    if(tr){
+      holdHtml+=(tr.bought||[]).map(i=>`<span class="hchip" style="border-color:rgba(0,214,143,.45);color:var(--green)">▲ ${instName(k,i)}</span>`).join("");
+      holdHtml+=(tr.sold||[]).map(i=>`<span class="hchip" style="border-color:rgba(255,92,92,.4);color:var(--red)">▼ ${instName(k,i)}</span>`).join("");
+    }
+    document.getElementById("m-holdings").innerHTML=holdHtml||"<span style='color:var(--muted)'>–</span>";
   }
   const keys=Object.keys(M);
   let cur=keys.includes(qs.get("m"))?qs.get("m"):keys[0];

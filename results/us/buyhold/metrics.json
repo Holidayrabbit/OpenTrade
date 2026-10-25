@@ -1,0 +1,26 @@
+{
+ "market": "us",
+ "model": "lgbm",
+ "config": {
+  "name": "美股·标普500",
+  "topk": 8,
+  "cost_buy": 0.0005,
+  "cost_sell": 0.0005,
+  "ann_days": 252,
+  "universe_source": "sp500"
+ },
+ "backtest": [
+  "2026-01-02",
+  "2026-10-23"
+ ],
+ "n_calendar_days": 204,
+ "n_universe": 503,
+ "total_return": 0.1473,
+ "annual_return": 0.186,
+ "annual_vol": 0.1195,
+ "sharpe": 1.487,
+ "max_drawdown": -0.0778,
+ "calmar": 2.39,
+ "weekly_win_rate": 0.5714,
+ "ic": null
+}

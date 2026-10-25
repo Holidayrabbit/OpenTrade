@@ -1,0 +1,32 @@
+{
+ "market": "gold",
+ "model": "lgbm",
+ "config": {
+  "name": "黄金资产组合",
+  "topk": 5,
+  "cost_buy": 0.0005,
+  "cost_sell": 0.0005,
+  "ann_days": 252,
+  "universe_source": "gold_fixed"
+ },
+ "backtest": [
+  "2026-01-02",
+  "2026-10-23"
+ ],
+ "n_calendar_days": 211,
+ "n_universe": 14,
+ "variant": "monthly",
+ "total_return": 0.1087,
+ "annual_return": 0.1318,
+ "annual_vol": 0.3313,
+ "sharpe": 0.539,
+ "max_drawdown": -0.2841,
+ "calmar": 0.464,
+ "weekly_win_rate": 0.5,
+ "ic": {
+  "mean_ic": -0.0005,
+  "ic_ir": -0.001,
+  "ic_positive_rate": 0.5141,
+  "n_days": 177
+ }
+}

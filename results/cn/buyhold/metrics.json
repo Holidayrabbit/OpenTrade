@@ -1,0 +1,26 @@
+{
+ "market": "cn",
+ "model": "lgbm",
+ "config": {
+  "name": "A股·沪深300",
+  "topk": 8,
+  "cost_buy": 0.0008,
+  "cost_sell": 0.0013,
+  "ann_days": 252,
+  "universe_source": "csi300"
+ },
+ "backtest": [
+  "2026-01-05",
+  "2026-10-23"
+ ],
+ "n_calendar_days": 193,
+ "n_universe": 300,
+ "total_return": -0.0904,
+ "annual_return": -0.1169,
+ "annual_vol": 0.1777,
+ "sharpe": -0.611,
+ "max_drawdown": -0.1638,
+ "calmar": -0.714,
+ "weekly_win_rate": 0.375,
+ "ic": null
+}

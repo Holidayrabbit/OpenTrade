@@ -1,0 +1,15 @@
+{
+ "fail": {
+  "gold": [
+   {
+    "inst": "GCFUT",
+    "err": "ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote "
+   }
+  ],
+  "cn": [],
+  "us": [],
+  "crypto": []
+ },
+ "fetched_at": "2026-10-26T01:05:46",
+ "data_start": "2017-01-01"
+}
