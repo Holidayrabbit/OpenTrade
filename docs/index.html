@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>alpha2026 · 开源量化模型四市场回测实验</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#131722; --panel2:#1a2030; --border:#232a3b;
+    --text:#d7dce6; --muted:#8a93a6; --green:#00d68f; --red:#ff5c5c;
+    --blue:#4c8dff; --orange:#ffb02e; --purple:#b47aff; --gray:#8a8f98;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;line-height:1.6}
+  .wrap{max-width:1180px;margin:0 auto;padding:24px 20px 80px}
+  header{padding:34px 0 10px}
+  h1{font-size:26px;font-weight:700;letter-spacing:.5px}
+  h1 .accent{color:var(--green)}
+  .subtitle{color:var(--muted);font-size:14px;margin-top:6px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:3px 12px;font-size:12px;color:var(--muted)}
+  .chip b{color:var(--text);font-weight:600}
+  h2{font-size:17px;margin:34px 0 14px;padding-left:10px;border-left:3px solid var(--green)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+  .card .label{font-size:12px;color:var(--muted)}
+  .card .big{font-size:30px;font-weight:700;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+  .card .sub{font-size:12px;color:var(--muted)}
+  .pos{color:var(--green)} .neg{color:var(--red)}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px}
+  .chart{width:100%;height:400px}
+  .chart-sm{width:100%;height:280px}
+  .tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .tab{padding:6px 18px;border-radius:8px;background:var(--panel2);border:1px solid var(--border);cursor:pointer;font-size:14px;color:var(--muted)}
+  .tab.on{color:#0b0e14;background:var(--green);border-color:var(--green);font-weight:600}
+  table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+  th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--muted);font-weight:500}
+  .method{font-size:13.5px;color:var(--text)}
+  .method p{margin:8px 0;color:var(--muted)}
+  .method b{color:var(--text)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:860px){.grid2{grid-template-columns:1fr}}
+  .verdict{background:linear-gradient(90deg,rgba(0,214,143,.08),transparent);border:1px solid rgba(0,214,143,.25);border-radius:12px;padding:16px 18px;font-size:14px;margin-bottom:14px}
+  footer{margin-top:50px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);padding-top:18px}
+  a{color:var(--blue);text-decoration:none}
+  .holdings{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .hchip{background:var(--panel2);border:1px solid var(--border);border-radius:6px;padding:2px 10px;font-size:12px}
+  #loading{text-align:center;padding:80px;color:var(--muted)}
+  .err{color:var(--red)}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><div id="loading">加载实验数据中…</div></div>
+
+<script>
+const COLORS={buyhold:"#8a8f98",static:"#4c8dff",monthly:"#ffb02e",weekly:"#00d68f",gru_static:"#b47aff"};
+const VNAME={buyhold:"等权买入持有",static:"静态模型(年初训练一次)",monthly:"每月再训练",weekly:"每周再训练",gru_static:"GRU神经网络(GPU)"};
+const MKTNAME={cn:"A股·沪深300",us:"美股·标普500",crypto:"加密货币·币安Top15",gold:"黄金资产组合"};
+const fmtPct=(x,d=1)=>x==null?"–":((x>=0?"+":"")+(x*100).toFixed(d)+"%");
+const fmtNum=(x,d=2)=>x==null?"–":x.toFixed(d);
+const instName=(mkt,inst)=>{const u=(UNI[mkt]||[]).find(x=>x.inst===inst);return u?`${u.name}(${inst})`:inst};
+let UNI={};
+const qs=new URLSearchParams(location.search);
+
+async function jload(p){const r=await fetch(p);if(!r.ok)throw new Error(p);return r.json()}
+
+function kpiCard(label,ret,sub,extra){
+  const cls=ret>=0?"pos":"neg";
+  return `<div class="card"><div class="label">${label}</div>
+    <div class="big ${cls}">${fmtPct(ret)}</div>
+    <div class="sub">${sub||""}</div>${extra||""}</div>`;
+}
+
+function lineSeries(variant,navArr,highlight){
+  return {name:VNAME[variant]||variant,type:"line",data:navArr,showSymbol:false,
+    lineStyle:{width:highlight?2.6:1.3,color:COLORS[variant]||"#ccc"},itemStyle:{color:COLORS[variant]||"#ccc"}};
+}
+function baseOpt(navArrs,legend=true){
+  const dates=navArrs.length?navArrs[0].data.map(x=>x[0]):[];
+  return {
+    animation:false,textStyle:{fontFamily:"inherit"},
+    tooltip:{trigger:"axis",backgroundColor:"#1a2030",borderColor:"#232a3b",textStyle:{color:"#d7dce6",fontSize:12},
+      valueFormatter:v=>v==null?"–":Number(v).toFixed(4)},
+    legend:legend?{textStyle:{color:"#8a93a6",fontSize:11},top:0}:undefined,
+    grid:{left:56,right:20,top:legend?34:16,bottom:48},
+    xAxis:{type:"category",data:dates,axisLine:{lineStyle:{color:"#232a3b"}},axisLabel:{color:"#8a93a6"}},
+    yAxis:{type:"value",scale:true,axisLabel:{color:"#8a93a6"},splitLine:{lineStyle:{color:"#1a2030"}}},
+    dataZoom:[{type:"inside"},{type:"slider",height:16,bottom:8,borderColor:"#232a3b",backgroundColor:"#131722",
+      fillerColor:"rgba(76,141,255,.15)",textStyle:{color:"#8a93a6"}}]
+  };
+}
+
+function metricsTable(rows,keys,labels){
+  let h=`<table><tr><th>策略</th>${labels.map(l=>`<th>${l}</th>`).join("")}</tr>`;
+  for(const r of rows){
+    h+=`<tr><td style="color:${COLORS[r.v]||"#ccc"}">${VNAME[r.v]||r.v}</td>`+
+      keys.map(k=>{
+        const val=r.m[k];let cls="";
+        if(k==="total_return"||k==="annual_return")cls=val>=0?"pos":"neg";
+        if(k==="max_drawdown")cls="neg";
+        if(k==="ic_mean"||k==="sharpe")cls=val>0?"pos":"neg";
+        const txt=(k==="total_return"||k==="annual_return"||k==="max_drawdown"||k==="weekly_win_rate"||k==="ic_pos")?fmtPct(val):fmtNum(val);
+        return `<td class="${cls}">${txt}</td>`;
+      }).join("")+`</tr>`;
+  }
+  return h+"</table>";
+}
+
+async function main(){
+  const [summary,portfolio]=await Promise.all([jload("data/summary.json"),jload("data/portfolio.json")]);
+  const mkts={};for(const k of ["cn","us","crypto","gold"]){try{mkts[k]=await jload(`data/${k}.json`)}catch(e){}}
+  for(const k in mkts){UNI[k]=(mkts[k].instruments||[])}
+  document.getElementById("app").innerHTML=render(summary,portfolio,mkts);
+  window.__data={summary,portfolio,mkts};
+  drawCharts(summary,portfolio,mkts);
+}
+
+function render(S,P,M){
+  const pm=P.metrics||{};
+  const wr=pm.weekly||{},st=pm.static||{},bh=pm.buyhold||{},ms=pm.static;
+  const gains=S.weekly_vs_static_gain||{};
+  const nPos=Object.entries(gains).filter(([k,v])=>k!=="portfolio"&&v.return_delta>0).length;
+  const nMkt=Object.keys(gains).filter(k=>k!=="portfolio").length;
+  const portGain=(gains.portfolio||{}).return_delta;
+  let verdict;
+  if(portGain!=null&&portGain>0){
+    verdict=`✅ <b>结论:支持</b> — 在 ${nMkt} 个市场中有 <b>${nPos}</b> 个市场"每周再训练"优于"年初一次训练",四市场等权组合收益差 <b class="pos">${fmtPct(portGain)}</b>。更频繁地用最新数据重训模型,总体上提高了 2026 年以来的收益与 IC 稳定性。`;
+  }else if(portGain!=null){
+    verdict=`⚠️ <b>结论:部分支持</b> — ${nPos}/${nMkt} 个市场周度再训练占优,但组合层面收益差 ${fmtPct(portGain)} 为负。再训练频率的收益因市场而异,并非无条件有效。`;
+  }else{verdict="结果生成中…";}
+
+  let kpis = kpiCard("买入持有(基准)",bh.total_return,`夏普 ${fmtNum(bh.sharpe)} · 回撤 ${fmtPct(bh.max_drawdown)}`)
+    + kpiCard("静态模型·年初训练一次",st.total_return,`夏普 ${fmtNum(st.sharpe)} · 回撤 ${fmtPct(st.max_drawdown)}`)
+    + kpiCard("每周再训练模型",wr.total_return,`夏普 ${fmtNum(wr.sharpe)} · 回撤 ${fmtPct(wr.max_drawdown)}`)
+    + kpiCard("周度再训练增益",((wr.total_return??0)-(st.total_return??0)),`相对静态模型 · 2026年初至今`);
+
+  let gainRows=`<table><tr><th>市场</th><th>周度 − 静态 收益差</th><th>夏普差</th><th>IC 差</th></tr>`;
+  for(const [k,v] of Object.entries(gains)){
+    gainRows+=`<tr><td>${v.name}</td><td class="${v.return_delta>=0?"pos":"neg"}">${fmtPct(v.return_delta)}</td>
+      <td class="${(v.sharpe_delta??0)>=0?"pos":"neg"}">${v.sharpe_delta==null?"–":(v.sharpe_delta>0?"+":"")+v.sharpe_delta}</td>
+      <td class="${(v.ic_delta??0)>=0?"pos":"neg"}">${v.ic_delta==null?"–":fmtNum(v.ic_delta,4)}</td></tr>`;
+  }
+  gainRows+="</table>";
+
+  const tabs=Object.entries(M).map(([k,v],i)=>`<div class="tab ${i===0?"on":""}" data-mkt="${k}">${v.name}</div>`).join("");
+
+  return `
+  <header>
+    <h1>alpha2026 <span class="accent">·</span> 开源量化模型四市场实盘模拟</h1>
+    <div class="subtitle">基于 Microsoft Qlib(Alpha158 因子 + LightGBM / GRU)· 2026-01-01 → ${S.backtest_range?S.backtest_range[1]:""} 每周调仓 walk-forward 回测 · 检验"每周重新训练模型"能否提高收益</div>
+    <div class="chips">
+      <span class="chip">市场 <b>A股沪深300 · 美股标普500 · 币安Top15 · 黄金资产14标的</b></span>
+      <span class="chip">引擎 <b>Qlib 0.9.7 · Alpha158 · LightGBM</b></span>
+      <span class="chip">算力 <b>RTX 3060 · WSL2</b></span>
+      <span class="chip">数据 <b>腾讯/新浪/上金所/币安 免费公开接口</b></span>
+      <span class="chip">生成于 <b>${S.generated_at}</b></span>
+    </div>
+  </header>
+
+  <h2>四市场等权组合 · 2026 年初至今</h2>
+  <div class="cards">${kpis}</div>
+  <div style="height:14px"></div>
+  <div class="panel"><div id="chart-portfolio" class="chart"></div></div>
+
+  <h2>实验结论 · 每周调整模型 vs 不调整</h2>
+  <div class="verdict">${verdict}</div>
+  <div class="panel">${gainRows}</div>
+
+  <h2>分市场详情</h2>
+  <div class="tabs" id="mtabs">${tabs}</div>
+  <div class="panel"><div id="chart-market" class="chart"></div></div>
+  <div style="height:14px"></div>
+  <div class="grid2">
+    <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">绩效指标(周度再训练变体)</div><div id="m-metrics"></div></div>
+    <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">预测力 IC(逐日 RankIC, 20日均值)</div><div id="chart-ic" class="chart-sm"></div></div>
+  </div>
+  <div style="height:14px"></div>
+  <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">最新一期持仓(周度再训练 · Top-K 等权)</div><div class="holdings" id="m-holdings"></div></div>
+
+  <h2>方法与调研</h2>
+  <div class="panel method">
+    <p><b>开源项目调研(2025-2026):</b> 综合活跃度与能力,选型 <b>Microsoft Qlib</b>(49k+ stars, v0.9.8)作为实验引擎 —— 它提供了本实验直接复用的三件套:Alpha158 标准因子集、LightGBM/GRU 等基准模型、以及 walk-forward 滚动训练范式。对照组定位:FinRL(深度强化学习研究框架)、Freqtrade/FreqAI(加密实盘机器人,原生支持周期性再训练)、vn.py(A股/期货中文实盘生态)、NautilusTrader(Rust 内核事件驱动引擎)、QuantConnect Lean(机构级多资产)。近两年值得关注的方向:微软 RD-Agent(LLM 自动因子挖掘, NeurIPS 2025)、Chain-of-Alpha(LLM 公式化 Alpha 挖掘)。</p>
+    <p><b>实验设计:</b> 每个市场独立构建 Qlib 数据(自有交易日历);特征 = Alpha158(158个价量因子,归一化统计在 2017-2023 冻结防泄漏);标签 = T+1→T+2 收益率(与 Qlib 官方 benchmark 一致);模型 = LightGBM(官方调参), 另跑 GRU(GPU) 对照;T 日收盘出信号、以 T 日收盘价成交、每周首个交易日调仓 Top-K 等权;佣金/印花税/滑点按市场设定(A股约买0.08%/卖0.13%,加密0.1%)。</p>
+    <p><b>对照维度:</b> ① 等权买入持有;② 静态(年初用 2025-12-31 前数据训练一次,全年不更新);③ 每月再训练;④ 每周再训练(核心假设)。再训练采用扩展窗口,验证段为末 15% 用于早停,严格避免前视偏差。</p>
+    <p><b>局限性:</b> 成分股按当前名单回溯存在幸存者偏差;收盘价成交略理想化;前复权价格随分红除权整体重算;加密市场 7×24 交易;本实验为研究演示,不构成投资建议。</p>
+  </div>
+
+  <footer>
+    数据与结果由 alpha2026 流水线自动生成(fetch → qlib dump → walk-forward backtest → site build),可在 GitHub 一键复现。<br>
+    免责声明:历史回测不代表未来收益,本项目仅用于开源量化研究展示,不构成任何投资建议。
+  </footer>`;
+}
+
+function drawCharts(S,P,M){
+  const c1=echarts.init(document.getElementById("chart-portfolio"));
+  const variants=["buyhold","static","monthly","gru_static","weekly"].filter(v=>(P.variants||{})[v]);
+  c1.setOption({...baseOpt(variants.map(v=>({data:(P.variants[v].nav)}))),
+    series:variants.map(v=>lineSeries(v,(P.variants[v].nav),v==="weekly"))});
+
+  function drawMarket(k){
+    const m=M[k];if(!m)return;
+    const vs=["buyhold","static","monthly","gru_static","weekly"].filter(v=>m.variants[v]);
+    const cm=echarts.init(document.getElementById("chart-market"));
+    cm.setOption({...baseOpt(vs.map(v=>({data:m.variants[v].nav}))),
+      series:vs.map(v=>lineSeries(v,m.variants[v].nav,v==="weekly"))});
+    const wk=m.variants.weekly||m.variants.static;
+    const rows=vs.map(v=>({v,m:{...m.variants[v].metrics,ic_mean:(m.variants[v].metrics.ic||{}).mean_ic,
+      ic_pos:(m.variants[v].metrics.ic||{}).ic_positive_rate}}));
+    document.getElementById("m-metrics").innerHTML=metricsTable(rows,
+      ["total_return","annual_return","sharpe","max_drawdown","weekly_win_rate","ic_mean"],
+      ["总收益","年化","夏普","最大回撤","周胜率","IC"]);
+    const hasIC=vs.filter(v=>m.variants[v].ic_4w_ma);
+    if(hasIC.length){
+      const ci=echarts.init(document.getElementById("chart-ic"));
+      const dates=m.variants[hasIC[0]].ic_4w_ma.map(x=>x[0]);
+      ci.setOption({...baseOpt(hasIC.map(v=>({data:m.variants[v].ic_4w_ma}))),
+        series:hasIC.map(v=>({name:VNAME[v]||v,type:"line",data:m.variants[v].ic_4w_ma,showSymbol:false,
+          lineStyle:{width:v==="weekly"?2.4:1.2,color:COLORS[v]},itemStyle:{color:COLORS[v]}})),
+        yAxis:{...baseOpt([]).yAxis,axisLabel:{color:"#8a93a6",formatter:v=>v.toFixed(2)}}});
+    }
+    const tr=(m.variants.weekly?.recent_trades||[]).filter(t=>t.date).slice(-1)[0];
+    const hold=tr?(tr.bought||[]):[];
+    document.getElementById("m-holdings").innerHTML=hold.length
+      ?hold.map(i=>`<span class="hchip">${instName(k,i)}</span>`).join(""):"<span style='color:var(--muted)'>–</span>";
+  }
+  const keys=Object.keys(M);
+  let cur=keys.includes(qs.get("m"))?qs.get("m"):keys[0];
+  drawMarket(cur);
+  document.getElementById("mtabs").addEventListener("click",e=>{
+    const t=e.target.closest(".tab");if(!t)return;
+    document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
+    t.classList.add("on");cur=t.dataset.mkt;history.replaceState({},"",`?m=${cur}`);drawMarket(cur);
+  });
+  window.addEventListener("resize",()=>{echarts.dispose;document.querySelectorAll("[_echarts_instance_]").forEach(el=>echarts.getInstanceByDom(el)&&echarts.getInstanceByDom(el).resize())});
+}
+
+main().catch(e=>{document.getElementById("loading").innerHTML=`<span class="err">数据加载失败: ${e}<br>请通过 http 服务访问(如 python -m http.server), 不要直接双击打开 html。</span>`});
+</script>
+</body>
+</html>

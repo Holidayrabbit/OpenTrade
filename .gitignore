@@ -1,0 +1,7 @@
+data/
+results/**/*.csv
+run_all.log
+__pycache__/
+*.pyc
+nohup.out
+.DS_Store

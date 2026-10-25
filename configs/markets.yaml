@@ -1,0 +1,64 @@
+# alpha2026 四市场实验配置
+# 数据统一抓取区间: data_start ~ 今天(执行日), 回测区间: 2026-01-01 ~ 今天
+data_start: "2017-01-01"
+backtest_start: "2026-01-01"
+
+# 处理器拟合区间(Qlib Alpha158 基准做法: 归一化统计量在训练早期冻结, 避免泄漏)
+processor_fit_start: "2017-01-01"
+processor_fit_end: "2023-12-31"
+# 静态模型训练/验证段
+static_train_end: "2023-06-30"
+static_valid_end: "2025-12-31"
+
+markets:
+  cn:
+    name: "A股·沪深300"
+    topk: 8
+    cost_buy: 0.0008      # 佣金万2.5+冲击
+    cost_sell: 0.0013     # 佣金+印花税万5(卖出)
+    ann_days: 252
+    universe_source: csi300
+  us:
+    name: "美股·标普500"
+    topk: 8
+    cost_buy: 0.0005
+    cost_sell: 0.0005
+    ann_days: 252
+    universe_source: sp500
+  crypto:
+    name: "加密货币·币安Top15"
+    topk: 5
+    cost_buy: 0.0010      # taker 费率
+    cost_sell: 0.0010
+    ann_days: 365
+    universe_source: binance_top
+  gold:
+    name: "黄金资产组合"
+    topk: 5
+    cost_buy: 0.0005
+    cost_sell: 0.0005
+    ann_days: 252
+    universe_source: gold_fixed
+
+# 黄金市场固定标的池(现货/期货/ETF/矿股 跨市场组合)
+gold_universe:
+  - {inst: XAUUSD,  name: "伦敦金现(XAU)",       source: sina_xau}
+  - {inst: GCFUT,   name: "COMEX黄金主力",        source: em_global_futures}
+  - {inst: AUSHG,   name: "上海金Au99.99",        source: sge}
+  - {inst: SH518880, name: "华安黄金ETF",         source: em_cn}
+  - {inst: SZ159937, name: "易方达黄金ETF",       source: em_cn}
+  - {inst: SH518800, name: "国泰黄金ETF",         source: em_cn}
+  - {inst: GLD,     name: "SPDR黄金ETF(US)",     source: em_us}
+  - {inst: IAU,     name: "iShares黄金信托(US)", source: em_us}
+  - {inst: GDX,     name: "金矿ETF(US)",         source: em_us}
+  - {inst: NEM,     name: "纽蒙特矿业(US)",       source: em_us}
+  - {inst: GOLDUS,  name: "巴里克黄金(US)",       source: em_us}
+  - {inst: SH601899, name: "紫金矿业",            source: em_cn}
+  - {inst: SH600547, name: "山东黄金",            source: em_cn}
+  - {inst: SH600988, name: "赤峰黄金",            source: em_cn}
+  - {inst: SH600489, name: "中金黄金",            source: em_cn}
+
+# 币安稳定币/杠杆币排除表
+crypto_exclude_substrings: ["USDC", "FDUSD", "TUSD", "DAI", "BUSD", "EUR", "UP", "DOWN", "BULL", "BEAR"]
+crypto_min_list_date: "2024-06-30"   # 入池要求: 该币种K线起始不晚于此日期(保证有训练历史)
+crypto_top_n: 15
