@@ -14,10 +14,22 @@ if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
 fi
 echo "python: $(which python)"
 
-# 数据抓取(01 自带按标的缓存, 过期(>5天)自动重抓, 未过期秒级跳过 → 支持增量刷新)
-python scripts/01_fetch_data.py --markets cn,us,crypto,gold
-
-python scripts/02_dump_qlib.py cn,us,crypto,gold
+# 逐市场: 抓取(增量缓存) + qlib 落地, 失败冷却后重试最多 3 次
+# (02 的标的数校验保证不会用残缺数据出结果)
+for m in gold crypto cn us; do
+  ok=0
+  for attempt in 1 2 3; do
+    if python scripts/01_fetch_data.py --markets "$m" && python scripts/02_dump_qlib.py "$m"; then
+      ok=1; break
+    fi
+    echo "[retry] $m 第${attempt}次失败, 冷却 120s ..."
+    sleep 120
+  done
+  if [ "$ok" != "1" ]; then
+    echo "[FATAL] 市场 $m 数据无法就绪, 终止(已产出的其他市场结果保留)"
+    exit 1
+  fi
+done
 
 # 四市场 × buyhold/static/monthly/weekly(LightGBM)
 for m in gold crypto cn us; do

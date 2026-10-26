@@ -41,7 +41,7 @@ def log(msg):
     print(f"[{dt.datetime.now():%H:%M:%S}] {msg}", flush=True)
 
 
-def http_get(url, params=None, headers=None, retries=5, timeout=20):
+def http_get(url, params=None, headers=None, retries=4, timeout=20):
     last = None
     for i in range(retries):
         try:
@@ -49,9 +49,11 @@ def http_get(url, params=None, headers=None, retries=5, timeout=20):
             if r.status_code == 200:
                 return r
             last = RuntimeError(f"HTTP {r.status_code}: {r.text[:100]}")
+            if r.status_code not in (429, 500, 501, 502, 503, 504):
+                raise last  # 4xx(限流封禁等)不重试
         except Exception as e:  # noqa: BLE001
             last = e
-        time.sleep(1.5 * (i + 1))
+        time.sleep(min(5 * (i + 1), 20))  # 5,10,15,20s 指数退避
     raise last
 
 
@@ -156,7 +158,7 @@ def tx_kline(tx_symbol, kind):
         if not rows:
             continue
         frames.append(pd.DataFrame([x[:6] for x in rows], columns=["date", "open", "close", "high", "low", "volume"]))
-        time.sleep(0.12)
+        time.sleep(0.4)  # 腾讯限流防护: 控制单标的分块请求节奏
     if not frames:
         return pd.DataFrame()
     df = pd.concat(frames).drop_duplicates("date").sort_values("date").reset_index(drop=True)
@@ -367,6 +369,7 @@ def run(market):
 
     ok, fail = [], []
     frames = []
+    pending = list(uni)  # 待抓清单; 每轮失败的进入下一轮(带冷却), 最多 3 轮
 
     def worker(m):
         try:
@@ -374,19 +377,29 @@ def run(market):
         except Exception as e:  # noqa: BLE001
             return (m, repr(e)[:80])
 
-    with ThreadPoolExecutor(max_workers=6) as ex:
-        futs = {ex.submit(worker, m): m["inst"] for m in uni}
-        done = 0
-        for fu in as_completed(futs):
-            done += 1
-            meta, r = fu.result()
-            if isinstance(r, pd.DataFrame):
-                frames.append(r)
-                ok.append(meta | {"first_date": r["date"].iloc[0], "last_date": r["date"].iloc[-1], "rows": len(r)})
-            else:
-                fail.append({"inst": meta["inst"], "err": r})
-            if done % 50 == 0:
-                log(f"  {market}: {done}/{len(uni)} done, fail={len(fail)}")
+    for round_no in range(3):
+        if not pending:
+            break
+        if round_no:
+            cooldown = 60 * round_no
+            log(f"  {market}: 第{round_no + 1}轮重试 {len(pending)} 个标的, 冷却 {cooldown}s ...")
+            time.sleep(cooldown)
+        with ThreadPoolExecutor(max_workers=3) as ex:
+            futs = {ex.submit(worker, m): m["inst"] for m in pending}
+            done = 0
+            next_pending = []
+            for fu in as_completed(futs):
+                done += 1
+                meta, r = fu.result()
+                if isinstance(r, pd.DataFrame):
+                    frames.append(r)
+                    ok.append(meta | {"first_date": r["date"].iloc[0], "last_date": r["date"].iloc[-1], "rows": len(r)})
+                else:
+                    fail.append({"inst": meta["inst"], "err": r})
+                    next_pending.append(meta)
+                if done % 50 == 0:
+                    log(f"  {market}: 本轮 {done}/{len(pending)} done, fail={len(next_pending)}")
+            pending = next_pending
 
     # 用已有 raw 缓存补齐本轮失败但历史抓取成功的标的
     raw_dir = ROOT / "data" / "raw" / market
