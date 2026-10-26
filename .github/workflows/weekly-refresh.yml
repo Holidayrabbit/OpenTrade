@@ -33,6 +33,8 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          clean: false # 保留 data/raw 抓取缓存, 失败重跑从断点续抓
 
       - name: Skip if already refreshed within 12h (backup-slot guard)
         run: |

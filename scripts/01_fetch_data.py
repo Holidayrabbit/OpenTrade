@@ -41,7 +41,7 @@ def log(msg):
     print(f"[{dt.datetime.now():%H:%M:%S}] {msg}", flush=True)
 
 
-def http_get(url, params=None, headers=None, retries=4, timeout=20):
+def http_get(url, params=None, headers=None, retries=3, timeout=15):
     last = None
     for i in range(retries):
         try:
@@ -53,7 +53,7 @@ def http_get(url, params=None, headers=None, retries=4, timeout=20):
                 raise last  # 4xx(限流封禁等)不重试
         except Exception as e:  # noqa: BLE001
             last = e
-        time.sleep(min(5 * (i + 1), 20))  # 5,10,15,20s 指数退避
+        time.sleep(3 * (i + 1))  # 3,6,9s 退避
     raise last
 
 
@@ -158,7 +158,7 @@ def tx_kline(tx_symbol, kind):
         if not rows:
             continue
         frames.append(pd.DataFrame([x[:6] for x in rows], columns=["date", "open", "close", "high", "low", "volume"]))
-        time.sleep(0.4)  # 腾讯限流防护: 控制单标的分块请求节奏
+        time.sleep(1.2)  # 腾讯限流防护: 低位节奏, 避免触发黑洞式限流
     if not frames:
         return pd.DataFrame()
     df = pd.concat(frames).drop_duplicates("date").sort_values("date").reset_index(drop=True)
@@ -384,7 +384,7 @@ def run(market):
             cooldown = 60 * round_no
             log(f"  {market}: 第{round_no + 1}轮重试 {len(pending)} 个标的, 冷却 {cooldown}s ...")
             time.sleep(cooldown)
-        with ThreadPoolExecutor(max_workers=3) as ex:
+        with ThreadPoolExecutor(max_workers=2) as ex:
             futs = {ex.submit(worker, m): m["inst"] for m in pending}
             done = 0
             next_pending = []
