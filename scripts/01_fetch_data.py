@@ -49,8 +49,9 @@ def http_get(url, params=None, headers=None, retries=3, timeout=15):
             if r.status_code == 200:
                 return r
             last = RuntimeError(f"HTTP {r.status_code}: {r.text[:100]}")
-            if r.status_code not in (429, 500, 501, 502, 503, 504):
-                raise last  # 4xx(限流封禁等)不重试
+            # 腾讯 501 = IP 封禁, 重试无意义 → 快速失败交给双源切换/市场级重试
+            if r.status_code not in (429, 500, 502, 503, 504):
+                raise last
         except Exception as e:  # noqa: BLE001
             last = e
         time.sleep(3 * (i + 1))  # 3,6,9s 退避
@@ -333,6 +334,22 @@ def fetch_one(inst_meta, market, force=False):
     raise last_err
 
 
+def _tx_then_em(code, kind):
+    """A股/美股双源: 腾讯优先, 限流/为空时自动切换东财(两源会阶段性封禁, 互为备份)"""
+    try:
+        sym = tx_us_symbol(code) if kind == "us" else cn_tx_symbol(code)
+        if sym:
+            df = tx_kline(sym, kind)
+            if df is not None and not df.empty:
+                return df
+    except Exception as e:  # noqa: BLE001
+        log(f"  tx fail {code}: {e!r} → 切换东财")
+    if kind == "us":
+        secid = us_secid(code)
+        return em_kline(secid, CFG["data_start"], TODAY) if secid else pd.DataFrame()
+    return em_kline(cn_secid(code), CFG["data_start"], TODAY)
+
+
 def _fetch_one_inner(inst_meta, market):
     inst = inst_meta["inst"]
     if market == "gold":
@@ -344,16 +361,14 @@ def _fetch_one_inner(inst_meta, market):
         if src == "em_global_futures":
             return em_kline("101.GC00Y", CFG["data_start"], TODAY)
         if src == "em_us":
-            txsym = tx_us_symbol(inst_meta["code"].replace("US", ""))
-            return tx_kline(txsym, "us") if txsym else pd.DataFrame()
-        return tx_kline(cn_tx_symbol(inst[2:]), "cn")
+            return _tx_then_em(inst_meta["code"].replace("US", ""), "us")
+        return _tx_then_em(inst[2:], "cn")
     if market == "cn":
-        return tx_kline(cn_tx_symbol(inst[2:]), "cn")
+        return _tx_then_em(inst[2:], "cn")
     if market == "crypto":
         return inst_meta.pop("_klines")
     # us
-    txsym = tx_us_symbol(inst_meta["code"])
-    return tx_kline(txsym, "us") if txsym else pd.DataFrame()
+    return _tx_then_em(inst_meta["code"], "us")
 
 
 def run(market):
