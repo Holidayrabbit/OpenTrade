@@ -252,8 +252,22 @@ def binance_klines(symbol, start_ms, end_ms):
 
 
 # ---------------------------------------------------------------- 标的池构建
+def _universe_fallback(market):
+    """标的池接口不可用时复用上次 universe.json(增量刷新场景, 标的池很少变化)"""
+    fp = ROOT / "data" / "universe.json"
+    if fp.exists():
+        old = json.loads(fp.read_text()).get(market) or []
+        if old:
+            log(f"  {market}: 标的池接口失败, 复用上次 universe({len(old)} 个标的)")
+            return [{k: v for k, v in u.items() if k != "_klines"} for u in old]
+    raise RuntimeError(f"{market} 标的池无法获取且无历史 universe")
+
+
 def universe_cn():
-    import akshare as ak
+    try:
+        import akshare as ak
+    except ImportError:
+        return _universe_fallback("cn")
     for fn, arg in [("index_stock_cons_csindex", "000300"), ("index_stock_cons", "000300")]:
         try:
             df = getattr(ak, fn)(symbol=arg)
@@ -262,7 +276,7 @@ def universe_cn():
             return [{"inst": ("SH" if c.startswith("6") else "SZ") + c, "code": c, "name": n} for c, n in zip(codes, names)]
         except Exception as e:  # noqa: BLE001
             log(f"cn universe via {fn} failed: {e!r}, fallback")
-    raise RuntimeError("无法获取沪深300成分股")
+    return _universe_fallback("cn")
 
 
 def universe_us():
@@ -272,7 +286,11 @@ def universe_us():
 
 def universe_crypto(cfg):
     log("  binance 24h tickers ...")
-    tk = http_get(f"{BINANCE}/api/v3/ticker/24hr", timeout=30).json()
+    try:
+        tk = http_get(f"{BINANCE}/api/v3/ticker/24hr", timeout=30).json()
+    except Exception as e:  # noqa: BLE001
+        log(f"  binance unreachable: {e!r}")
+        return _universe_fallback("crypto")
     excl = CFG["crypto_exclude_substrings"]
     cands = [t for t in tk if t["symbol"].endswith("USDT")]
     cands = [t for t in cands if not any(x in t["symbol"] for x in excl)]

@@ -2525,40 +2525,22 @@
  ],
  "gold": [
   {
-   "inst": "AUSHG",
-   "code": "AUSHG",
-   "name": "上海金Au99.99",
-   "_source": "sge",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
-  },
-  {
    "inst": "XAUUSD",
    "code": "XAUUSD",
    "name": "伦敦金现(XAU)",
    "_source": "sina_xau",
    "first_date": "2017-01-02",
-   "last_date": "2026-10-23",
-   "rows": 2542
+   "last_date": "2026-10-26",
+   "rows": 2543
   },
   {
-   "inst": "SH518800",
-   "code": "SH518800",
-   "name": "国泰黄金ETF",
-   "_source": "em_cn",
+   "inst": "GCFUT",
+   "code": "GCFUT",
+   "name": "COMEX黄金主力",
+   "_source": "em_global_futures",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ159937",
-   "code": "SZ159937",
-   "name": "易方达黄金ETF",
-   "_source": "em_cn",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2538
   },
   {
    "inst": "SH518880",
@@ -2566,22 +2548,49 @@
    "name": "华安黄金ETF",
    "_source": "em_cn",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
-   "inst": "IAU",
-   "code": "IAU",
-   "name": "iShares黄金信托(US)",
-   "_source": "em_us",
+   "inst": "AUSHG",
+   "code": "AUSHG",
+   "name": "上海金Au99.99",
+   "_source": "sge",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2378
+  },
+  {
+   "inst": "SZ159937",
+   "code": "SZ159937",
+   "name": "易方达黄金ETF",
+   "_source": "em_cn",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH518800",
+   "code": "SH518800",
+   "name": "国泰黄金ETF",
+   "_source": "em_cn",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "GLD",
    "code": "GLD",
    "name": "SPDR黄金ETF(US)",
+   "_source": "em_us",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "IAU",
+   "code": "IAU",
+   "name": "iShares黄金信托(US)",
    "_source": "em_us",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
@@ -2620,8 +2629,8 @@
    "name": "紫金矿业",
    "_source": "em_cn",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2375
+   "last_date": "2026-10-26",
+   "rows": 2376
   },
   {
    "inst": "SH600547",
@@ -2629,17 +2638,8 @@
    "name": "山东黄金",
    "_source": "em_cn",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2349
-  },
-  {
-   "inst": "SH600489",
-   "code": "SH600489",
-   "name": "中金黄金",
-   "_source": "em_cn",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2350
   },
   {
    "inst": "SH600988",
@@ -2647,7 +2647,16 @@
    "name": "赤峰黄金",
    "_source": "em_cn",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
+   "last_date": "2026-10-26",
+   "rows": 2370
+  },
+  {
+   "inst": "SH600489",
+   "code": "SH600489",
+   "name": "中金黄金",
+   "_source": "em_cn",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
    "rows": 2369
   }
  ],
