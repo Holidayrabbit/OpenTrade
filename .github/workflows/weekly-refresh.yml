@@ -63,5 +63,5 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "auto: 周度数据与回测刷新 $(date +%F)"
-            git push
+            for i in 1 2 3 4 5; do git push && break; echo "push retry $i"; sleep 60; done
           fi

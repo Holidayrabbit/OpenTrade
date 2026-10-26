@@ -2662,17 +2662,17 @@
  ],
  "us": [
   {
-   "inst": "AOS",
-   "code": "AOS",
-   "name": "A. O. Smith",
+   "inst": "MMM",
+   "code": "MMM",
+   "name": "3M",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "MMM",
-   "code": "MMM",
-   "name": "3M",
+   "inst": "AOS",
+   "code": "AOS",
+   "name": "A. O. Smith",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2686,17 +2686,17 @@
    "rows": 2466
   },
   {
-   "inst": "ACN",
-   "code": "ACN",
-   "name": "Accenture",
+   "inst": "ABBV",
+   "code": "ABBV",
+   "name": "AbbVie",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "ABBV",
-   "code": "ABBV",
-   "name": "AbbVie",
+   "inst": "ACN",
+   "code": "ACN",
+   "name": "Accenture",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2710,6 +2710,14 @@
    "rows": 2466
   },
   {
+   "inst": "AES",
+   "code": "AES",
+   "name": "AES Corporation",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "AMD",
    "code": "AMD",
    "name": "Advanced Micro Devices",
@@ -2718,33 +2726,9 @@
    "rows": 2466
   },
   {
-   "inst": "ABNB",
-   "code": "ABNB",
-   "name": "Airbnb",
-   "first_date": "2020-12-10",
-   "last_date": "2026-10-23",
-   "rows": 1474
-  },
-  {
    "inst": "AFL",
    "code": "AFL",
    "name": "Aflac",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "APD",
-   "code": "APD",
-   "name": "Air Products",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "AES",
-   "code": "AES",
-   "name": "AES Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2758,9 +2742,17 @@
    "rows": 2466
   },
   {
-   "inst": "ALB",
-   "code": "ALB",
-   "name": "Albemarle Corporation",
+   "inst": "ABNB",
+   "code": "ABNB",
+   "name": "Airbnb",
+   "first_date": "2020-12-10",
+   "last_date": "2026-10-26",
+   "rows": 1475
+  },
+  {
+   "inst": "APD",
+   "code": "APD",
+   "name": "Air Products",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2769,6 +2761,14 @@
    "inst": "AKAM",
    "code": "AKAM",
    "name": "Akamai Technologies",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "ALB",
+   "code": "ALB",
+   "name": "Albemarle Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2780,6 +2780,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "ALGN",
+   "code": "ALGN",
+   "name": "Align Technology",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "ALLE",
@@ -2798,9 +2806,9 @@
    "rows": 2466
   },
   {
-   "inst": "ALGN",
-   "code": "ALGN",
-   "name": "Align Technology",
+   "inst": "ALL",
+   "code": "ALL",
+   "name": "Allstate",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2814,28 +2822,12 @@
    "rows": 2466
   },
   {
-   "inst": "ALL",
-   "code": "ALL",
-   "name": "Allstate",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "GOOG",
    "code": "GOOG",
    "name": "Alphabet Inc. (Class C)",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
-  },
-  {
-   "inst": "AMCR",
-   "code": "AMCR",
-   "name": "Amcor",
-   "first_date": "2019-06-11",
-   "last_date": "2026-10-23",
-   "rows": 1854
   },
   {
    "inst": "MO",
@@ -2852,6 +2844,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "AMCR",
+   "code": "AMCR",
+   "name": "Amcor",
+   "first_date": "2019-06-11",
+   "last_date": "2026-10-23",
+   "rows": 1854
   },
   {
    "inst": "AEE",
@@ -2878,14 +2878,6 @@
    "rows": 2466
   },
   {
-   "inst": "AWK",
-   "code": "AWK",
-   "name": "American Water Works",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "AIG",
    "code": "AIG",
    "name": "American International Group",
@@ -2897,6 +2889,14 @@
    "inst": "AMT",
    "code": "AMT",
    "name": "American Tower",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "AWK",
+   "code": "AWK",
+   "name": "American Water Works",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2974,20 +2974,20 @@
    "rows": 2466
   },
   {
-   "inst": "APP",
-   "code": "APP",
-   "name": "AppLovin",
-   "first_date": "2021-04-15",
-   "last_date": "2026-10-23",
-   "rows": 1389
-  },
-  {
    "inst": "AMAT",
    "code": "AMAT",
    "name": "Applied Materials",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "APP",
+   "code": "APP",
+   "name": "AppLovin",
+   "first_date": "2021-04-15",
+   "last_date": "2026-10-26",
+   "rows": 1390
   },
   {
    "inst": "APTV",
@@ -3094,20 +3094,20 @@
    "rows": 2466
   },
   {
+   "inst": "AXON",
+   "code": "AXON",
+   "name": "Axon Enterprise",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 1977
+  },
+  {
    "inst": "BKR",
    "code": "BKR",
    "name": "Baker Hughes",
    "first_date": "2019-10-18",
    "last_date": "2026-10-23",
    "rows": 1763
-  },
-  {
-   "inst": "AXON",
-   "code": "AXON",
-   "name": "Axon Enterprise",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 1976
   },
   {
    "inst": "BALL",
@@ -3158,6 +3158,14 @@
    "rows": 2466
   },
   {
+   "inst": "TECH",
+   "code": "TECH",
+   "name": "Bio-Techne",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "BIIB",
    "code": "BIIB",
    "name": "Biogen",
@@ -3169,14 +3177,6 @@
    "inst": "BLK",
    "code": "BLK",
    "name": "BlackRock",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "TECH",
-   "code": "TECH",
-   "name": "Bio-Techne",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3194,24 +3194,16 @@
    "code": "XYZ",
    "name": "Block, Inc.",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "BE",
    "code": "BE",
    "name": "Bloom Energy",
    "first_date": "2018-07-25",
-   "last_date": "2026-10-23",
-   "rows": 2074
-  },
-  {
-   "inst": "BKNG",
-   "code": "BKNG",
-   "name": "Booking Holdings",
-   "first_date": "2018-02-27",
-   "last_date": "2026-10-23",
-   "rows": 2177
+   "last_date": "2026-10-26",
+   "rows": 2075
   },
   {
    "inst": "BNY",
@@ -3230,17 +3222,17 @@
    "rows": 2466
   },
   {
+   "inst": "BKNG",
+   "code": "BKNG",
+   "name": "Booking Holdings",
+   "first_date": "2018-02-27",
+   "last_date": "2026-10-23",
+   "rows": 2177
+  },
+  {
    "inst": "BSX",
    "code": "BSX",
    "name": "Boston Scientific",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "AVGO",
-   "code": "AVGO",
-   "name": "Broadcom",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3254,9 +3246,9 @@
    "rows": 2466
   },
   {
-   "inst": "BFB",
-   "code": "BF.B",
-   "name": "Brown–Forman",
+   "inst": "AVGO",
+   "code": "AVGO",
+   "name": "Broadcom",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3273,6 +3265,14 @@
    "inst": "BRO",
    "code": "BRO",
    "name": "Brown & Brown",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "BFB",
+   "code": "BF.B",
+   "name": "Brown–Forman",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3358,17 +3358,17 @@
    "rows": 2386
   },
   {
-   "inst": "CAT",
-   "code": "CAT",
-   "name": "Caterpillar Inc.",
+   "inst": "CASY",
+   "code": "CASY",
+   "name": "Casey's",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "CASY",
-   "code": "CASY",
-   "name": "Casey's",
+   "inst": "CAT",
+   "code": "CAT",
+   "name": "Caterpillar Inc.",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3390,14 +3390,6 @@
    "rows": 2162
   },
   {
-   "inst": "COR",
-   "code": "COR",
-   "name": "Cencora",
-   "first_date": "2023-08-30",
-   "last_date": "2026-10-23",
-   "rows": 791
-  },
-  {
    "inst": "CDW",
    "code": "CDW",
    "name": "CDW Corporation",
@@ -3406,17 +3398,17 @@
    "rows": 2466
   },
   {
+   "inst": "COR",
+   "code": "COR",
+   "name": "Cencora",
+   "first_date": "2023-08-30",
+   "last_date": "2026-10-23",
+   "rows": 791
+  },
+  {
    "inst": "CNC",
    "code": "CNC",
    "name": "Centene Corporation",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "CF",
-   "code": "CF",
-   "name": "CF Industries",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3430,12 +3422,20 @@
    "rows": 2466
   },
   {
+   "inst": "CF",
+   "code": "CF",
+   "name": "CF Industries",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "CRL",
    "code": "CRL",
    "name": "Charles River Laboratories",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "SCHW",
@@ -3582,20 +3582,20 @@
    "rows": 2466
   },
   {
-   "inst": "COIN",
-   "code": "COIN",
-   "name": "Coinbase",
-   "first_date": "2021-04-14",
-   "last_date": "2026-10-23",
-   "rows": 1390
-  },
-  {
    "inst": "COHR",
    "code": "COHR",
    "name": "Coherent Corp.",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "COIN",
+   "code": "COIN",
+   "name": "Coinbase",
+   "first_date": "2021-04-14",
+   "last_date": "2026-10-26",
+   "rows": 1391
   },
   {
    "inst": "CL",
@@ -3682,8 +3682,8 @@
    "code": "CPAY",
    "name": "Corpay",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "CSGP",
@@ -3770,8 +3770,8 @@
    "code": "DDOG",
    "name": "Datadog",
    "first_date": "2019-09-19",
-   "last_date": "2026-10-23",
-   "rows": 1784
+   "last_date": "2026-10-26",
+   "rows": 1785
   },
   {
    "inst": "DVA",
@@ -3782,17 +3782,17 @@
    "rows": 2466
   },
   {
-   "inst": "DE",
-   "code": "DE",
-   "name": "Deere & Company",
+   "inst": "DECK",
+   "code": "DECK",
+   "name": "Deckers Brands",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "DECK",
-   "code": "DECK",
-   "name": "Deckers Brands",
+   "inst": "DE",
+   "code": "DE",
+   "name": "Deere & Company",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3830,17 +3830,17 @@
    "rows": 2466
   },
   {
-   "inst": "DLR",
-   "code": "DLR",
-   "name": "Digital Realty",
+   "inst": "FANG",
+   "code": "FANG",
+   "name": "Diamondback Energy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "FANG",
-   "code": "FANG",
-   "name": "Diamondback Energy",
+   "inst": "DLR",
+   "code": "DLR",
+   "name": "Digital Realty",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3874,8 +3874,8 @@
    "code": "DASH",
    "name": "DoorDash",
    "first_date": "2020-12-09",
-   "last_date": "2026-10-23",
-   "rows": 1475
+   "last_date": "2026-10-26",
+   "rows": 1476
   },
   {
    "inst": "DPZ",
@@ -4062,6 +4062,14 @@
    "rows": 2466
   },
   {
+   "inst": "EL",
+   "code": "EL",
+   "name": "Estée Lauder Companies (The)",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "EG",
    "code": "EG",
    "name": "Everest Group",
@@ -4082,21 +4090,21 @@
    "code": "P",
    "name": "Everpure",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "EL",
-   "code": "EL",
-   "name": "Estée Lauder Companies (The)",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "ES",
    "code": "ES",
    "name": "Eversource Energy",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "EXC",
+   "code": "EXC",
+   "name": "Exelon",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4108,14 +4116,6 @@
    "first_date": "2021-02-10",
    "last_date": "2026-10-23",
    "rows": 1433
-  },
-  {
-   "inst": "EXC",
-   "code": "EXC",
-   "name": "Exelon",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
   },
   {
    "inst": "EXPE",
@@ -4190,20 +4190,20 @@
    "rows": 2466
   },
   {
+   "inst": "FDXF",
+   "code": "FDXF",
+   "name": "FedEx Freight",
+   "first_date": "2026-06-01",
+   "last_date": "2026-10-26",
+   "rows": 103
+  },
+  {
    "inst": "FDX",
    "code": "FDX",
    "name": "FedEx",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
-  },
-  {
-   "inst": "FDXF",
-   "code": "FDXF",
-   "name": "FedEx Freight",
-   "first_date": "2026-06-01",
-   "last_date": "2026-10-23",
-   "rows": 102
   },
   {
    "inst": "FERG",
@@ -4214,14 +4214,6 @@
    "rows": 1416
   },
   {
-   "inst": "FITB",
-   "code": "FITB",
-   "name": "Fifth Third Bancorp",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "FIS",
    "code": "FIS",
    "name": "Fidelity National Information Services",
@@ -4230,9 +4222,25 @@
    "rows": 2466
   },
   {
+   "inst": "FITB",
+   "code": "FITB",
+   "name": "Fifth Third Bancorp",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "FSLR",
    "code": "FSLR",
    "name": "First Solar",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "FE",
+   "code": "FE",
+   "name": "FirstEnergy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4246,14 +4254,6 @@
    "rows": 849
   },
   {
-   "inst": "FE",
-   "code": "FE",
-   "name": "FirstEnergy",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "FLEX",
    "code": "FLEX",
    "name": "Flex Ltd.",
@@ -4262,17 +4262,17 @@
    "rows": 2466
   },
   {
-   "inst": "FTNT",
-   "code": "FTNT",
-   "name": "Fortinet",
+   "inst": "F",
+   "code": "F",
+   "name": "Ford Motor Company",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "F",
-   "code": "F",
-   "name": "Ford Motor Company",
+   "inst": "FTNT",
+   "code": "FTNT",
+   "name": "Fortinet",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4310,14 +4310,6 @@
    "rows": 2466
   },
   {
-   "inst": "GRMN",
-   "code": "GRMN",
-   "name": "Garmin",
-   "first_date": "2021-12-07",
-   "last_date": "2026-10-23",
-   "rows": 1225
-  },
-  {
    "inst": "FCX",
    "code": "FCX",
    "name": "Freeport-McMoRan",
@@ -4326,17 +4318,17 @@
    "rows": 2466
   },
   {
+   "inst": "GRMN",
+   "code": "GRMN",
+   "name": "Garmin",
+   "first_date": "2021-12-07",
+   "last_date": "2026-10-23",
+   "rows": 1225
+  },
+  {
    "inst": "IT",
    "code": "IT",
    "name": "Gartner",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "GE",
-   "code": "GE",
-   "name": "GE Aerospace",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4348,6 +4340,14 @@
    "first_date": "2022-12-15",
    "last_date": "2026-10-23",
    "rows": 967
+  },
+  {
+   "inst": "GE",
+   "code": "GE",
+   "name": "GE Aerospace",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
   },
   {
    "inst": "GEV",
@@ -4430,17 +4430,17 @@
    "rows": 1812
   },
   {
-   "inst": "GS",
-   "code": "GS",
-   "name": "Goldman Sachs",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "GDDY",
    "code": "GDDY",
    "name": "GoDaddy",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "GS",
+   "code": "GS",
+   "name": "Goldman Sachs",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4462,17 +4462,17 @@
    "rows": 2466
   },
   {
-   "inst": "HCA",
-   "code": "HCA",
-   "name": "HCA Healthcare",
+   "inst": "HAS",
+   "code": "HAS",
+   "name": "Hasbro",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "HAS",
-   "code": "HAS",
-   "name": "Hasbro",
+   "inst": "HCA",
+   "code": "HCA",
+   "name": "HCA Healthcare",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4510,20 +4510,12 @@
    "rows": 2466
   },
   {
-   "inst": "HONA",
-   "code": "HONA",
-   "name": "Honeywell Aerospace",
-   "first_date": "2026-06-15",
+   "inst": "HLT",
+   "code": "HLT",
+   "name": "Hilton Worldwide",
+   "first_date": "2017-01-03",
    "last_date": "2026-10-23",
-   "rows": 92
-  },
-  {
-   "inst": "HON",
-   "code": "HON",
-   "name": "Honeywell Technologies",
-   "first_date": "2026-06-15",
-   "last_date": "2026-10-23",
-   "rows": 92
+   "rows": 2466
   },
   {
    "inst": "HD",
@@ -4534,12 +4526,20 @@
    "rows": 2466
   },
   {
-   "inst": "HLT",
-   "code": "HLT",
-   "name": "Hilton Worldwide",
-   "first_date": "2017-01-03",
+   "inst": "HONA",
+   "code": "HONA",
+   "name": "Honeywell Aerospace",
+   "first_date": "2026-06-15",
+   "last_date": "2026-10-26",
+   "rows": 93
+  },
+  {
+   "inst": "HON",
+   "code": "HON",
+   "name": "Honeywell Technologies",
+   "first_date": "2026-06-15",
    "last_date": "2026-10-23",
-   "rows": 2466
+   "rows": 92
   },
   {
    "inst": "HRL",
@@ -4614,17 +4614,17 @@
    "rows": 2466
   },
   {
-   "inst": "IDXX",
-   "code": "IDXX",
-   "name": "Idexx Laboratories",
+   "inst": "IEX",
+   "code": "IEX",
+   "name": "IDEX Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "IEX",
-   "code": "IEX",
-   "name": "IDEX Corporation",
+   "inst": "IDXX",
+   "code": "IDXX",
+   "name": "Idexx Laboratories",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4662,6 +4662,14 @@
    "rows": 2466
   },
   {
+   "inst": "PODD",
+   "code": "PODD",
+   "name": "Insulet Corporation",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
    "inst": "INTC",
    "code": "INTC",
    "name": "Intel",
@@ -4676,14 +4684,6 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2215
-  },
-  {
-   "inst": "PODD",
-   "code": "PODD",
-   "name": "Insulet Corporation",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
   },
   {
    "inst": "ICE",
@@ -4746,8 +4746,8 @@
    "code": "IQV",
    "name": "IQVIA",
    "first_date": "2017-11-15",
-   "last_date": "2026-10-23",
-   "rows": 2246
+   "last_date": "2026-10-26",
+   "rows": 2247
   },
   {
    "inst": "IRM",
@@ -4766,17 +4766,17 @@
    "rows": 2466
   },
   {
-   "inst": "JKHY",
-   "code": "JKHY",
-   "name": "Jack Henry & Associates",
+   "inst": "JBL",
+   "code": "JBL",
+   "name": "Jabil",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "JBL",
-   "code": "JBL",
-   "name": "Jabil",
+   "inst": "JKHY",
+   "code": "JKHY",
+   "name": "Jack Henry & Associates",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4814,20 +4814,20 @@
    "rows": 872
   },
   {
-   "inst": "KDP",
-   "code": "KDP",
-   "name": "Keurig Dr Pepper",
-   "first_date": "2020-09-21",
-   "last_date": "2026-10-23",
-   "rows": 1531
-  },
-  {
    "inst": "JPM",
    "code": "JPM",
    "name": "JPMorgan Chase",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "KDP",
+   "code": "KDP",
+   "name": "Keurig Dr Pepper",
+   "first_date": "2020-09-21",
+   "last_date": "2026-10-23",
+   "rows": 1531
   },
   {
    "inst": "KEY",
@@ -4842,8 +4842,8 @@
    "code": "KEYS",
    "name": "Keysight Technologies",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "KMB",
@@ -4978,8 +4978,8 @@
    "code": "LYV",
    "name": "Live Nation Entertainment",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "LMT",
@@ -5018,8 +5018,8 @@
    "code": "LITE",
    "name": "Lumentum",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "LYB",
@@ -5078,17 +5078,17 @@
    "rows": 2466
   },
   {
-   "inst": "MA",
-   "code": "MA",
-   "name": "Mastercard",
+   "inst": "MAS",
+   "code": "MAS",
+   "name": "Masco",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "MAS",
-   "code": "MAS",
-   "name": "Masco",
+   "inst": "MA",
+   "code": "MA",
+   "name": "Mastercard",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5126,17 +5126,17 @@
    "rows": 2466
   },
   {
-   "inst": "META",
-   "code": "META",
-   "name": "Meta Platforms",
+   "inst": "MRK",
+   "code": "MRK",
+   "name": "Merck & Co.",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "MRK",
-   "code": "MRK",
-   "name": "Merck & Co.",
+   "inst": "META",
+   "code": "META",
+   "name": "Meta Platforms",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5154,8 +5154,8 @@
    "code": "MTD",
    "name": "Mettler Toledo",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "MGM",
@@ -5202,8 +5202,8 @@
    "code": "MRNA",
    "name": "Moderna",
    "first_date": "2018-12-07",
-   "last_date": "2026-10-23",
-   "rows": 1980
+   "last_date": "2026-10-26",
+   "rows": 1981
   },
   {
    "inst": "MDLZ",
@@ -5222,17 +5222,17 @@
    "rows": 2466
   },
   {
-   "inst": "MCO",
-   "code": "MCO",
-   "name": "Moody's Corporation",
+   "inst": "MNST",
+   "code": "MNST",
+   "name": "Monster Beverage",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "MNST",
-   "code": "MNST",
-   "name": "Monster Beverage",
+   "inst": "MCO",
+   "code": "MCO",
+   "name": "Moody's Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5278,17 +5278,17 @@
    "rows": 2466
   },
   {
-   "inst": "NFLX",
-   "code": "NFLX",
-   "name": "Netflix",
+   "inst": "NTAP",
+   "code": "NTAP",
+   "name": "NetApp",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "NTAP",
-   "code": "NTAP",
-   "name": "NetApp",
+   "inst": "NFLX",
+   "code": "NFLX",
+   "name": "Netflix",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5318,6 +5318,14 @@
    "rows": 2466
   },
   {
+   "inst": "NEE",
+   "code": "NEE",
+   "name": "NextEra Energy",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "NKE",
    "code": "NKE",
    "name": "Nike, Inc.",
@@ -5329,14 +5337,6 @@
    "inst": "NI",
    "code": "NI",
    "name": "NiSource",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "NEE",
-   "code": "NEE",
-   "name": "NextEra Energy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5374,17 +5374,17 @@
    "rows": 2466
   },
   {
-   "inst": "NRG",
-   "code": "NRG",
-   "name": "NRG Energy",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "NCLH",
    "code": "NCLH",
    "name": "Norwegian Cruise Line Holdings",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "NRG",
+   "code": "NRG",
+   "name": "NRG Energy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5414,17 +5414,17 @@
    "rows": 2466
   },
   {
-   "inst": "ORLY",
-   "code": "ORLY",
-   "name": "O'Reilly Automotive",
+   "inst": "NXPI",
+   "code": "NXPI",
+   "name": "NXP Semiconductors",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "NXPI",
-   "code": "NXPI",
-   "name": "NXP Semiconductors",
+   "inst": "ORLY",
+   "code": "ORLY",
+   "name": "O'Reilly Automotive",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5462,14 +5462,6 @@
    "rows": 2466
   },
   {
-   "inst": "OTIS",
-   "code": "OTIS",
-   "name": "Otis Worldwide",
-   "first_date": "2020-04-03",
-   "last_date": "2026-10-23",
-   "rows": 1648
-  },
-  {
    "inst": "OKE",
    "code": "OKE",
    "name": "Oneok",
@@ -5484,6 +5476,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "OTIS",
+   "code": "OTIS",
+   "name": "Otis Worldwide",
+   "first_date": "2020-04-03",
+   "last_date": "2026-10-23",
+   "rows": 1648
   },
   {
    "inst": "PCAR",
@@ -5506,8 +5506,8 @@
    "code": "PLTR",
    "name": "Palantir Technologies",
    "first_date": "2020-09-30",
-   "last_date": "2026-10-23",
-   "rows": 1524
+   "last_date": "2026-10-26",
+   "rows": 1525
   },
   {
    "inst": "PANW",
@@ -5518,17 +5518,17 @@
    "rows": 2466
   },
   {
-   "inst": "PAYX",
-   "code": "PAYX",
-   "name": "Paychex",
+   "inst": "PH",
+   "code": "PH",
+   "name": "Parker Hannifin",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "PH",
-   "code": "PH",
-   "name": "Parker Hannifin",
+   "inst": "PAYX",
+   "code": "PAYX",
+   "name": "Paychex",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5702,28 +5702,20 @@
    "rows": 2466
   },
   {
-   "inst": "Q",
-   "code": "Q",
-   "name": "Qnity Electronics",
-   "first_date": "2025-11-03",
-   "last_date": "2026-10-23",
-   "rows": 245
-  },
-  {
-   "inst": "RL",
-   "code": "RL",
-   "name": "Ralph Lauren Corporation",
-   "first_date": "2021-08-11",
-   "last_date": "2026-10-23",
-   "rows": 1307
-  },
-  {
    "inst": "QCOM",
    "code": "QCOM",
    "name": "Qualcomm",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "Q",
+   "code": "Q",
+   "name": "Qnity Electronics",
+   "first_date": "2025-11-03",
+   "last_date": "2026-10-23",
+   "rows": 245
   },
   {
    "inst": "DGX",
@@ -5734,12 +5726,12 @@
    "rows": 2466
   },
   {
-   "inst": "RDDT",
-   "code": "RDDT",
-   "name": "Reddit",
-   "first_date": "2024-03-21",
+   "inst": "RL",
+   "code": "RL",
+   "name": "Ralph Lauren Corporation",
+   "first_date": "2021-08-11",
    "last_date": "2026-10-23",
-   "rows": 651
+   "rows": 1307
   },
   {
    "inst": "RJF",
@@ -5748,6 +5740,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "RDDT",
+   "code": "RDDT",
+   "name": "Reddit",
+   "first_date": "2024-03-21",
+   "last_date": "2026-10-26",
+   "rows": 652
   },
   {
    "inst": "RTX",
@@ -5806,20 +5806,20 @@
    "rows": 2466
   },
   {
-   "inst": "HOOD",
-   "code": "HOOD",
-   "name": "Robinhood Markets",
-   "first_date": "2021-07-29",
-   "last_date": "2026-10-23",
-   "rows": 1316
-  },
-  {
    "inst": "RVTY",
    "code": "RVTY",
    "name": "Revvity",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "HOOD",
+   "code": "HOOD",
+   "name": "Robinhood Markets",
+   "first_date": "2021-07-29",
+   "last_date": "2026-10-26",
+   "rows": 1317
   },
   {
    "inst": "ROK",
@@ -5870,20 +5870,20 @@
    "rows": 2466
   },
   {
-   "inst": "CRM",
-   "code": "CRM",
-   "name": "Salesforce",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "SNDK",
    "code": "SNDK",
    "name": "Sandisk",
    "first_date": "2025-02-13",
    "last_date": "2026-10-23",
    "rows": 426
+  },
+  {
+   "inst": "CRM",
+   "code": "CRM",
+   "name": "Salesforce",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
   },
   {
    "inst": "SBAC",
@@ -5898,8 +5898,8 @@
    "code": "SLB",
    "name": "Schlumberger",
    "first_date": "2017-03-02",
-   "last_date": "2026-10-23",
-   "rows": 2426
+   "last_date": "2026-10-26",
+   "rows": 2427
   },
   {
    "inst": "STX",
@@ -5986,8 +5986,8 @@
    "code": "SOLV",
    "name": "Solventum",
    "first_date": "2024-04-01",
-   "last_date": "2026-10-23",
-   "rows": 645
+   "last_date": "2026-10-26",
+   "rows": 646
   },
   {
    "inst": "SO",
@@ -6146,8 +6146,8 @@
    "code": "TDY",
    "name": "Teledyne Technologies",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "TER",
@@ -6266,8 +6266,8 @@
    "code": "TWLO",
    "name": "Twilio",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "TYL",
@@ -6298,8 +6298,8 @@
    "code": "UBER",
    "name": "Uber",
    "first_date": "2019-05-10",
-   "last_date": "2026-10-23",
-   "rows": 1875
+   "last_date": "2026-10-26",
+   "rows": 1876
   },
   {
    "inst": "UDR",
@@ -6374,20 +6374,12 @@
    "rows": 2466
   },
   {
-   "inst": "VLTO",
-   "code": "VLTO",
-   "name": "Veralto",
-   "first_date": "2023-10-02",
-   "last_date": "2026-10-23",
-   "rows": 769
-  },
-  {
    "inst": "VEEV",
    "code": "VEEV",
    "name": "Veeva Systems",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "VTR",
@@ -6396,6 +6388,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "VLTO",
+   "code": "VLTO",
+   "name": "Veralto",
+   "first_date": "2023-10-02",
+   "last_date": "2026-10-23",
+   "rows": 769
   },
   {
    "inst": "VRSN",
@@ -6422,20 +6422,20 @@
    "rows": 2466
   },
   {
-   "inst": "VRT",
-   "code": "VRT",
-   "name": "Vertiv",
-   "first_date": "2020-02-10",
-   "last_date": "2026-10-23",
-   "rows": 1686
-  },
-  {
    "inst": "VRTX",
    "code": "VRTX",
    "name": "Vertex Pharmaceuticals",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "VRT",
+   "code": "VRT",
+   "name": "Vertiv",
+   "first_date": "2020-02-10",
+   "last_date": "2026-10-23",
+   "rows": 1686
   },
   {
    "inst": "VTRS",
@@ -6470,20 +6470,20 @@
    "rows": 2378
   },
   {
-   "inst": "VYLR",
-   "code": "VYLR",
-   "name": "Vylor",
-   "first_date": "2026-10-01",
-   "last_date": "2026-10-23",
-   "rows": 17
-  },
-  {
    "inst": "VMRK",
    "code": "VMRK",
    "name": "Vivmark Residential",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "VYLR",
+   "code": "VYLR",
+   "name": "Vylor",
+   "first_date": "2026-10-01",
+   "last_date": "2026-10-26",
+   "rows": 18
   },
   {
    "inst": "VMC",
@@ -6502,17 +6502,17 @@
    "rows": 2466
   },
   {
-   "inst": "WAB",
-   "code": "WAB",
-   "name": "Wabtec",
+   "inst": "GWW",
+   "code": "GWW",
+   "name": "W. W. Grainger",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "GWW",
-   "code": "GWW",
-   "name": "W. W. Grainger",
+   "inst": "WAB",
+   "code": "WAB",
+   "name": "Wabtec",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -6550,17 +6550,17 @@
    "rows": 2466
   },
   {
-   "inst": "WFC",
-   "code": "WFC",
-   "name": "Wells Fargo",
+   "inst": "WEC",
+   "code": "WEC",
+   "name": "WEC Energy Group",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "WEC",
-   "code": "WEC",
-   "name": "WEC Energy Group",
+   "inst": "WFC",
+   "code": "WFC",
+   "name": "Wells Fargo",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -6626,8 +6626,8 @@
    "code": "WDAY",
    "name": "Workday, Inc.",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "WYNN",

@@ -52,8 +52,12 @@ def dump_market(market: str):
     insts = D.list_instruments(D.instruments("all"), as_list=True)
     df = D.features(insts, ["$close", "$volume"], start_time=cal[-5], end_time=cal[-1])
     n_inst = df.index.get_level_values("instrument").nunique()
+    # 完整性硬校验: 落地标的数必须 >= universe 的 90%, 防止残缺宇宙悄悄进入回测
+    uni = json.loads((ROOT / "data" / "universe.json").read_text()).get(market) or []
+    uni_n = len({u["inst"] for u in uni})
     print(f"[check] {market}: {len(cal)} 个交易日({str(cal[0])[:10]} ~ {str(cal[-1])[:10]}), "
-          f"标的 {len(insts)} 个, 近5日有行情 {n_inst} 个", flush=True)
+          f"标的 {len(insts)} / universe {uni_n}, 近5日有行情 {n_inst}", flush=True)
+    assert uni_n == 0 or len(insts) >= uni_n * 0.9, f"{market} 标的覆盖不足({len(insts)}/{uni_n}), 拒绝落地"
     assert len(insts) > 10 and n_inst > 10, "标的覆盖异常"
     return True
 
