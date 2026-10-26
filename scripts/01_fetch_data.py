@@ -395,11 +395,11 @@ def run(market):
                     frames.append(r)
                     ok.append(meta | {"first_date": r["date"].iloc[0], "last_date": r["date"].iloc[-1], "rows": len(r)})
                 else:
-                    fail.append({"inst": meta["inst"], "err": r})
                     next_pending.append(meta)
                 if done % 50 == 0:
                     log(f"  {market}: 本轮 {done}/{len(pending)} done, fail={len(next_pending)}")
             pending = next_pending
+        fail = [{"inst": p["inst"], "err": "all retries exhausted"} for p in pending]
 
     # 用已有 raw 缓存补齐本轮失败但历史抓取成功的标的
     raw_dir = ROOT / "data" / "raw" / market
@@ -422,6 +422,16 @@ def run(market):
         out = RAW_DIR / market
         out.mkdir(parents=True, exist_ok=True)
         all_df.to_csv(out / "all.csv", index=False)
+    # 去重防线: 同一标的多轮重试只保留一条 ok 记录, 保证 universe.json 无重复
+    seen = set()
+    ok_unique = []
+    for o in ok:
+        if o["inst"] in seen:
+            continue
+        seen.add(o["inst"])
+        ok_unique.append(o)
+    ok = ok_unique
+    fail = [f for f in fail if f["inst"] not in seen]
     log(f"=== {market}: 成功 {len(ok)} / 失败 {len(fail)} ===")
     for f in fail:
         log(f"  {market} FAIL {f['inst']}: {f['err']}")

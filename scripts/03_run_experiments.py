@@ -247,9 +247,9 @@ def main():
     cal_bt = [d for d in cal if d >= bt_start]
     log(f"{args.market}: 回测交易日 {cal_bt[0]:%Y-%m-%d} ~ {cal_bt[-1]:%Y-%m-%d} 共{len(cal_bt)}天")
 
-    # 全量收盘价面板(用于模拟/IC)
+    # 全量收盘价面板(用于模拟/IC); 标的列表防御性去重
     uni = json.loads((ROOT / "data" / "universe.json").read_text())[args.market]
-    insts = [u["inst"] for u in uni]
+    insts = list(dict.fromkeys(u["inst"] for u in uni))
     px_df = D.features(D.list_instruments(D.instruments("all"), as_list=True), ["$close"],
                        start_time=CFG["data_start"])
     px_df = px_df["$close"].unstack("instrument")
