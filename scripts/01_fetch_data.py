@@ -426,6 +426,8 @@ def run(market):
                 meta, r = fu.result()
                 if isinstance(r, pd.DataFrame):
                     frames.append(r)
+                    # 剥离不可JSON序列化的字段(如 crypto 的 _klines DataFrame)
+                    meta = {k: v for k, v in meta.items() if not hasattr(v, "to_csv")}
                     ok.append(meta | {"first_date": r["date"].iloc[0], "last_date": r["date"].iloc[-1], "rows": len(r)})
                 else:
                     next_pending.append(meta)
