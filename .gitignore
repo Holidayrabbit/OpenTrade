@@ -1,5 +1,7 @@
 /data/
 results/**/*.csv
+mlruns/
+*.log
 run_all.log
 __pycache__/
 *.pyc

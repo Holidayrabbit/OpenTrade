@@ -1,0 +1,42 @@
+name: weekly-refresh
+
+# 每周一 08:30(北京时间) 在自托管 runner(win3060wsl, RTX 3060)上:
+#   增量抓取四市场最新数据 → 重跑全部回测 → 重建站点数据 → 以 Holidayrabbit 名义提交推送 → Pages 自动更新
+on:
+  schedule:
+    - cron: "30 0 * * 1" # UTC 00:30 = 北京 08:30 周一
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: [self-hosted, quant]
+    timeout-minutes: 300
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run full pipeline (fetch → dump → backtest → site)
+        env:
+          MLFLOW_ALLOW_FILE_STORE: "true"
+        run: |
+          bash run_all.sh
+
+      - name: Commit & push updated results (as Holidayrabbit)
+        run: |
+          git config user.name  "Holidayrabbit"
+          git config user.email "154126756@qq.com"
+          git add -A
+          git add -f data/universe.json data/meta.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "auto: 周度数据与回测刷新 $(date +%F)"
+            git push
+          fi

@@ -5,6 +5,10 @@
 
 **[🌐 在线展示(GitHub Pages)](https://holidayrabbit.github.io/OpenTrade/)** · **[📦 本仓库](https://github.com/Holidayrabbit/OpenTrade)** · 实验代号:alpha2026 · 引擎部署:RTX 3060 · WSL2
 
+[![weekly-refresh](https://github.com/Holidayrabbit/OpenTrade/actions/workflows/weekly-refresh.yml/badge.svg)](https://github.com/Holidayrabbit/OpenTrade/actions/workflows/weekly-refresh.yml)
+
+> **本项目是活的**:自托管 GitHub Actions runner(部署在 RTX 3060/WSL2 机器上)会在**每周一 08:30(北京时间)自动重跑全流程**——增量抓取四市场最新数据、重训模型、重算回测、重建站点并推送,GitHub Pages 随之更新。页面上"生成于"时间即最近一次刷新。也可在 Actions 页面手动触发(workflow_dispatch)。
+
 ---
 
 ## 一句话结论

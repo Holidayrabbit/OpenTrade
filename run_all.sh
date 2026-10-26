@@ -14,14 +14,8 @@ if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
 fi
 echo "python: $(which python)"
 
-step1_skip=0
-if [ -f data/qlib_csv/gold/all.csv ] && [ -f data/qlib_csv/cn/all.csv ] && [ -f data/qlib_csv/us/all.csv ] && [ -f data/qlib_csv/crypto/all.csv ]; then
-  echo "[skip] 数据已存在, 跳过抓取(删除 data/qlib_csv 可强制重抓)"
-  step1_skip=1
-fi
-if [ "$step1_skip" = "0" ]; then
-  python scripts/01_fetch_data.py --markets cn,us,crypto,gold
-fi
+# 数据抓取(01 自带按标的缓存, 过期(>5天)自动重抓, 未过期秒级跳过 → 支持增量刷新)
+python scripts/01_fetch_data.py --markets cn,us,crypto,gold
 
 python scripts/02_dump_qlib.py cn,us,crypto,gold
 
