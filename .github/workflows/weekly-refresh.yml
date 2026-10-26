@@ -1,10 +1,12 @@
 name: weekly-refresh
 
-# 每周一 08:30(北京时间) 在自托管 runner(win3060wsl, RTX 3060)上:
+# 在自托管 runner(win3060wsl, RTX 3060)上:
 #   增量抓取四市场最新数据 → 重跑全部回测 → 重建站点数据 → 以 Holidayrabbit 名义提交推送 → Pages 自动更新
+# 网络说明: runner 所在网络访问 GitHub 不稳定, 故含 ①网络门禁 ②主/备双时段 ③防重复刷新 三层韧性
 on:
   schedule:
-    - cron: "30 0 * * 1" # UTC 00:30 = 北京 08:30 周一
+    - cron: "30 0 * * 1" # 主时段: 北京时间周一 08:30
+    - cron: "30 2 * * 1" # 备用时段: 北京时间周一 10:30(主时段失败则这次生效)
   workflow_dispatch: {}
 
 permissions:
@@ -19,16 +21,37 @@ jobs:
     runs-on: [self-hosted, quant]
     timeout-minutes: 300
     steps:
+      - name: Wait for GitHub connectivity
+        run: |
+          for i in $(seq 1 40); do
+            ok=0
+            for j in 1 2 3; do curl -s -m 8 -o /dev/null https://github.com && ok=$((ok+1)); done
+            if [ "$ok" -ge 2 ]; then echo "network ok ($ok/3)"; exit 0; fi
+            echo "github unreachable ($ok/3), waiting 60s ($i/40)"; sleep 60
+          done
+          echo "::error::network gate timeout after 40min"; exit 1
+
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Skip if already refreshed within 12h (backup-slot guard)
+        run: |
+          ts=$(git log -1 --format=%ct); msg=$(git log -1 --format=%s); now=$(date +%s)
+          age=$(( now - ts ))
+          echo "latest commit: '$msg' (${age}s ago)"
+          if [[ "$msg" == auto:* && $age -lt 43200 ]]; then
+            echo "Already fresh. Skipping pipeline."; echo "skip_pipeline=1" >> "$GITHUB_ENV"
+          fi
+
       - name: Run full pipeline (fetch → dump → backtest → site)
+        if: ${{ env.skip_pipeline != '1' }}
         env:
           MLFLOW_ALLOW_FILE_STORE: "true"
         run: |
           bash run_all.sh
 
       - name: Commit & push updated results (as Holidayrabbit)
+        if: ${{ env.skip_pipeline != '1' }}
         run: |
           git config user.name  "Holidayrabbit"
           git config user.email "154126756@qq.com"
