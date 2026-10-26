@@ -2525,15 +2525,6 @@
  ],
  "gold": [
   {
-   "inst": "XAUUSD",
-   "code": "XAUUSD",
-   "name": "伦敦金现(XAU)",
-   "_source": "sina_xau",
-   "first_date": "2017-01-02",
-   "last_date": "2026-10-26",
-   "rows": 2543
-  },
-  {
    "inst": "GCFUT",
    "code": "GCFUT",
    "name": "COMEX黄金主力",
@@ -2543,13 +2534,13 @@
    "rows": 2538
   },
   {
-   "inst": "SH518880",
-   "code": "SH518880",
-   "name": "华安黄金ETF",
-   "_source": "em_cn",
-   "first_date": "2017-01-03",
+   "inst": "XAUUSD",
+   "code": "XAUUSD",
+   "name": "伦敦金现(XAU)",
+   "_source": "sina_xau",
+   "first_date": "2017-01-02",
    "last_date": "2026-10-26",
-   "rows": 2380
+   "rows": 2543
   },
   {
    "inst": "AUSHG",
@@ -2559,6 +2550,15 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-26",
    "rows": 2378
+  },
+  {
+   "inst": "SH518880",
+   "code": "SH518880",
+   "name": "华安黄金ETF",
+   "_source": "em_cn",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ159937",
