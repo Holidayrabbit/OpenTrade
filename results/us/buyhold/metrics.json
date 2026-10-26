@@ -11,16 +11,16 @@
  },
  "backtest": [
   "2026-01-02",
-  "2026-10-23"
+  "2026-10-26"
  ],
- "n_calendar_days": 204,
+ "n_calendar_days": 205,
  "n_universe": 503,
- "total_return": 0.1473,
- "annual_return": 0.186,
- "annual_vol": 0.1195,
- "sharpe": 1.487,
+ "total_return": 0.1483,
+ "annual_return": 0.1863,
+ "annual_vol": 0.1192,
+ "sharpe": 1.493,
  "max_drawdown": -0.0778,
- "calmar": 2.39,
- "weekly_win_rate": 0.5714,
+ "calmar": 2.394,
+ "weekly_win_rate": 0.5814,
  "ic": null
 }
