@@ -1,9 +1,9 @@
-# alpha2026 · 开源量化模型四市场实盘模拟实验
+# OpenTrade · 开源量化模型四市场实盘模拟实验
 
 > 用 **Microsoft Qlib(Alpha158 + LightGBM/GRU)** 在 **A股·美股·加密·黄金** 四类市场回测 **2026 年初至今**的每周调仓交易,并检验一个假设:
 > **每周用最新数据重新训练模型,能否比"年初训练一次"赚到更多?**
 
-[在线展示(GitHub Pages)](https://example.github.io/alpha2026) · 实验区间:2026-01-01 → 数据抓取日 · 引擎部署:win3060wsl(RTX 3060 · WSL2)
+**[🌐 在线展示(GitHub Pages)](https://holidayrabbit.github.io/OpenTrade/)** · **[📦 本仓库](https://github.com/Holidayrabbit/OpenTrade)** · 实验代号:alpha2026 · 引擎部署:RTX 3060 · WSL2
 
 ---
 
@@ -102,11 +102,13 @@ python scripts/04_build_site.py                               # 生成 docs/(前
 
 ### 发布到 GitHub Pages
 
+本仓库已配置:push 到 `main` 后,Pages 从 `/docs` 目录自动发布,地址即
+<https://holidayrabbit.github.io/OpenTrade/>。若在自己的仓库复刻,执行:
+
 ```bash
-git init && git add -A && git commit -m "alpha2026 results"
-git remote add origin git@github.com:<你的用户名>/alpha2026.git && git push -u origin main
+git init && git add -A && git commit -m "OpenTrade results"
+git remote add origin git@github.com:<你的用户名>/<你的仓库>.git && git push -u origin main
 # 仓库 Settings → Pages → Branch: main / Folder: /docs → Save
-# 站点地址: https://<你的用户名>.github.io/alpha2026/
 ```
 
 `docs/` 已含 `.nojekyll`,所有数据为纯静态 JSON,Pages 直接可用。

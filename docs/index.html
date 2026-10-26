@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>alpha2026 · 开源量化模型四市场回测实验</title>
+<title>OpenTrade · 开源量化模型四市场回测实验</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <style>
   :root{
@@ -149,14 +149,15 @@ function render(S,P,M){
 
   return `
   <header>
-    <h1>alpha2026 <span class="accent">·</span> 开源量化模型四市场实盘模拟</h1>
-    <div class="subtitle">基于 Microsoft Qlib(Alpha158 因子 + LightGBM / GRU)· 2026-01-01 → ${S.backtest_range?S.backtest_range[1]:""} 每周调仓 walk-forward 回测 · 检验"每周重新训练模型"能否提高收益</div>
+    <h1>OpenTrade <span class="accent">·</span> 开源量化模型四市场实盘模拟</h1>
+    <div class="subtitle">基于 Microsoft Qlib(Alpha158 因子 + LightGBM / GRU)· 2026-01-01 → ${S.backtest_range?S.backtest_range[1]:""} 每周调仓 walk-forward 回测 · 检验"每周重新训练模型"能否提高收益 · 实验代号 alpha2026</div>
     <div class="chips">
       <span class="chip">市场 <b>A股沪深300 · 美股标普500 · 币安Top15 · 黄金资产14标的</b></span>
       <span class="chip">引擎 <b>Qlib 0.9.7 · Alpha158 · LightGBM</b></span>
       <span class="chip">算力 <b>RTX 3060 · WSL2</b></span>
       <span class="chip">数据 <b>腾讯/新浪/上金所/币安 免费公开接口</b></span>
       <span class="chip">生成于 <b>${S.generated_at}</b></span>
+      <span class="chip"><a href="https://github.com/Holidayrabbit/OpenTrade" target="_blank">GitHub 仓库 ↗</a></span>
     </div>
   </header>
 
@@ -180,6 +181,38 @@ function render(S,P,M){
   <div style="height:14px"></div>
   <div class="panel"><div class="label" style="color:var(--muted);font-size:12px;margin-bottom:8px">最新一期调仓(周度再训练 · 绿=新买入 红=调出 · 持仓为 Top-K 等权)</div><div class="holdings" id="m-holdings"></div></div>
 
+  <h2>实验详情 · 这个模拟是怎么做的</h2>
+  <div class="panel method">
+    <p><b>① 数据准备:</b>从四个免费公开数据源抓取 2017-01 至今的日线行情(开盘/最高/最低/收盘/成交量),共 832 个标的。A 股与美股使用前复权价格(消除分红除权造成的价格跳变),加密货币为 7×24 连续行情,四个市场各自维护独立交易日历。</p>
+    <table style="margin:6px 0 10px">
+      <tr><th>市场</th><th>标的池</th><th>数量</th><th>数据源</th></tr>
+      <tr><td>A股</td><td>沪深300 成分股(按当前名单回溯)</td><td>300</td><td>腾讯行情 fqkline</td></tr>
+      <tr><td>美股</td><td>标普500 成分股 + smartbox 代码映射</td><td>503</td><td>腾讯 usfqkline</td></tr>
+      <tr><td>加密</td><td>币安 USDT 24h 成交额 Top15(上市早于 2024-06)</td><td>15</td><td>data-api.binance.vision</td></tr>
+      <tr><td>黄金</td><td>伦敦金XAU·COMEX期金·上金所Au99.99·黄金ETF·金矿股(跨4类)</td><td>14</td><td>新浪/东财/上金所(akshare)/腾讯</td></tr>
+    </table>
+    <p><b>② 特征与标签:</b>每个交易日、每个标的计算 <b>Alpha158</b>(Qlib 官方因子集:158 个价量技术指标,如动量、波动率、量价背离、K线形态等)。标签为 <b>T+1 收盘 → T+2 收盘的收益率</b>(与 Qlib 官方基准一致)。特征归一化的统计量冻结在 2017–2023 区间,保证不泄露未来信息。</p>
+    <p><b>③ 模型训练:</b>LightGBM(梯度提升树,使用 Qlib 官方 CSI300 调参),训练窗口为"数据起点 → 调仓日前两天",窗口末 15% 作为验证集做早停。另跑 GRU 神经网络(60 epoch, GPU)作为模型类型对照。</p>
+    <p><b>④ 模拟交易(每个调仓周循环):</b>T 日(每周首个交易日)收盘后计算特征 → 模型给全部标的打分 → 取 Top-K(A股/美股 K=8,加密/黄金 K=5)→ 以 T 日收盘价调仓为等权组合 → 扣除交易成本。连续 5 个交易日无行情的持仓按最后已知价强制平仓(处理退市/停牌)。全程无任何未来数据流入。</p>
+    <table style="margin:6px 0 10px">
+      <tr><th>市场</th><th>买入成本</th><th>卖出成本</th><th>说明</th></tr>
+      <tr><td>A股</td><td>0.08%</td><td>0.13%</td><td>佣金+冲击 / 佣金+印花税+冲击</td></tr>
+      <tr><td>美股</td><td>0.05%</td><td>0.05%</td><td>佣金+冲击</td></tr>
+      <tr><td>加密</td><td>0.10%</td><td>0.10%</td><td>taker 费率</td></tr>
+      <tr><td>黄金</td><td>0.05%</td><td>0.05%</td><td>按 ETF/股票口径近似</td></tr>
+    </table>
+    <p><b>⑤ 四个对照变体(唯一差异 = 模型更新频率):</b></p>
+    <table style="margin:6px 0 10px">
+      <tr><th>变体</th><th>重训频率</th><th>含义</th></tr>
+      <tr><td>static 静态</td><td>仅 2026 年初一次(数据截至 2025-12-31)</td><td>传统"年度模型"</td></tr>
+      <tr><td>monthly 每月</td><td>每月首个交易日</td><td>中频更新</td></tr>
+      <tr><td>weekly 每周</td><td>每周首个交易日(共 43 次重训)</td><td><b>核心假设:模型新鲜度</b></td></tr>
+      <tr><td>buyhold 买入持有</td><td>不训练,年初等权买入持有</td><td>基准线</td></tr>
+    </table>
+    <p><b>⑥ 指标口径:</b>总收益 = 期末净值−1(已含全部成本);夏普按各自市场年化天数计算;最大回撤 = 净值曲线从峰值的最大跌幅;<b>IC(信息系数)</b>= 每天模型分数与真实次日涨幅的秩相关系数,衡量"预测能力本身",IC&gt;0 且稳定为正说明模型选股有效——注意 IC 好不代表组合赚钱(还要看市场环境与交易成本)。</p>
+    <p><b>⑦ 一键复现:</b>任何 Linux/WSL 机器上 <code>bash deploy/setup_env.sh &amp;&amp; nohup bash run_all.sh &amp;</code> 即可从抓数据到生成本页全套结果(约 2–4 小时,详见 <a href="https://github.com/Holidayrabbit/OpenTrade" target="_blank">GitHub 仓库 README</a>)。</p>
+  </div>
+
   <h2>方法与调研</h2>
   <div class="panel method">
     <p><b>开源项目调研(2025-2026):</b> 综合活跃度与能力,选型 <b>Microsoft Qlib</b>(49k+ stars, v0.9.8)作为实验引擎 —— 它提供了本实验直接复用的三件套:Alpha158 标准因子集、LightGBM/GRU 等基准模型、以及 walk-forward 滚动训练范式。对照组定位:FinRL(深度强化学习研究框架)、Freqtrade/FreqAI(加密实盘机器人,原生支持周期性再训练)、vn.py(A股/期货中文实盘生态)、NautilusTrader(Rust 内核事件驱动引擎)、QuantConnect Lean(机构级多资产)。近两年值得关注的方向:微软 RD-Agent(LLM 自动因子挖掘, NeurIPS 2025)、Chain-of-Alpha(LLM 公式化 Alpha 挖掘)。</p>
@@ -189,7 +222,7 @@ function render(S,P,M){
   </div>
 
   <footer>
-    数据与结果由 alpha2026 流水线自动生成(fetch → qlib dump → walk-forward backtest → site build),可在 GitHub 一键复现。<br>
+    OpenTrade · 数据与结果由流水线自动生成(fetch → qlib dump → walk-forward backtest → site build),可在 <a href="https://github.com/Holidayrabbit/OpenTrade" target="_blank">GitHub 仓库</a>一键复现。<br>
     免责声明:历史回测不代表未来收益,本项目仅用于开源量化研究展示,不构成任何投资建议。
   </footer>`;
 }
