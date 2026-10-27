@@ -1,0 +1,32 @@
+{
+ "market": "crypto",
+ "model": "linear",
+ "config": {
+  "name": "加密货币·币安Top15",
+  "topk": 5,
+  "cost_buy": 0.001,
+  "cost_sell": 0.001,
+  "ann_days": 365,
+  "universe_source": "binance_top"
+ },
+ "backtest": [
+  "2026-01-01",
+  "2026-10-26"
+ ],
+ "n_calendar_days": 299,
+ "n_universe": 15,
+ "variant": "weekly",
+ "total_return": -0.0417,
+ "annual_return": -0.0508,
+ "annual_vol": 0.5186,
+ "sharpe": 0.157,
+ "max_drawdown": -0.4093,
+ "calmar": -0.124,
+ "weekly_win_rate": 0.4651,
+ "ic": {
+  "mean_ic": 0.0666,
+  "ic_ir": 0.191,
+  "ic_positive_rate": 0.5657,
+  "n_days": 297
+ }
+}

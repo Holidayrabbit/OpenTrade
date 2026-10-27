@@ -114,6 +114,15 @@ def make_model(kind, n_feat):
 
         return GRU(d_feat=n_feat, hidden_size=64, num_layers=2, dropout=0.1,
                    n_epochs=60, lr=2e-3, batch_size=2000, early_stop=8, seed=42, GPU=0)
+    elif kind == "alstm":
+        from qlib.contrib.model.pytorch_alstm import ALSTM
+
+        return ALSTM(d_feat=n_feat, hidden_size=64, num_layers=2, dropout=0.1,
+                     n_epochs=60, lr=2e-3, batch_size=2000, early_stop=8, seed=42, GPU=0)
+    elif kind == "linear":
+        from qlib.contrib.model.linear import LinearModel
+
+        return LinearModel(estimator="ols")
     raise ValueError(kind)
 
 
@@ -131,6 +140,8 @@ def fit_at(ds, cal, labels_end, kind):
     t0 = time.time()
     if kind == "lgbm":
         model.fit(ds, num_boost_round=1000, early_stopping_rounds=50, verbose_eval=-1)
+    elif kind == "linear":
+        model.fit(ds)  # OLS 无早停/验证集概念
     else:
         evals = {}
         model.fit(ds, evals_result=evals)
@@ -235,7 +246,7 @@ N_FEATURES = [158]
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--market", required=True, choices=["cn", "us", "crypto", "gold"])
-    ap.add_argument("--model", default="lgbm", choices=["lgbm", "gru"])
+    ap.add_argument("--model", default="lgbm", choices=["lgbm", "gru", "alstm", "linear"])
     ap.add_argument("--variants", default="buyhold,static,monthly,weekly")
     args = ap.parse_args()
 

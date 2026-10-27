@@ -11,22 +11,22 @@
  },
  "backtest": [
   "2026-01-01",
-  "2026-10-25"
+  "2026-10-26"
  ],
- "n_calendar_days": 298,
+ "n_calendar_days": 299,
  "n_universe": 15,
  "variant": "weekly",
- "total_return": -0.2164,
- "annual_return": -0.259,
- "annual_vol": 0.4657,
- "sharpe": -0.411,
- "max_drawdown": -0.4466,
- "calmar": -0.58,
+ "total_return": -0.1397,
+ "annual_return": -0.1684,
+ "annual_vol": 0.4773,
+ "sharpe": -0.148,
+ "max_drawdown": -0.4511,
+ "calmar": -0.373,
  "weekly_win_rate": 0.4651,
  "ic": {
-  "mean_ic": 0.0529,
-  "ic_ir": 0.145,
-  "ic_positive_rate": 0.5709,
-  "n_days": 296
+  "mean_ic": 0.0601,
+  "ic_ir": 0.16,
+  "ic_positive_rate": 0.5791,
+  "n_days": 297
  }
 }

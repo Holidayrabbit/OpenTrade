@@ -39,5 +39,13 @@ done
 # GRU 深度模型对照(GPU, A股静态)
 python scripts/03_run_experiments.py --market cn --model gru --variants static || echo "[warn] GRU 失败, 不影响主线"
 
+# 线性回归基准(全部市场, static+weekly, 训练秒级)——检验复杂模型的增益
+for m in gold crypto cn us; do
+  python scripts/03_run_experiments.py --market "$m" --model linear --variants static,weekly || echo "[warn] linear $m 失败, 不影响主线"
+done
+
+# ALSTM 注意力网络对照(GPU, A股静态)
+python scripts/03_run_experiments.py --market cn --model alstm --variants static || echo "[warn] ALSTM 失败, 不影响主线"
+
 python scripts/04_build_site.py
 echo "ALL_DONE $(date)"
