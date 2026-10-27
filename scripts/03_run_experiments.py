@@ -126,15 +126,17 @@ def make_model(kind, n_feat):
     raise ValueError(kind)
 
 
-def fit_at(ds, cal, labels_end, kind):
+def fit_at(ds, cal, labels_end, kind, cal_bt_hint=None):
     """在 (data_start, labels_end] 上重训: 末 15% 作验证(早停)"""
     idx = [d for d in cal if d <= labels_end]
     n_valid = max(60, int(len(idx) * 0.15))
     n_valid = min(n_valid, len(idx) - 60)
     train_end, valid_start = idx[len(idx) - n_valid - 1], idx[len(idx) - n_valid]
+    # ALSTM.fit 会同时 prepare(["train","valid","test"]), 缺 test 段会在新版 pandas 下崩溃 → 恒提供一个占位段
     ds.segments = {
         "train": (pd.Timestamp(CFG["data_start"]), train_end),
         "valid": (valid_start, labels_end),
+        "test": (cal_bt_hint if cal_bt_hint else valid_start, labels_end),
     }
     model = make_model(kind, N_FEATURES[0])
     t0 = time.time()
@@ -315,7 +317,7 @@ def main():
             for ri, T in enumerate(refits):
                 pos = cal.index(T)
                 labels_end = cal[pos - 2]
-                model, fmeta = fit_at(ds, cal, labels_end, args.model)
+                model, fmeta = fit_at(ds, cal, labels_end, args.model, cal_bt_hint=cal_bt[0])
                 refit_log.append(fmeta | {"refit_date": str(T)[:10]})
                 win_dates = [d for d in cal_bt if d >= T]
                 if ri + 1 < len(refits):
