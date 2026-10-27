@@ -1,107 +1,123 @@
 {
  "cn": [
   {
-   "inst": "SZ000166",
-   "code": "000166",
-   "name": "申万宏源",
-   "first_date": "2017-01-26",
-   "last_date": "2026-10-23",
-   "rows": 2362
-  },
-  {
-   "inst": "SZ000100",
-   "code": "000100",
-   "name": "TCL科技",
+   "inst": "SZ000001",
+   "code": "000001",
+   "name": "平安银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2303
-  },
-  {
-   "inst": "SZ000063",
-   "code": "000063",
-   "name": "中兴通讯",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2330
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ000002",
    "code": "000002",
    "name": "万科A",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2374
+   "last_date": "2026-10-26",
+   "rows": 2375
   },
   {
-   "inst": "SZ000001",
-   "code": "000001",
-   "name": "平安银行",
+   "inst": "SZ000063",
+   "code": "000063",
+   "name": "中兴通讯",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2331
+  },
+  {
+   "inst": "SZ000100",
+   "code": "000100",
+   "name": "TCL科技",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2304
+  },
+  {
+   "inst": "SZ000166",
+   "code": "000166",
+   "name": "申万宏源",
+   "first_date": "2017-01-26",
+   "last_date": "2026-10-26",
+   "rows": 2363
   },
   {
    "inst": "SZ000157",
    "code": "000157",
    "name": "中联重科",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ000301",
    "code": "000301",
    "name": "东方盛虹",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2208
+   "last_date": "2026-10-26",
+   "rows": 2209
   },
   {
    "inst": "SZ000333",
    "code": "000333",
    "name": "美的集团",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2339
-  },
-  {
-   "inst": "SZ000425",
-   "code": "000425",
-   "name": "徐工机械",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2356
+   "last_date": "2026-10-26",
+   "rows": 2340
   },
   {
    "inst": "SZ000338",
    "code": "000338",
    "name": "潍柴动力",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ000408",
    "code": "000408",
    "name": "藏格矿业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2341
+   "last_date": "2026-10-26",
+   "rows": 2342
+  },
+  {
+   "inst": "SZ000425",
+   "code": "000425",
+   "name": "徐工机械",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2357
   },
   {
    "inst": "SZ000538",
    "code": "000538",
    "name": "云南白药",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2326
+   "last_date": "2026-10-26",
+   "rows": 2327
   },
   {
    "inst": "SZ000568",
    "code": "000568",
    "name": "泸州老窖",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ000596",
+   "code": "000596",
+   "name": "古井贡酒",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ000617",
+   "code": "000617",
+   "name": "中油资本",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
    "rows": 2379
   },
   {
@@ -109,47 +125,23 @@
    "code": "000630",
    "name": "铜陵有色",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
-  },
-  {
-   "inst": "SZ000596",
-   "code": "000596",
-   "name": "古井贡酒",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ000617",
-   "code": "000617",
-   "name": "中油资本",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2378
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
    "inst": "SZ000625",
    "code": "000625",
    "name": "长安汽车",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ000651",
    "code": "000651",
    "name": "格力电器",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2372
-  },
-  {
-   "inst": "SZ000708",
-   "code": "000708",
-   "name": "中信特钢",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
+   "last_date": "2026-10-26",
    "rows": 2373
   },
   {
@@ -157,311 +149,327 @@
    "code": "000657",
    "name": "中钨高新",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2364
+   "last_date": "2026-10-26",
+   "rows": 2365
   },
   {
-   "inst": "SZ000776",
-   "code": "000776",
-   "name": "广发证券",
+   "inst": "SZ000708",
+   "code": "000708",
+   "name": "中信特钢",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2374
   },
   {
    "inst": "SZ000725",
    "code": "000725",
    "name": "京东方A",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ000768",
    "code": "000768",
    "name": "中航西飞",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ000776",
+   "code": "000776",
+   "name": "广发证券",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ000792",
    "code": "000792",
    "name": "盐湖股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2060
+   "last_date": "2026-10-26",
+   "rows": 2061
   },
   {
    "inst": "SZ000807",
    "code": "000807",
    "name": "云铝股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2352
-  },
-  {
-   "inst": "SZ000895",
-   "code": "000895",
-   "name": "双汇发展",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2364
+   "last_date": "2026-10-26",
+   "rows": 2353
   },
   {
    "inst": "SZ000858",
    "code": "000858",
    "name": "五 粮 液",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ000895",
+   "code": "000895",
+   "name": "双汇发展",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2365
   },
   {
    "inst": "SZ000938",
    "code": "000938",
    "name": "紫光股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2344
+   "last_date": "2026-10-26",
+   "rows": 2345
   },
   {
    "inst": "SZ000963",
    "code": "000963",
    "name": "华东医药",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ000975",
    "code": "000975",
    "name": "山金国际",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2359
-  },
-  {
-   "inst": "SZ001280",
-   "code": "001280",
-   "name": "中国铀业",
-   "first_date": "2025-12-03",
-   "last_date": "2026-10-23",
-   "rows": 214
-  },
-  {
-   "inst": "SZ001391",
-   "code": "001391",
-   "name": "国货航",
-   "first_date": "2024-12-30",
-   "last_date": "2026-10-23",
-   "rows": 438
+   "last_date": "2026-10-26",
+   "rows": 2360
   },
   {
    "inst": "SZ000977",
    "code": "000977",
    "name": "浪潮信息",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2367
-  },
-  {
-   "inst": "SZ000999",
-   "code": "000999",
-   "name": "华润三九",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2368
   },
   {
    "inst": "SZ000988",
    "code": "000988",
    "name": "华工科技",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
-   "inst": "SZ001965",
-   "code": "001965",
-   "name": "招商公路",
-   "first_date": "2017-12-25",
-   "last_date": "2026-10-23",
-   "rows": 2140
+   "inst": "SZ001280",
+   "code": "001280",
+   "name": "中国铀业",
+   "first_date": "2025-12-03",
+   "last_date": "2026-10-26",
+   "rows": 215
+  },
+  {
+   "inst": "SZ000999",
+   "code": "000999",
+   "name": "华润三九",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ001391",
+   "code": "001391",
+   "name": "国货航",
+   "first_date": "2024-12-30",
+   "last_date": "2026-10-26",
+   "rows": 439
   },
   {
    "inst": "SZ001979",
    "code": "001979",
    "name": "招商蛇口",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2363
+   "last_date": "2026-10-26",
+   "rows": 2364
+  },
+  {
+   "inst": "SZ001965",
+   "code": "001965",
+   "name": "招商公路",
+   "first_date": "2017-12-25",
+   "last_date": "2026-10-26",
+   "rows": 2141
   },
   {
    "inst": "SZ002001",
    "code": "002001",
    "name": "新和成",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002027",
    "code": "002027",
    "name": "分众传媒",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ002049",
-   "code": "002049",
-   "name": "紫光国微",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2253
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002028",
    "code": "002028",
    "name": "思源电气",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
-   "inst": "SZ002050",
-   "code": "002050",
-   "name": "三花智控",
+   "inst": "SZ002049",
+   "code": "002049",
+   "name": "紫光国微",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2341
+   "last_date": "2026-10-26",
+   "rows": 2254
   },
   {
    "inst": "SZ002074",
    "code": "002074",
    "name": "国轩高科",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2366
+   "last_date": "2026-10-26",
+   "rows": 2367
   },
   {
-   "inst": "SZ002142",
-   "code": "002142",
-   "name": "宁波银行",
+   "inst": "SZ002050",
+   "code": "002050",
+   "name": "三花智控",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2373
-  },
-  {
-   "inst": "SZ002202",
-   "code": "002202",
-   "name": "金风科技",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2373
+   "last_date": "2026-10-26",
+   "rows": 2342
   },
   {
    "inst": "SZ002179",
    "code": "002179",
    "name": "中航光电",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ002142",
+   "code": "002142",
+   "name": "宁波银行",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2374
+  },
+  {
+   "inst": "SZ002202",
+   "code": "002202",
+   "name": "金风科技",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2374
   },
   {
    "inst": "SZ002230",
    "code": "002230",
    "name": "科大讯飞",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002236",
    "code": "002236",
    "name": "大华股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
    "inst": "SZ002241",
    "code": "002241",
    "name": "歌尔股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002294",
    "code": "002294",
    "name": "信立泰",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ002311",
-   "code": "002311",
-   "name": "海大集团",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002304",
    "code": "002304",
    "name": "洋河股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ002311",
+   "code": "002311",
+   "name": "海大集团",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002352",
    "code": "002352",
    "name": "顺丰控股",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2376
+   "last_date": "2026-10-26",
+   "rows": 2377
   },
   {
    "inst": "SZ002353",
    "code": "002353",
    "name": "杰瑞股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002371",
    "code": "002371",
    "name": "北方华创",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002384",
    "code": "002384",
    "name": "东山精密",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2309
+   "last_date": "2026-10-26",
+   "rows": 2310
   },
   {
    "inst": "SZ002415",
    "code": "002415",
    "name": "海康威视",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
    "inst": "SZ002422",
    "code": "002422",
    "name": "科伦药业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ002460",
+   "code": "002460",
+   "name": "赣锋锂业",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
    "rows": 2379
   },
   {
@@ -469,2070 +477,2053 @@
    "code": "002463",
    "name": "沪电股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ002460",
-   "code": "002460",
-   "name": "赣锋锂业",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2378
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002466",
    "code": "002466",
    "name": "天齐锂业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2354
+   "last_date": "2026-10-26",
+   "rows": 2355
   },
   {
    "inst": "SZ002475",
    "code": "002475",
    "name": "立讯精密",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2378
+   "last_date": "2026-10-26",
+   "rows": 2379
   },
   {
    "inst": "SZ002493",
    "code": "002493",
    "name": "荣盛石化",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002532",
    "code": "002532",
    "name": "天山铝业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2296
+   "last_date": "2026-10-26",
+   "rows": 2297
   },
   {
    "inst": "SZ002558",
    "code": "002558",
    "name": "巨人网络",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2344
+   "last_date": "2026-10-26",
+   "rows": 2345
   },
   {
    "inst": "SZ002594",
    "code": "002594",
    "name": "比亚迪",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002600",
    "code": "002600",
    "name": "领益智造",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2262
+   "last_date": "2026-10-26",
+   "rows": 2263
   },
   {
    "inst": "SZ002602",
    "code": "002602",
    "name": "世纪华通",
    "first_date": "2017-01-09",
-   "last_date": "2026-10-23",
-   "rows": 2273
+   "last_date": "2026-10-26",
+   "rows": 2274
   },
   {
    "inst": "SZ002625",
    "code": "002625",
    "name": "光启技术",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2216
+   "last_date": "2026-10-26",
+   "rows": 2217
   },
   {
    "inst": "SZ002648",
    "code": "002648",
    "name": "卫星化学",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
    "inst": "SZ002709",
    "code": "002709",
    "name": "天赐材料",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ002714",
-   "code": "002714",
-   "name": "牧原股份",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002736",
    "code": "002736",
    "name": "国信证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
-   "inst": "SZ002837",
-   "code": "002837",
-   "name": "英维克",
+   "inst": "SZ002714",
+   "code": "002714",
+   "name": "牧原股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2303
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ002916",
    "code": "002916",
    "name": "深南电路",
    "first_date": "2017-12-13",
-   "last_date": "2026-10-23",
-   "rows": 2146
+   "last_date": "2026-10-26",
+   "rows": 2147
+  },
+  {
+   "inst": "SZ002837",
+   "code": "002837",
+   "name": "英维克",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2304
   },
   {
    "inst": "SZ002920",
    "code": "002920",
    "name": "德赛西威",
    "first_date": "2017-12-26",
-   "last_date": "2026-10-23",
-   "rows": 2139
-  },
-  {
-   "inst": "SZ003816",
-   "code": "003816",
-   "name": "中国广核",
-   "first_date": "2019-08-26",
-   "last_date": "2026-10-23",
-   "rows": 1734
+   "last_date": "2026-10-26",
+   "rows": 2140
   },
   {
    "inst": "SZ002938",
    "code": "002938",
    "name": "鹏鼎控股",
    "first_date": "2018-09-18",
-   "last_date": "2026-10-23",
-   "rows": 1960
+   "last_date": "2026-10-26",
+   "rows": 1961
+  },
+  {
+   "inst": "SZ003816",
+   "code": "003816",
+   "name": "中国广核",
+   "first_date": "2019-08-26",
+   "last_date": "2026-10-26",
+   "rows": 1735
   },
   {
    "inst": "SZ300014",
    "code": "300014",
    "name": "亿纬锂能",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300015",
    "code": "300015",
    "name": "爱尔眼科",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2366
+   "last_date": "2026-10-26",
+   "rows": 2367
   },
   {
    "inst": "SZ300033",
    "code": "300033",
    "name": "同花顺",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ300122",
-   "code": "300122",
-   "name": "智飞生物",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300059",
    "code": "300059",
    "name": "东方财富",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ300122",
+   "code": "300122",
+   "name": "智飞生物",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300124",
    "code": "300124",
    "name": "汇川技术",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2369
   },
   {
    "inst": "SZ300251",
    "code": "300251",
    "name": "光线传媒",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300274",
    "code": "300274",
    "name": "阳光电源",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300308",
    "code": "300308",
    "name": "中际旭创",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2374
-  },
-  {
-   "inst": "SZ300394",
-   "code": "300394",
-   "name": "天孚通信",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2367
+   "last_date": "2026-10-26",
+   "rows": 2375
   },
   {
    "inst": "SZ300316",
    "code": "300316",
    "name": "晶盛机电",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SZ300394",
+   "code": "300394",
+   "name": "天孚通信",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2368
   },
   {
    "inst": "SZ300408",
    "code": "300408",
    "name": "三环集团",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
-  },
-  {
-   "inst": "SZ300418",
-   "code": "300418",
-   "name": "昆仑万维",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2374
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
    "inst": "SZ300413",
    "code": "300413",
    "name": "芒果超媒",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2212
+   "last_date": "2026-10-26",
+   "rows": 2213
+  },
+  {
+   "inst": "SZ300418",
+   "code": "300418",
+   "name": "昆仑万维",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2375
   },
   {
    "inst": "SZ300433",
    "code": "300433",
    "name": "蓝思科技",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300442",
    "code": "300442",
    "name": "润泽科技",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2363
+   "last_date": "2026-10-26",
+   "rows": 2364
   },
   {
    "inst": "SZ300450",
    "code": "300450",
    "name": "先导智能",
    "first_date": "2017-02-08",
-   "last_date": "2026-10-23",
-   "rows": 2352
+   "last_date": "2026-10-26",
+   "rows": 2353
   },
   {
    "inst": "SZ300476",
    "code": "300476",
    "name": "胜宏科技",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2374
+   "last_date": "2026-10-26",
+   "rows": 2375
   },
   {
    "inst": "SZ300498",
    "code": "300498",
    "name": "温氏股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300502",
    "code": "300502",
    "name": "新易盛",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SZ300661",
-   "code": "300661",
-   "name": "圣邦股份",
-   "first_date": "2017-06-06",
-   "last_date": "2026-10-23",
-   "rows": 2269
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SZ300628",
    "code": "300628",
    "name": "亿联网络",
    "first_date": "2017-03-17",
-   "last_date": "2026-10-23",
-   "rows": 2331
+   "last_date": "2026-10-26",
+   "rows": 2332
+  },
+  {
+   "inst": "SZ300661",
+   "code": "300661",
+   "name": "圣邦股份",
+   "first_date": "2017-06-06",
+   "last_date": "2026-10-26",
+   "rows": 2270
   },
   {
    "inst": "SZ300750",
    "code": "300750",
    "name": "宁德时代",
    "first_date": "2018-06-11",
-   "last_date": "2026-10-23",
-   "rows": 2030
+   "last_date": "2026-10-26",
+   "rows": 2031
   },
   {
    "inst": "SZ300760",
    "code": "300760",
    "name": "迈瑞医疗",
    "first_date": "2018-10-16",
-   "last_date": "2026-10-23",
-   "rows": 1946
+   "last_date": "2026-10-26",
+   "rows": 1947
   },
   {
    "inst": "SZ300803",
    "code": "300803",
    "name": "指南针",
    "first_date": "2019-11-18",
-   "last_date": "2026-10-23",
-   "rows": 1680
+   "last_date": "2026-10-26",
+   "rows": 1681
   },
   {
    "inst": "SZ300832",
    "code": "300832",
    "name": "新产业",
    "first_date": "2020-05-12",
-   "last_date": "2026-10-23",
-   "rows": 1565
-  },
-  {
-   "inst": "SZ301165",
-   "code": "301165",
-   "name": "锐捷网络",
-   "first_date": "2022-11-21",
-   "last_date": "2026-10-23",
-   "rows": 950
+   "last_date": "2026-10-26",
+   "rows": 1566
   },
   {
    "inst": "SZ300866",
    "code": "300866",
    "name": "安克创新",
    "first_date": "2020-08-24",
-   "last_date": "2026-10-23",
-   "rows": 1493
+   "last_date": "2026-10-26",
+   "rows": 1494
   },
   {
    "inst": "SZ300896",
    "code": "300896",
    "name": "爱美客",
    "first_date": "2020-09-28",
-   "last_date": "2026-10-23",
-   "rows": 1468
+   "last_date": "2026-10-26",
+   "rows": 1469
   },
   {
    "inst": "SZ300999",
    "code": "300999",
    "name": "金龙鱼",
    "first_date": "2020-10-15",
-   "last_date": "2026-10-23",
-   "rows": 1461
+   "last_date": "2026-10-26",
+   "rows": 1462
+  },
+  {
+   "inst": "SZ301165",
+   "code": "301165",
+   "name": "锐捷网络",
+   "first_date": "2022-11-21",
+   "last_date": "2026-10-26",
+   "rows": 951
   },
   {
    "inst": "SZ301236",
    "code": "301236",
    "name": "软通动力",
    "first_date": "2022-03-15",
-   "last_date": "2026-10-23",
-   "rows": 1117
+   "last_date": "2026-10-26",
+   "rows": 1118
   },
   {
    "inst": "SZ301269",
    "code": "301269",
    "name": "华大九天",
    "first_date": "2022-07-29",
-   "last_date": "2026-10-23",
-   "rows": 1015
+   "last_date": "2026-10-26",
+   "rows": 1016
   },
   {
    "inst": "SZ301308",
    "code": "301308",
    "name": "江波龙",
    "first_date": "2022-08-05",
-   "last_date": "2026-10-23",
-   "rows": 1020
+   "last_date": "2026-10-26",
+   "rows": 1021
   },
   {
    "inst": "SZ302132",
    "code": "302132",
    "name": "中航成飞",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
-  },
-  {
-   "inst": "SH600009",
-   "code": "600009",
-   "name": "上海机场",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
    "inst": "SH600000",
    "code": "600000",
    "name": "浦发银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH600009",
+   "code": "600009",
+   "name": "上海机场",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2369
   },
   {
    "inst": "SH600010",
    "code": "600010",
    "name": "包钢股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2370
+   "last_date": "2026-10-26",
+   "rows": 2371
   },
   {
    "inst": "SH600011",
    "code": "600011",
    "name": "华能国际",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600015",
    "code": "600015",
    "name": "华夏银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600016",
    "code": "600016",
    "name": "民生银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600018",
    "code": "600018",
    "name": "上港集团",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2376
+   "last_date": "2026-10-26",
+   "rows": 2377
   },
   {
    "inst": "SH600019",
    "code": "600019",
    "name": "宝钢股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2360
+   "last_date": "2026-10-26",
+   "rows": 2361
   },
   {
    "inst": "SH600023",
    "code": "600023",
    "name": "浙能电力",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600025",
    "code": "600025",
    "name": "华能水电",
    "first_date": "2017-12-15",
-   "last_date": "2026-10-23",
-   "rows": 2146
+   "last_date": "2026-10-26",
+   "rows": 2147
   },
   {
    "inst": "SH600026",
    "code": "600026",
    "name": "中远海能",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2374
-  },
-  {
-   "inst": "SH600028",
-   "code": "600028",
-   "name": "中国石化",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2375
   },
   {
    "inst": "SH600027",
    "code": "600027",
    "name": "华电国际",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2369
+  },
+  {
+   "inst": "SH600028",
+   "code": "600028",
+   "name": "中国石化",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600029",
    "code": "600029",
    "name": "南方航空",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2376
+   "last_date": "2026-10-26",
+   "rows": 2377
   },
   {
    "inst": "SH600030",
    "code": "600030",
    "name": "中信证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2362
+   "last_date": "2026-10-26",
+   "rows": 2363
   },
   {
    "inst": "SH600031",
    "code": "600031",
    "name": "三一重工",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600036",
    "code": "600036",
    "name": "招商银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH600048",
-   "code": "600048",
-   "name": "保利发展",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600039",
    "code": "600039",
    "name": "四川路桥",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2367
+   "last_date": "2026-10-26",
+   "rows": 2368
+  },
+  {
+   "inst": "SH600048",
+   "code": "600048",
+   "name": "保利发展",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600050",
    "code": "600050",
    "name": "中国联通",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2284
+   "last_date": "2026-10-26",
+   "rows": 2285
   },
   {
    "inst": "SH600061",
    "code": "600061",
    "name": "国投资本",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600066",
    "code": "600066",
    "name": "宇通客车",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2378
+   "last_date": "2026-10-26",
+   "rows": 2379
   },
   {
    "inst": "SH600085",
    "code": "600085",
    "name": "同仁堂",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600089",
    "code": "600089",
    "name": "特变电工",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2373
+   "last_date": "2026-10-26",
+   "rows": 2374
   },
   {
    "inst": "SH600104",
    "code": "600104",
    "name": "上汽集团",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH600111",
-   "code": "600111",
-   "name": "北方稀土",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600115",
    "code": "600115",
    "name": "中国东航",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH600111",
+   "code": "600111",
+   "name": "北方稀土",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600118",
    "code": "600118",
    "name": "中国卫星",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600150",
    "code": "600150",
    "name": "中国船舶",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2238
+   "last_date": "2026-10-26",
+   "rows": 2239
   },
   {
    "inst": "SH600160",
    "code": "600160",
    "name": "巨化股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
    "inst": "SH600176",
    "code": "600176",
    "name": "中国巨石",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2367
+   "last_date": "2026-10-26",
+   "rows": 2368
   },
   {
    "inst": "SH600183",
    "code": "600183",
    "name": "生益科技",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600188",
    "code": "600188",
    "name": "兖矿能源",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600196",
    "code": "600196",
    "name": "复星医药",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH600221",
-   "code": "600221",
-   "name": "海航控股",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2248
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600219",
    "code": "600219",
    "name": "南山铝业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2373
+   "last_date": "2026-10-26",
+   "rows": 2374
+  },
+  {
+   "inst": "SH600221",
+   "code": "600221",
+   "name": "海航控股",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2249
   },
   {
    "inst": "SH600233",
    "code": "600233",
    "name": "圆通速递",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600276",
    "code": "600276",
    "name": "恒瑞医药",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600309",
    "code": "600309",
    "name": "万华化学",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2254
+   "last_date": "2026-10-26",
+   "rows": 2255
   },
   {
    "inst": "SH600346",
    "code": "600346",
    "name": "恒力石化",
    "first_date": "2017-03-14",
-   "last_date": "2026-10-23",
-   "rows": 2316
+   "last_date": "2026-10-26",
+   "rows": 2317
   },
   {
    "inst": "SH600362",
    "code": "600362",
    "name": "江西铜业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600372",
    "code": "600372",
    "name": "中航机载",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2356
+   "last_date": "2026-10-26",
+   "rows": 2357
   },
   {
    "inst": "SH600406",
    "code": "600406",
    "name": "国电南瑞",
    "first_date": "2017-06-08",
-   "last_date": "2026-10-23",
-   "rows": 2272
+   "last_date": "2026-10-26",
+   "rows": 2273
   },
   {
    "inst": "SH600415",
    "code": "600415",
    "name": "小商品城",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600426",
    "code": "600426",
    "name": "华鲁恒升",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600436",
    "code": "600436",
    "name": "片仔癀",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH600460",
-   "code": "600460",
-   "name": "士兰微",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2303
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600438",
    "code": "600438",
    "name": "通威股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
-   "inst": "SH600489",
-   "code": "600489",
-   "name": "中金黄金",
+   "inst": "SH600460",
+   "code": "600460",
+   "name": "士兰微",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2304
   },
   {
    "inst": "SH600482",
    "code": "600482",
    "name": "中国动力",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2358
+   "last_date": "2026-10-26",
+   "rows": 2359
+  },
+  {
+   "inst": "SH600489",
+   "code": "600489",
+   "name": "中金黄金",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2369
   },
   {
    "inst": "SH600515",
    "code": "600515",
    "name": "海南机场",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2240
-  },
-  {
-   "inst": "SH600547",
-   "code": "600547",
-   "name": "山东黄金",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2349
-  },
-  {
-   "inst": "SH600522",
-   "code": "600522",
-   "name": "中天科技",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2241
   },
   {
    "inst": "SH600519",
    "code": "600519",
    "name": "贵州茅台",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH600522",
+   "code": "600522",
+   "name": "中天科技",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH600547",
+   "code": "600547",
+   "name": "山东黄金",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2350
   },
   {
    "inst": "SH600549",
    "code": "600549",
    "name": "厦门钨业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600570",
    "code": "600570",
    "name": "恒生电子",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
    "inst": "SH600584",
    "code": "600584",
    "name": "长电科技",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2361
+   "last_date": "2026-10-26",
+   "rows": 2362
   },
   {
    "inst": "SH600585",
    "code": "600585",
    "name": "海螺水泥",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH600600",
-   "code": "600600",
-   "name": "青岛啤酒",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600588",
    "code": "600588",
    "name": "用友网络",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
-   "inst": "SH600674",
-   "code": "600674",
-   "name": "川投能源",
+   "inst": "SH600600",
+   "code": "600600",
+   "name": "青岛啤酒",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600660",
    "code": "600660",
    "name": "福耀玻璃",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH600674",
+   "code": "600674",
+   "name": "川投能源",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600690",
    "code": "600690",
    "name": "海尔智家",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
    "inst": "SH600741",
    "code": "600741",
    "name": "华域汽车",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH600795",
-   "code": "600795",
-   "name": "国电电力",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2315
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600760",
    "code": "600760",
    "name": "中航沈飞",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2367
+   "last_date": "2026-10-26",
+   "rows": 2368
+  },
+  {
+   "inst": "SH600795",
+   "code": "600795",
+   "name": "国电电力",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2316
   },
   {
    "inst": "SH600803",
    "code": "600803",
    "name": "新奥股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2337
+   "last_date": "2026-10-26",
+   "rows": 2338
   },
   {
    "inst": "SH600809",
    "code": "600809",
    "name": "山西汾酒",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2369
   },
   {
    "inst": "SH600845",
    "code": "600845",
    "name": "宝信软件",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
-  },
-  {
-   "inst": "SH600886",
-   "code": "600886",
-   "name": "国投电力",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
    "inst": "SH600875",
    "code": "600875",
    "name": "东方电气",
    "first_date": "2017-03-28",
-   "last_date": "2026-10-23",
-   "rows": 2319
+   "last_date": "2026-10-26",
+   "rows": 2320
+  },
+  {
+   "inst": "SH600886",
+   "code": "600886",
+   "name": "国投电力",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600887",
    "code": "600887",
    "name": "伊利股份",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2375
+   "last_date": "2026-10-26",
+   "rows": 2376
   },
   {
    "inst": "SH600893",
    "code": "600893",
    "name": "航发动力",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2369
   },
   {
    "inst": "SH600900",
    "code": "600900",
    "name": "长江电力",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2369
   },
   {
    "inst": "SH600905",
    "code": "600905",
    "name": "三峡能源",
    "first_date": "2021-06-10",
-   "last_date": "2026-10-23",
-   "rows": 1301
+   "last_date": "2026-10-26",
+   "rows": 1302
   },
   {
    "inst": "SH600918",
    "code": "600918",
    "name": "中泰证券",
    "first_date": "2020-06-03",
-   "last_date": "2026-10-23",
-   "rows": 1549
-  },
-  {
-   "inst": "SH600930",
-   "code": "600930",
-   "name": "华电新能",
-   "first_date": "2025-07-16",
-   "last_date": "2026-10-23",
-   "rows": 308
+   "last_date": "2026-10-26",
+   "rows": 1550
   },
   {
    "inst": "SH600919",
    "code": "600919",
    "name": "江苏银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2373
+   "last_date": "2026-10-26",
+   "rows": 2374
   },
   {
    "inst": "SH600926",
    "code": "600926",
    "name": "杭州银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH600930",
+   "code": "600930",
+   "name": "华电新能",
+   "first_date": "2025-07-16",
+   "last_date": "2026-10-26",
+   "rows": 309
   },
   {
    "inst": "SH600938",
    "code": "600938",
    "name": "中国海油",
    "first_date": "2022-04-21",
-   "last_date": "2026-10-23",
-   "rows": 1092
+   "last_date": "2026-10-26",
+   "rows": 1093
   },
   {
    "inst": "SH600941",
    "code": "600941",
    "name": "中国移动",
    "first_date": "2022-01-05",
-   "last_date": "2026-10-23",
-   "rows": 1161
-  },
-  {
-   "inst": "SH600989",
-   "code": "600989",
-   "name": "宝丰能源",
-   "first_date": "2019-05-16",
-   "last_date": "2026-10-23",
-   "rows": 1805
+   "last_date": "2026-10-26",
+   "rows": 1162
   },
   {
    "inst": "SH600958",
    "code": "600958",
    "name": "东方证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2357
+   "last_date": "2026-10-26",
+   "rows": 2358
+  },
+  {
+   "inst": "SH600989",
+   "code": "600989",
+   "name": "宝丰能源",
+   "first_date": "2019-05-16",
+   "last_date": "2026-10-26",
+   "rows": 1806
   },
   {
    "inst": "SH601006",
    "code": "601006",
    "name": "大秦铁路",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH600999",
    "code": "600999",
    "name": "招商证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2373
+   "last_date": "2026-10-26",
+   "rows": 2374
   },
   {
    "inst": "SH601009",
    "code": "601009",
    "name": "南京银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2377
+   "last_date": "2026-10-26",
+   "rows": 2378
   },
   {
    "inst": "SH601012",
    "code": "601012",
    "name": "隆基绿能",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2373
+   "last_date": "2026-10-26",
+   "rows": 2374
   },
   {
    "inst": "SH601018",
    "code": "601018",
    "name": "宁波港",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH601077",
-   "code": "601077",
-   "name": "渝农商行",
-   "first_date": "2019-10-29",
-   "last_date": "2026-10-23",
-   "rows": 1694
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601021",
    "code": "601021",
    "name": "春秋航空",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601058",
    "code": "601058",
    "name": "赛轮轮胎",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2375
+   "last_date": "2026-10-26",
+   "rows": 2376
   },
   {
    "inst": "SH601066",
    "code": "601066",
    "name": "中信建投",
    "first_date": "2018-06-20",
-   "last_date": "2026-10-23",
-   "rows": 2024
+   "last_date": "2026-10-26",
+   "rows": 2025
+  },
+  {
+   "inst": "SH601077",
+   "code": "601077",
+   "name": "渝农商行",
+   "first_date": "2019-10-29",
+   "last_date": "2026-10-26",
+   "rows": 1695
   },
   {
    "inst": "SH601088",
    "code": "601088",
    "name": "中国神华",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2305
-  },
-  {
-   "inst": "SH601136",
-   "code": "601136",
-   "name": "首创证券",
-   "first_date": "2022-12-22",
-   "last_date": "2026-10-23",
-   "rows": 927
+   "last_date": "2026-10-26",
+   "rows": 2306
   },
   {
    "inst": "SH601100",
    "code": "601100",
    "name": "恒立液压",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601111",
    "code": "601111",
    "name": "中国国航",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2378
+   "last_date": "2026-10-26",
+   "rows": 2379
   },
   {
    "inst": "SH601117",
    "code": "601117",
    "name": "中国化学",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601127",
    "code": "601127",
    "name": "赛力斯",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2364
+   "last_date": "2026-10-26",
+   "rows": 2365
+  },
+  {
+   "inst": "SH601136",
+   "code": "601136",
+   "name": "首创证券",
+   "first_date": "2022-12-22",
+   "last_date": "2026-10-26",
+   "rows": 928
   },
   {
    "inst": "SH601138",
    "code": "601138",
    "name": "工业富联",
    "first_date": "2018-06-08",
-   "last_date": "2026-10-23",
-   "rows": 2031
-  },
-  {
-   "inst": "SH601169",
-   "code": "601169",
-   "name": "北京银行",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2371
+   "last_date": "2026-10-26",
+   "rows": 2032
   },
   {
    "inst": "SH601166",
    "code": "601166",
    "name": "兴业银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
-   "inst": "SH601211",
-   "code": "601211",
-   "name": "国泰海通",
+   "inst": "SH601169",
+   "code": "601169",
+   "name": "北京银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2360
+   "last_date": "2026-10-26",
+   "rows": 2372
   },
   {
    "inst": "SH601186",
    "code": "601186",
    "name": "中国铁建",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH601211",
+   "code": "601211",
+   "name": "国泰海通",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2361
   },
   {
    "inst": "SH601225",
    "code": "601225",
    "name": "陕西煤业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601229",
    "code": "601229",
    "name": "上海银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601238",
    "code": "601238",
    "name": "广汽集团",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
    "inst": "SH601288",
    "code": "601288",
    "name": "农业银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH601319",
-   "code": "601319",
-   "name": "中国人保",
-   "first_date": "2018-11-16",
-   "last_date": "2026-10-23",
-   "rows": 1923
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601318",
    "code": "601318",
    "name": "中国平安",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH601319",
+   "code": "601319",
+   "name": "中国人保",
+   "first_date": "2018-11-16",
+   "last_date": "2026-10-26",
+   "rows": 1924
   },
   {
    "inst": "SH601328",
    "code": "601328",
    "name": "交通银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601336",
    "code": "601336",
    "name": "新华保险",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601360",
    "code": "601360",
    "name": "三六零",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2257
-  },
-  {
-   "inst": "SH601377",
-   "code": "601377",
-   "name": "兴业证券",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2368
+   "last_date": "2026-10-26",
+   "rows": 2258
   },
   {
    "inst": "SH601390",
    "code": "601390",
    "name": "中国中铁",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2305
+   "last_date": "2026-10-26",
+   "rows": 2306
   },
   {
-   "inst": "SH601398",
-   "code": "601398",
-   "name": "工商银行",
+   "inst": "SH601377",
+   "code": "601377",
+   "name": "兴业证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2369
   },
   {
    "inst": "SH601456",
    "code": "601456",
    "name": "国联民生",
    "first_date": "2020-07-31",
-   "last_date": "2026-10-23",
-   "rows": 1489
+   "last_date": "2026-10-26",
+   "rows": 1490
+  },
+  {
+   "inst": "SH601398",
+   "code": "601398",
+   "name": "工商银行",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601600",
    "code": "601600",
    "name": "中国铝业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2270
-  },
-  {
-   "inst": "SH601618",
-   "code": "601618",
-   "name": "中国中冶",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2271
   },
   {
    "inst": "SH601601",
    "code": "601601",
    "name": "中国太保",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601607",
    "code": "601607",
    "name": "上海医药",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
-   "inst": "SH601633",
-   "code": "601633",
-   "name": "长城汽车",
+   "inst": "SH601618",
+   "code": "601618",
+   "name": "中国中冶",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2372
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601628",
    "code": "601628",
    "name": "中国人寿",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH601633",
+   "code": "601633",
+   "name": "长城汽车",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2373
   },
   {
    "inst": "SH601658",
    "code": "601658",
    "name": "邮储银行",
    "first_date": "2019-12-10",
-   "last_date": "2026-10-23",
-   "rows": 1664
+   "last_date": "2026-10-26",
+   "rows": 1665
   },
   {
    "inst": "SH601668",
    "code": "601668",
    "name": "中国建筑",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601669",
    "code": "601669",
    "name": "中国电建",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601688",
    "code": "601688",
    "name": "华泰证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH601698",
-   "code": "601698",
-   "name": "中国卫通",
-   "first_date": "2019-06-28",
-   "last_date": "2026-10-23",
-   "rows": 1775
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601689",
    "code": "601689",
    "name": "拓普集团",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
-   "inst": "SH601727",
-   "code": "601727",
-   "name": "上海电气",
-   "first_date": "2017-05-08",
-   "last_date": "2026-10-23",
-   "rows": 2248
+   "inst": "SH601698",
+   "code": "601698",
+   "name": "中国卫通",
+   "first_date": "2019-06-28",
+   "last_date": "2026-10-26",
+   "rows": 1776
   },
   {
    "inst": "SH601728",
    "code": "601728",
    "name": "中国电信",
    "first_date": "2021-08-20",
-   "last_date": "2026-10-23",
-   "rows": 1251
+   "last_date": "2026-10-26",
+   "rows": 1252
+  },
+  {
+   "inst": "SH601727",
+   "code": "601727",
+   "name": "上海电气",
+   "first_date": "2017-05-08",
+   "last_date": "2026-10-26",
+   "rows": 2249
   },
   {
    "inst": "SH601766",
    "code": "601766",
    "name": "中国中车",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH601800",
-   "code": "601800",
-   "name": "中国交建",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH601816",
-   "code": "601816",
-   "name": "京沪高铁",
-   "first_date": "2020-01-16",
-   "last_date": "2026-10-23",
-   "rows": 1638
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601788",
    "code": "601788",
    "name": "光大证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH601800",
+   "code": "601800",
+   "name": "中国交建",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH601816",
+   "code": "601816",
+   "name": "京沪高铁",
+   "first_date": "2020-01-16",
+   "last_date": "2026-10-26",
+   "rows": 1639
   },
   {
    "inst": "SH601818",
    "code": "601818",
    "name": "光大银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601825",
    "code": "601825",
    "name": "沪农商行",
    "first_date": "2021-08-19",
-   "last_date": "2026-10-23",
-   "rows": 1252
+   "last_date": "2026-10-26",
+   "rows": 1253
   },
   {
    "inst": "SH601838",
    "code": "601838",
    "name": "成都银行",
    "first_date": "2018-01-31",
-   "last_date": "2026-10-23",
-   "rows": 2114
+   "last_date": "2026-10-26",
+   "rows": 2115
   },
   {
    "inst": "SH601868",
    "code": "601868",
    "name": "中国能建",
    "first_date": "2021-09-28",
-   "last_date": "2026-10-23",
-   "rows": 1226
+   "last_date": "2026-10-26",
+   "rows": 1227
   },
   {
    "inst": "SH601857",
    "code": "601857",
    "name": "中国石油",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601872",
    "code": "601872",
    "name": "招商轮船",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2279
+   "last_date": "2026-10-26",
+   "rows": 2280
   },
   {
    "inst": "SH601877",
    "code": "601877",
    "name": "正泰电器",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601878",
    "code": "601878",
    "name": "浙商证券",
    "first_date": "2017-06-26",
-   "last_date": "2026-10-23",
-   "rows": 2265
+   "last_date": "2026-10-26",
+   "rows": 2266
   },
   {
    "inst": "SH601881",
    "code": "601881",
    "name": "中国银河",
    "first_date": "2017-01-23",
-   "last_date": "2026-10-23",
-   "rows": 2365
+   "last_date": "2026-10-26",
+   "rows": 2366
   },
   {
    "inst": "SH601888",
    "code": "601888",
    "name": "中国中免",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH601899",
-   "code": "601899",
-   "name": "紫金矿业",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2375
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601898",
    "code": "601898",
    "name": "中煤能源",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
+  },
+  {
+   "inst": "SH601899",
+   "code": "601899",
+   "name": "紫金矿业",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2376
   },
   {
    "inst": "SH601901",
    "code": "601901",
    "name": "方正证券",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2369
+   "last_date": "2026-10-26",
+   "rows": 2370
   },
   {
    "inst": "SH601916",
    "code": "601916",
    "name": "浙商银行",
    "first_date": "2019-11-26",
-   "last_date": "2026-10-23",
-   "rows": 1668
-  },
-  {
-   "inst": "SH601939",
-   "code": "601939",
-   "name": "建设银行",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 1669
   },
   {
    "inst": "SH601919",
    "code": "601919",
    "name": "中远海控",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2329
+   "last_date": "2026-10-26",
+   "rows": 2330
+  },
+  {
+   "inst": "SH601939",
+   "code": "601939",
+   "name": "建设银行",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601985",
    "code": "601985",
    "name": "中国核电",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601988",
    "code": "601988",
    "name": "中国银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH601995",
    "code": "601995",
    "name": "中金公司",
    "first_date": "2020-11-02",
-   "last_date": "2026-10-23",
-   "rows": 1423
+   "last_date": "2026-10-26",
+   "rows": 1424
   },
   {
    "inst": "SH601998",
    "code": "601998",
    "name": "中信银行",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
-  },
-  {
-   "inst": "SH603260",
-   "code": "603260",
-   "name": "合盛硅业",
-   "first_date": "2017-10-30",
-   "last_date": "2026-10-23",
-   "rows": 2180
-  },
-  {
-   "inst": "SH603288",
-   "code": "603288",
-   "name": "海天味业",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH603019",
    "code": "603019",
    "name": "中科曙光",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2366
+   "last_date": "2026-10-26",
+   "rows": 2367
   },
   {
    "inst": "SH603259",
    "code": "603259",
    "name": "药明康德",
    "first_date": "2018-05-08",
-   "last_date": "2026-10-23",
-   "rows": 2054
+   "last_date": "2026-10-26",
+   "rows": 2055
+  },
+  {
+   "inst": "SH603260",
+   "code": "603260",
+   "name": "合盛硅业",
+   "first_date": "2017-10-30",
+   "last_date": "2026-10-26",
+   "rows": 2181
+  },
+  {
+   "inst": "SH603288",
+   "code": "603288",
+   "name": "海天味业",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH603296",
    "code": "603296",
    "name": "华勤技术",
    "first_date": "2023-08-08",
-   "last_date": "2026-10-23",
-   "rows": 776
-  },
-  {
-   "inst": "SH603369",
-   "code": "603369",
-   "name": "今世缘",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 777
   },
   {
    "inst": "SH603392",
    "code": "603392",
    "name": "万泰生物",
    "first_date": "2020-04-29",
-   "last_date": "2026-10-23",
-   "rows": 1571
+   "last_date": "2026-10-26",
+   "rows": 1572
   },
   {
-   "inst": "SH603893",
-   "code": "603893",
-   "name": "瑞芯微",
-   "first_date": "2020-02-07",
-   "last_date": "2026-10-23",
-   "rows": 1628
+   "inst": "SH603369",
+   "code": "603369",
+   "name": "今世缘",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH603799",
    "code": "603799",
    "name": "华友钴业",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2367
+   "last_date": "2026-10-26",
+   "rows": 2368
   },
   {
    "inst": "SH603501",
    "code": "603501",
    "name": "豪威集团",
    "first_date": "2017-05-04",
-   "last_date": "2026-10-23",
-   "rows": 2129
+   "last_date": "2026-10-26",
+   "rows": 2130
+  },
+  {
+   "inst": "SH603893",
+   "code": "603893",
+   "name": "瑞芯微",
+   "first_date": "2020-02-07",
+   "last_date": "2026-10-26",
+   "rows": 1629
   },
   {
    "inst": "SH603986",
    "code": "603986",
    "name": "兆易创新",
    "first_date": "2017-03-13",
-   "last_date": "2026-10-23",
-   "rows": 2243
-  },
-  {
-   "inst": "SH603993",
-   "code": "603993",
-   "name": "洛阳钼业",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2379
+   "last_date": "2026-10-26",
+   "rows": 2244
   },
   {
    "inst": "SH605117",
    "code": "605117",
    "name": "德业股份",
    "first_date": "2021-04-20",
-   "last_date": "2026-10-23",
-   "rows": 1335
+   "last_date": "2026-10-26",
+   "rows": 1336
+  },
+  {
+   "inst": "SH603993",
+   "code": "603993",
+   "name": "洛阳钼业",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2380
   },
   {
    "inst": "SH605499",
    "code": "605499",
    "name": "东鹏饮料",
    "first_date": "2021-05-27",
-   "last_date": "2026-10-23",
-   "rows": 1311
-  },
-  {
-   "inst": "SH688009",
-   "code": "688009",
-   "name": "中国通号",
-   "first_date": "2019-07-22",
-   "last_date": "2026-10-23",
-   "rows": 1759
+   "last_date": "2026-10-26",
+   "rows": 1312
   },
   {
    "inst": "SH688008",
    "code": "688008",
    "name": "澜起科技",
    "first_date": "2019-07-22",
-   "last_date": "2026-10-23",
-   "rows": 1759
+   "last_date": "2026-10-26",
+   "rows": 1760
+  },
+  {
+   "inst": "SH688009",
+   "code": "688009",
+   "name": "中国通号",
+   "first_date": "2019-07-22",
+   "last_date": "2026-10-26",
+   "rows": 1760
   },
   {
    "inst": "SH688012",
    "code": "688012",
    "name": "中微公司",
    "first_date": "2019-07-22",
-   "last_date": "2026-10-23",
-   "rows": 1750
+   "last_date": "2026-10-26",
+   "rows": 1751
   },
   {
    "inst": "SH688036",
    "code": "688036",
    "name": "传音控股",
    "first_date": "2019-09-30",
-   "last_date": "2026-10-23",
-   "rows": 1710
+   "last_date": "2026-10-26",
+   "rows": 1711
   },
   {
    "inst": "SH688041",
    "code": "688041",
    "name": "海光信息",
    "first_date": "2022-08-12",
-   "last_date": "2026-10-23",
-   "rows": 1005
+   "last_date": "2026-10-26",
+   "rows": 1006
   },
   {
    "inst": "SH688047",
    "code": "688047",
    "name": "龙芯中科",
    "first_date": "2022-06-24",
-   "last_date": "2026-10-23",
-   "rows": 1050
+   "last_date": "2026-10-26",
+   "rows": 1051
   },
   {
    "inst": "SH688072",
    "code": "688072",
    "name": "拓荆科技",
    "first_date": "2022-04-20",
-   "last_date": "2026-10-23",
-   "rows": 1083
+   "last_date": "2026-10-26",
+   "rows": 1084
   },
   {
    "inst": "SH688082",
    "code": "688082",
    "name": "盛美上海",
    "first_date": "2021-11-18",
-   "last_date": "2026-10-23",
-   "rows": 1194
+   "last_date": "2026-10-26",
+   "rows": 1195
   },
   {
    "inst": "SH688111",
    "code": "688111",
    "name": "金山办公",
    "first_date": "2019-11-18",
-   "last_date": "2026-10-23",
-   "rows": 1680
+   "last_date": "2026-10-26",
+   "rows": 1681
   },
   {
    "inst": "SH688126",
    "code": "688126",
    "name": "沪硅产业",
    "first_date": "2020-04-20",
-   "last_date": "2026-10-23",
-   "rows": 1568
+   "last_date": "2026-10-26",
+   "rows": 1569
   },
   {
    "inst": "SH688183",
    "code": "688183",
    "name": "生益电子",
    "first_date": "2021-02-25",
-   "last_date": "2026-10-23",
-   "rows": 1372
+   "last_date": "2026-10-26",
+   "rows": 1373
   },
   {
    "inst": "SH688223",
    "code": "688223",
    "name": "晶科能源",
    "first_date": "2022-01-26",
-   "last_date": "2026-10-23",
-   "rows": 1146
-  },
-  {
-   "inst": "SH688271",
-   "code": "688271",
-   "name": "联影医疗",
-   "first_date": "2022-08-22",
-   "last_date": "2026-10-23",
-   "rows": 1009
+   "last_date": "2026-10-26",
+   "rows": 1147
   },
   {
    "inst": "SH688256",
    "code": "688256",
    "name": "寒武纪",
    "first_date": "2020-07-20",
-   "last_date": "2026-10-23",
-   "rows": 1518
+   "last_date": "2026-10-26",
+   "rows": 1519
+  },
+  {
+   "inst": "SH688271",
+   "code": "688271",
+   "name": "联影医疗",
+   "first_date": "2022-08-22",
+   "last_date": "2026-10-26",
+   "rows": 1010
   },
   {
    "inst": "SH688303",
    "code": "688303",
    "name": "大全能源",
    "first_date": "2021-07-22",
-   "last_date": "2026-10-23",
-   "rows": 1272
+   "last_date": "2026-10-26",
+   "rows": 1273
   },
   {
    "inst": "SH688396",
    "code": "688396",
    "name": "华润微",
    "first_date": "2020-02-27",
-   "last_date": "2026-10-23",
-   "rows": 1614
+   "last_date": "2026-10-26",
+   "rows": 1615
   },
   {
    "inst": "SH688472",
    "code": "688472",
    "name": "阿特斯",
    "first_date": "2023-06-09",
-   "last_date": "2026-10-23",
-   "rows": 816
+   "last_date": "2026-10-26",
+   "rows": 817
   },
   {
    "inst": "SH688506",
    "code": "688506",
    "name": "百利天恒",
    "first_date": "2023-01-06",
-   "last_date": "2026-10-23",
-   "rows": 917
+   "last_date": "2026-10-26",
+   "rows": 918
   },
   {
    "inst": "SH688521",
    "code": "688521",
    "name": "芯原股份",
    "first_date": "2020-08-18",
-   "last_date": "2026-10-23",
-   "rows": 1487
+   "last_date": "2026-10-26",
+   "rows": 1488
   },
   {
    "inst": "SH688981",
    "code": "688981",
    "name": "中芯国际",
    "first_date": "2020-07-16",
-   "last_date": "2026-10-23",
-   "rows": 1514
+   "last_date": "2026-10-26",
+   "rows": 1515
   }
  ],
  "crypto": [
-  {
-   "inst": "ZECUSDT",
-   "code": "ZECUSDT",
-   "name": "ZEC/USDT",
-   "first_date": "2019-03-21",
-   "last_date": "2026-10-25",
-   "rows": 2776
-  },
-  {
-   "inst": "XRPUSDT",
-   "code": "XRPUSDT",
-   "name": "XRP/USDT",
-   "first_date": "2018-05-04",
-   "last_date": "2026-10-25",
-   "rows": 3097
-  },
-  {
-   "inst": "SOLUSDT",
-   "code": "SOLUSDT",
-   "name": "SOL/USDT",
-   "first_date": "2020-08-11",
-   "last_date": "2026-10-25",
-   "rows": 2267
-  },
   {
    "inst": "ETHUSDT",
    "code": "ETHUSDT",
    "name": "ETH/USDT",
    "first_date": "2017-08-17",
-   "last_date": "2026-10-25",
-   "rows": 3357
-  },
-  {
-   "inst": "NEARUSDT",
-   "code": "NEARUSDT",
-   "name": "NEAR/USDT",
-   "first_date": "2020-10-14",
-   "last_date": "2026-10-25",
-   "rows": 2203
+   "last_date": "2026-10-26",
+   "rows": 3358
   },
   {
    "inst": "BTCUSDT",
    "code": "BTCUSDT",
    "name": "BTC/USDT",
    "first_date": "2017-08-17",
-   "last_date": "2026-10-25",
-   "rows": 3357
+   "last_date": "2026-10-26",
+   "rows": 3358
   },
   {
-   "inst": "WLDUSDT",
-   "code": "WLDUSDT",
-   "name": "WLD/USDT",
-   "first_date": "2023-07-24",
-   "last_date": "2026-10-25",
-   "rows": 1190
+   "inst": "ZECUSDT",
+   "code": "ZECUSDT",
+   "name": "ZEC/USDT",
+   "first_date": "2019-03-21",
+   "last_date": "2026-10-26",
+   "rows": 2777
   },
   {
-   "inst": "PEPEUSDT",
-   "code": "PEPEUSDT",
-   "name": "PEPE/USDT",
-   "first_date": "2023-05-05",
-   "last_date": "2026-10-25",
-   "rows": 1270
+   "inst": "SOLUSDT",
+   "code": "SOLUSDT",
+   "name": "SOL/USDT",
+   "first_date": "2020-08-11",
+   "last_date": "2026-10-26",
+   "rows": 2268
   },
   {
-   "inst": "SUIUSDT",
-   "code": "SUIUSDT",
-   "name": "SUI/USDT",
-   "first_date": "2023-05-03",
-   "last_date": "2026-10-25",
-   "rows": 1272
+   "inst": "NEARUSDT",
+   "code": "NEARUSDT",
+   "name": "NEAR/USDT",
+   "first_date": "2020-10-14",
+   "last_date": "2026-10-26",
+   "rows": 2204
+  },
+  {
+   "inst": "XRPUSDT",
+   "code": "XRPUSDT",
+   "name": "XRP/USDT",
+   "first_date": "2018-05-04",
+   "last_date": "2026-10-26",
+   "rows": 3098
   },
   {
    "inst": "ENAUSDT",
    "code": "ENAUSDT",
    "name": "ENA/USDT",
    "first_date": "2024-04-02",
-   "last_date": "2026-10-25",
-   "rows": 937
+   "last_date": "2026-10-26",
+   "rows": 938
+  },
+  {
+   "inst": "SUIUSDT",
+   "code": "SUIUSDT",
+   "name": "SUI/USDT",
+   "first_date": "2023-05-03",
+   "last_date": "2026-10-26",
+   "rows": 1273
+  },
+  {
+   "inst": "WLDUSDT",
+   "code": "WLDUSDT",
+   "name": "WLD/USDT",
+   "first_date": "2023-07-24",
+   "last_date": "2026-10-26",
+   "rows": 1191
   },
   {
    "inst": "DOGEUSDT",
    "code": "DOGEUSDT",
    "name": "DOGE/USDT",
    "first_date": "2019-07-05",
-   "last_date": "2026-10-25",
-   "rows": 2670
+   "last_date": "2026-10-26",
+   "rows": 2671
+  },
+  {
+   "inst": "PEPEUSDT",
+   "code": "PEPEUSDT",
+   "name": "PEPE/USDT",
+   "first_date": "2023-05-05",
+   "last_date": "2026-10-26",
+   "rows": 1271
   },
   {
    "inst": "UNIUSDT",
    "code": "UNIUSDT",
    "name": "UNI/USDT",
    "first_date": "2020-09-17",
-   "last_date": "2026-10-25",
-   "rows": 2230
-  },
-  {
-   "inst": "GTCUSDT",
-   "code": "GTCUSDT",
-   "name": "GTC/USDT",
-   "first_date": "2021-06-10",
-   "last_date": "2026-10-25",
-   "rows": 1964
+   "last_date": "2026-10-26",
+   "rows": 2231
   },
   {
    "inst": "TRXUSDT",
    "code": "TRXUSDT",
    "name": "TRX/USDT",
    "first_date": "2018-06-11",
-   "last_date": "2026-10-25",
-   "rows": 3059
+   "last_date": "2026-10-26",
+   "rows": 3060
   },
   {
    "inst": "LINKUSDT",
    "code": "LINKUSDT",
    "name": "LINK/USDT",
    "first_date": "2019-01-16",
-   "last_date": "2026-10-25",
-   "rows": 2840
+   "last_date": "2026-10-26",
+   "rows": 2841
+  },
+  {
+   "inst": "ADAUSDT",
+   "code": "ADAUSDT",
+   "name": "ADA/USDT",
+   "first_date": "2018-04-17",
+   "last_date": "2026-10-26",
+   "rows": 3115
   }
  ],
  "gold": [
-  {
-   "inst": "XAUUSD",
-   "code": "XAUUSD",
-   "name": "伦敦金现(XAU)",
-   "_source": "sina_xau",
-   "first_date": "2017-01-02",
-   "last_date": "2026-10-26",
-   "rows": 2543
-  },
   {
    "inst": "GCFUT",
    "code": "GCFUT",
@@ -2541,6 +2532,15 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-26",
    "rows": 2538
+  },
+  {
+   "inst": "XAUUSD",
+   "code": "XAUUSD",
+   "name": "伦敦金现(XAU)",
+   "_source": "sina_xau",
+   "first_date": "2017-01-02",
+   "last_date": "2026-10-26",
+   "rows": 2543
   },
   {
    "inst": "SH518880",
@@ -2642,15 +2642,6 @@
    "rows": 2350
   },
   {
-   "inst": "SH600988",
-   "code": "SH600988",
-   "name": "赤峰黄金",
-   "_source": "em_cn",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-26",
-   "rows": 2370
-  },
-  {
    "inst": "SH600489",
    "code": "SH600489",
    "name": "中金黄金",
@@ -2658,21 +2649,30 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-26",
    "rows": 2369
+  },
+  {
+   "inst": "SH600988",
+   "code": "SH600988",
+   "name": "赤峰黄金",
+   "_source": "em_cn",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2370
   }
  ],
  "us": [
   {
-   "inst": "AOS",
-   "code": "AOS",
-   "name": "A. O. Smith",
+   "inst": "MMM",
+   "code": "MMM",
+   "name": "3M",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "MMM",
-   "code": "MMM",
-   "name": "3M",
+   "inst": "AOS",
+   "code": "AOS",
+   "name": "A. O. Smith",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2686,17 +2686,17 @@
    "rows": 2466
   },
   {
-   "inst": "ACN",
-   "code": "ACN",
-   "name": "Accenture",
+   "inst": "ABBV",
+   "code": "ABBV",
+   "name": "AbbVie",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "ABBV",
-   "code": "ABBV",
-   "name": "AbbVie",
+   "inst": "ACN",
+   "code": "ACN",
+   "name": "Accenture",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2718,33 +2718,17 @@
    "rows": 2466
   },
   {
-   "inst": "ABNB",
-   "code": "ABNB",
-   "name": "Airbnb",
-   "first_date": "2020-12-10",
+   "inst": "AES",
+   "code": "AES",
+   "name": "AES Corporation",
+   "first_date": "2017-01-03",
    "last_date": "2026-10-23",
-   "rows": 1474
+   "rows": 2466
   },
   {
    "inst": "AFL",
    "code": "AFL",
    "name": "Aflac",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "APD",
-   "code": "APD",
-   "name": "Air Products",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "AES",
-   "code": "AES",
-   "name": "AES Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2758,17 +2742,33 @@
    "rows": 2466
   },
   {
-   "inst": "ALB",
-   "code": "ALB",
-   "name": "Albemarle Corporation",
+   "inst": "APD",
+   "code": "APD",
+   "name": "Air Products",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
+   "inst": "ABNB",
+   "code": "ABNB",
+   "name": "Airbnb",
+   "first_date": "2020-12-10",
+   "last_date": "2026-10-26",
+   "rows": 1475
+  },
+  {
    "inst": "AKAM",
    "code": "AKAM",
    "name": "Akamai Technologies",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "ALB",
+   "code": "ALB",
+   "name": "Albemarle Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2780,6 +2780,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "ALGN",
+   "code": "ALGN",
+   "name": "Align Technology",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "ALLE",
@@ -2798,9 +2806,9 @@
    "rows": 2466
   },
   {
-   "inst": "ALGN",
-   "code": "ALGN",
-   "name": "Align Technology",
+   "inst": "ALL",
+   "code": "ALL",
+   "name": "Allstate",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2814,28 +2822,12 @@
    "rows": 2466
   },
   {
-   "inst": "ALL",
-   "code": "ALL",
-   "name": "Allstate",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "GOOG",
    "code": "GOOG",
    "name": "Alphabet Inc. (Class C)",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
-  },
-  {
-   "inst": "AMCR",
-   "code": "AMCR",
-   "name": "Amcor",
-   "first_date": "2019-06-11",
-   "last_date": "2026-10-23",
-   "rows": 1854
   },
   {
    "inst": "MO",
@@ -2854,12 +2846,12 @@
    "rows": 2466
   },
   {
-   "inst": "AEE",
-   "code": "AEE",
-   "name": "Ameren",
-   "first_date": "2017-01-03",
+   "inst": "AMCR",
+   "code": "AMCR",
+   "name": "Amcor",
+   "first_date": "2019-06-11",
    "last_date": "2026-10-23",
-   "rows": 2466
+   "rows": 1854
   },
   {
    "inst": "AEP",
@@ -2870,17 +2862,9 @@
    "rows": 2466
   },
   {
-   "inst": "AXP",
-   "code": "AXP",
-   "name": "American Express",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "AWK",
-   "code": "AWK",
-   "name": "American Water Works",
+   "inst": "AEE",
+   "code": "AEE",
+   "name": "Ameren",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2894,9 +2878,25 @@
    "rows": 2466
   },
   {
+   "inst": "AXP",
+   "code": "AXP",
+   "name": "American Express",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "AMT",
    "code": "AMT",
    "name": "American Tower",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "AWK",
+   "code": "AWK",
+   "name": "American Water Works",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -2978,8 +2978,8 @@
    "code": "APP",
    "name": "AppLovin",
    "first_date": "2021-04-15",
-   "last_date": "2026-10-23",
-   "rows": 1389
+   "last_date": "2026-10-26",
+   "rows": 1390
   },
   {
    "inst": "AMAT",
@@ -3094,6 +3094,14 @@
    "rows": 2466
   },
   {
+   "inst": "AXON",
+   "code": "AXON",
+   "name": "Axon Enterprise",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 1977
+  },
+  {
    "inst": "BKR",
    "code": "BKR",
    "name": "Baker Hughes",
@@ -3102,25 +3110,9 @@
    "rows": 1763
   },
   {
-   "inst": "AXON",
-   "code": "AXON",
-   "name": "Axon Enterprise",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 1976
-  },
-  {
    "inst": "BALL",
    "code": "BALL",
    "name": "Ball Corporation",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "BAC",
-   "code": "BAC",
-   "name": "Bank of America",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3134,9 +3126,25 @@
    "rows": 2466
   },
   {
+   "inst": "BAC",
+   "code": "BAC",
+   "name": "Bank of America",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "BDX",
    "code": "BDX",
    "name": "Becton Dickinson",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "BBY",
+   "code": "BBY",
+   "name": "Best Buy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3150,9 +3158,9 @@
    "rows": 2466
   },
   {
-   "inst": "BBY",
-   "code": "BBY",
-   "name": "Best Buy",
+   "inst": "TECH",
+   "code": "TECH",
+   "name": "Bio-Techne",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3174,12 +3182,12 @@
    "rows": 2466
   },
   {
-   "inst": "TECH",
-   "code": "TECH",
-   "name": "Bio-Techne",
+   "inst": "XYZ",
+   "code": "XYZ",
+   "name": "Block, Inc.",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "BX",
@@ -3190,28 +3198,12 @@
    "rows": 2466
   },
   {
-   "inst": "XYZ",
-   "code": "XYZ",
-   "name": "Block, Inc.",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "BE",
    "code": "BE",
    "name": "Bloom Energy",
    "first_date": "2018-07-25",
-   "last_date": "2026-10-23",
-   "rows": 2074
-  },
-  {
-   "inst": "BKNG",
-   "code": "BKNG",
-   "name": "Booking Holdings",
-   "first_date": "2018-02-27",
-   "last_date": "2026-10-23",
-   "rows": 2177
+   "last_date": "2026-10-26",
+   "rows": 2075
   },
   {
    "inst": "BNY",
@@ -3230,17 +3222,17 @@
    "rows": 2466
   },
   {
+   "inst": "BKNG",
+   "code": "BKNG",
+   "name": "Booking Holdings",
+   "first_date": "2018-02-27",
+   "last_date": "2026-10-23",
+   "rows": 2177
+  },
+  {
    "inst": "BSX",
    "code": "BSX",
    "name": "Boston Scientific",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "AVGO",
-   "code": "AVGO",
-   "name": "Broadcom",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3254,9 +3246,9 @@
    "rows": 2466
   },
   {
-   "inst": "BFB",
-   "code": "BF.B",
-   "name": "Brown–Forman",
+   "inst": "AVGO",
+   "code": "AVGO",
+   "name": "Broadcom",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3273,6 +3265,14 @@
    "inst": "BRO",
    "code": "BRO",
    "name": "Brown & Brown",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "BFB",
+   "code": "BF.B",
+   "name": "Brown–Forman",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3334,20 +3334,20 @@
    "rows": 2466
   },
   {
-   "inst": "CARR",
-   "code": "CARR",
-   "name": "Carrier Global",
-   "first_date": "2020-04-03",
-   "last_date": "2026-10-23",
-   "rows": 1648
-  },
-  {
    "inst": "CCL",
    "code": "CCL",
    "name": "Carnival Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "CARR",
+   "code": "CARR",
+   "name": "Carrier Global",
+   "first_date": "2020-04-03",
+   "last_date": "2026-10-23",
+   "rows": 1648
   },
   {
    "inst": "CVNA",
@@ -3358,17 +3358,17 @@
    "rows": 2386
   },
   {
-   "inst": "CAT",
-   "code": "CAT",
-   "name": "Caterpillar Inc.",
+   "inst": "CASY",
+   "code": "CASY",
+   "name": "Casey's",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "CASY",
-   "code": "CASY",
-   "name": "Casey's",
+   "inst": "CAT",
+   "code": "CAT",
+   "name": "Caterpillar Inc.",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3406,12 +3406,28 @@
    "rows": 2466
   },
   {
+   "inst": "CNP",
+   "code": "CNP",
+   "name": "CenterPoint Energy",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "CNC",
    "code": "CNC",
    "name": "Centene Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "CRL",
+   "code": "CRL",
+   "name": "Charles River Laboratories",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "CF",
@@ -3422,17 +3438,9 @@
    "rows": 2466
   },
   {
-   "inst": "CNP",
-   "code": "CNP",
-   "name": "CenterPoint Energy",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "CRL",
-   "code": "CRL",
-   "name": "Charles River Laboratories",
+   "inst": "CHTR",
+   "code": "CHTR",
+   "name": "Charter Communications",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3441,14 +3449,6 @@
    "inst": "SCHW",
    "code": "SCHW",
    "name": "Charles Schwab Corporation",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "CHTR",
-   "code": "CHTR",
-   "name": "Charter Communications",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3502,17 +3502,17 @@
    "rows": 2466
   },
   {
-   "inst": "CINF",
-   "code": "CINF",
-   "name": "Cincinnati Financial",
+   "inst": "CTAS",
+   "code": "CTAS",
+   "name": "Cintas",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "CTAS",
-   "code": "CTAS",
-   "name": "Cintas",
+   "inst": "CINF",
+   "code": "CINF",
+   "name": "Cincinnati Financial",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3586,13 +3586,21 @@
    "code": "COIN",
    "name": "Coinbase",
    "first_date": "2021-04-14",
-   "last_date": "2026-10-23",
-   "rows": 1390
+   "last_date": "2026-10-26",
+   "rows": 1391
   },
   {
    "inst": "COHR",
    "code": "COHR",
    "name": "Coherent Corp.",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "CMCSA",
+   "code": "CMCSA",
+   "name": "Comcast",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3601,14 +3609,6 @@
    "inst": "CL",
    "code": "CL",
    "name": "Colgate-Palmolive",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "CMCSA",
-   "code": "CMCSA",
-   "name": "Comcast",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3682,8 +3682,8 @@
    "code": "CPAY",
    "name": "Corpay",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "CSGP",
@@ -3770,8 +3770,8 @@
    "code": "DDOG",
    "name": "Datadog",
    "first_date": "2019-09-19",
-   "last_date": "2026-10-23",
-   "rows": 1784
+   "last_date": "2026-10-26",
+   "rows": 1785
   },
   {
    "inst": "DVA",
@@ -3782,17 +3782,17 @@
    "rows": 2466
   },
   {
-   "inst": "DE",
-   "code": "DE",
-   "name": "Deere & Company",
+   "inst": "DECK",
+   "code": "DECK",
+   "name": "Deckers Brands",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "DECK",
-   "code": "DECK",
-   "name": "Deckers Brands",
+   "inst": "DE",
+   "code": "DE",
+   "name": "Deere & Company",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3830,17 +3830,17 @@
    "rows": 2466
   },
   {
-   "inst": "DLR",
-   "code": "DLR",
-   "name": "Digital Realty",
+   "inst": "FANG",
+   "code": "FANG",
+   "name": "Diamondback Energy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "FANG",
-   "code": "FANG",
-   "name": "Diamondback Energy",
+   "inst": "DLR",
+   "code": "DLR",
+   "name": "Digital Realty",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -3870,20 +3870,20 @@
    "rows": 2466
   },
   {
-   "inst": "DASH",
-   "code": "DASH",
-   "name": "DoorDash",
-   "first_date": "2020-12-09",
-   "last_date": "2026-10-23",
-   "rows": 1475
-  },
-  {
    "inst": "DPZ",
    "code": "DPZ",
    "name": "Domino's",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "DASH",
+   "code": "DASH",
+   "name": "DoorDash",
+   "first_date": "2020-12-09",
+   "last_date": "2026-10-26",
+   "rows": 1476
   },
   {
    "inst": "DOV",
@@ -4062,6 +4062,14 @@
    "rows": 2466
   },
   {
+   "inst": "EL",
+   "code": "EL",
+   "name": "Estée Lauder Companies (The)",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "EG",
    "code": "EG",
    "name": "Everest Group",
@@ -4082,21 +4090,21 @@
    "code": "P",
    "name": "Everpure",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "EL",
-   "code": "EL",
-   "name": "Estée Lauder Companies (The)",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "ES",
    "code": "ES",
    "name": "Eversource Energy",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "EXC",
+   "code": "EXC",
+   "name": "Exelon",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4108,14 +4116,6 @@
    "first_date": "2021-02-10",
    "last_date": "2026-10-23",
    "rows": 1433
-  },
-  {
-   "inst": "EXC",
-   "code": "EXC",
-   "name": "Exelon",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
   },
   {
    "inst": "EXPE",
@@ -4134,17 +4134,17 @@
    "rows": 2466
   },
   {
-   "inst": "EXR",
-   "code": "EXR",
-   "name": "Extra Space Storage",
+   "inst": "XOM",
+   "code": "XOM",
+   "name": "ExxonMobil",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "XOM",
-   "code": "XOM",
-   "name": "ExxonMobil",
+   "inst": "EXR",
+   "code": "EXR",
+   "name": "Extra Space Storage",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4190,20 +4190,20 @@
    "rows": 2466
   },
   {
+   "inst": "FDXF",
+   "code": "FDXF",
+   "name": "FedEx Freight",
+   "first_date": "2026-06-01",
+   "last_date": "2026-10-26",
+   "rows": 103
+  },
+  {
    "inst": "FDX",
    "code": "FDX",
    "name": "FedEx",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
-  },
-  {
-   "inst": "FDXF",
-   "code": "FDXF",
-   "name": "FedEx Freight",
-   "first_date": "2026-06-01",
-   "last_date": "2026-10-23",
-   "rows": 102
   },
   {
    "inst": "FERG",
@@ -4214,14 +4214,6 @@
    "rows": 1416
   },
   {
-   "inst": "FITB",
-   "code": "FITB",
-   "name": "Fifth Third Bancorp",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "FIS",
    "code": "FIS",
    "name": "Fidelity National Information Services",
@@ -4230,9 +4222,25 @@
    "rows": 2466
   },
   {
+   "inst": "FITB",
+   "code": "FITB",
+   "name": "Fifth Third Bancorp",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "FSLR",
    "code": "FSLR",
    "name": "First Solar",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "FE",
+   "code": "FE",
+   "name": "FirstEnergy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4246,9 +4254,9 @@
    "rows": 849
   },
   {
-   "inst": "FE",
-   "code": "FE",
-   "name": "FirstEnergy",
+   "inst": "F",
+   "code": "F",
+   "name": "Ford Motor Company",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4270,14 +4278,6 @@
    "rows": 2466
   },
   {
-   "inst": "F",
-   "code": "F",
-   "name": "Ford Motor Company",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "FTV",
    "code": "FTV",
    "name": "Fortive",
@@ -4286,17 +4286,17 @@
    "rows": 2466
   },
   {
-   "inst": "FOXA",
-   "code": "FOXA",
-   "name": "Fox Corporation (Class A)",
+   "inst": "FOX",
+   "code": "FOX",
+   "name": "Fox Corporation (Class B)",
    "first_date": "2019-03-13",
    "last_date": "2026-10-23",
    "rows": 1916
   },
   {
-   "inst": "FOX",
-   "code": "FOX",
-   "name": "Fox Corporation (Class B)",
+   "inst": "FOXA",
+   "code": "FOXA",
+   "name": "Fox Corporation (Class A)",
    "first_date": "2019-03-13",
    "last_date": "2026-10-23",
    "rows": 1916
@@ -4310,20 +4310,20 @@
    "rows": 2466
   },
   {
-   "inst": "GRMN",
-   "code": "GRMN",
-   "name": "Garmin",
-   "first_date": "2021-12-07",
-   "last_date": "2026-10-23",
-   "rows": 1225
-  },
-  {
    "inst": "FCX",
    "code": "FCX",
    "name": "Freeport-McMoRan",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "GRMN",
+   "code": "GRMN",
+   "name": "Garmin",
+   "first_date": "2021-12-07",
+   "last_date": "2026-10-23",
+   "rows": 1225
   },
   {
    "inst": "IT",
@@ -4430,17 +4430,17 @@
    "rows": 1812
   },
   {
-   "inst": "GS",
-   "code": "GS",
-   "name": "Goldman Sachs",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "GDDY",
    "code": "GDDY",
    "name": "GoDaddy",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "GS",
+   "code": "GS",
+   "name": "Goldman Sachs",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4462,14 +4462,6 @@
    "rows": 2466
   },
   {
-   "inst": "HCA",
-   "code": "HCA",
-   "name": "HCA Healthcare",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "HAS",
    "code": "HAS",
    "name": "Hasbro",
@@ -4484,6 +4476,14 @@
    "first_date": "2019-11-05",
    "last_date": "2026-10-23",
    "rows": 1751
+  },
+  {
+   "inst": "HCA",
+   "code": "HCA",
+   "name": "HCA Healthcare",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
   },
   {
    "inst": "HSIC",
@@ -4510,20 +4510,20 @@
    "rows": 2466
   },
   {
+   "inst": "HLT",
+   "code": "HLT",
+   "name": "Hilton Worldwide",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "HONA",
    "code": "HONA",
    "name": "Honeywell Aerospace",
    "first_date": "2026-06-15",
-   "last_date": "2026-10-23",
-   "rows": 92
-  },
-  {
-   "inst": "HON",
-   "code": "HON",
-   "name": "Honeywell Technologies",
-   "first_date": "2026-06-15",
-   "last_date": "2026-10-23",
-   "rows": 92
+   "last_date": "2026-10-26",
+   "rows": 93
   },
   {
    "inst": "HD",
@@ -4534,12 +4534,12 @@
    "rows": 2466
   },
   {
-   "inst": "HLT",
-   "code": "HLT",
-   "name": "Hilton Worldwide",
-   "first_date": "2017-01-03",
+   "inst": "HON",
+   "code": "HON",
+   "name": "Honeywell Technologies",
+   "first_date": "2026-06-15",
    "last_date": "2026-10-23",
-   "rows": 2466
+   "rows": 92
   },
   {
    "inst": "HRL",
@@ -4614,17 +4614,17 @@
    "rows": 2466
   },
   {
-   "inst": "IDXX",
-   "code": "IDXX",
-   "name": "Idexx Laboratories",
+   "inst": "IEX",
+   "code": "IEX",
+   "name": "IDEX Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "IEX",
-   "code": "IEX",
-   "name": "IDEX Corporation",
+   "inst": "IDXX",
+   "code": "IDXX",
+   "name": "Idexx Laboratories",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4662,6 +4662,14 @@
    "rows": 2466
   },
   {
+   "inst": "PODD",
+   "code": "PODD",
+   "name": "Insulet Corporation",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
    "inst": "INTC",
    "code": "INTC",
    "name": "Intel",
@@ -4678,14 +4686,6 @@
    "rows": 2215
   },
   {
-   "inst": "PODD",
-   "code": "PODD",
-   "name": "Insulet Corporation",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "ICE",
    "code": "ICE",
    "name": "Intercontinental Exchange",
@@ -4694,17 +4694,17 @@
    "rows": 2466
   },
   {
-   "inst": "IFF",
-   "code": "IFF",
-   "name": "International Flavors & Fragrances",
+   "inst": "IP",
+   "code": "IP",
+   "name": "International Paper",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "IP",
-   "code": "IP",
-   "name": "International Paper",
+   "inst": "IFF",
+   "code": "IFF",
+   "name": "International Flavors & Fragrances",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4734,20 +4734,20 @@
    "rows": 2466
   },
   {
+   "inst": "IQV",
+   "code": "IQV",
+   "name": "IQVIA",
+   "first_date": "2017-11-15",
+   "last_date": "2026-10-26",
+   "rows": 2247
+  },
+  {
    "inst": "INVH",
    "code": "INVH",
    "name": "Invitation Homes",
    "first_date": "2017-02-01",
    "last_date": "2026-10-23",
    "rows": 2446
-  },
-  {
-   "inst": "IQV",
-   "code": "IQV",
-   "name": "IQVIA",
-   "first_date": "2017-11-15",
-   "last_date": "2026-10-23",
-   "rows": 2246
   },
   {
    "inst": "IRM",
@@ -4761,14 +4761,6 @@
    "inst": "JBHT",
    "code": "JBHT",
    "name": "J.B. Hunt",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "JKHY",
-   "code": "JKHY",
-   "name": "Jack Henry & Associates",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -4788,6 +4780,14 @@
    "first_date": "2019-12-10",
    "last_date": "2026-10-23",
    "rows": 1727
+  },
+  {
+   "inst": "JKHY",
+   "code": "JKHY",
+   "name": "Jack Henry & Associates",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
   },
   {
    "inst": "JNJ",
@@ -4814,20 +4814,20 @@
    "rows": 872
   },
   {
-   "inst": "KDP",
-   "code": "KDP",
-   "name": "Keurig Dr Pepper",
-   "first_date": "2020-09-21",
-   "last_date": "2026-10-23",
-   "rows": 1531
-  },
-  {
    "inst": "JPM",
    "code": "JPM",
    "name": "JPMorgan Chase",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "KDP",
+   "code": "KDP",
+   "name": "Keurig Dr Pepper",
+   "first_date": "2020-09-21",
+   "last_date": "2026-10-23",
+   "rows": 1531
   },
   {
    "inst": "KEY",
@@ -4842,8 +4842,8 @@
    "code": "KEYS",
    "name": "Keysight Technologies",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "KMB",
@@ -4978,8 +4978,8 @@
    "code": "LYV",
    "name": "Live Nation Entertainment",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "LMT",
@@ -5018,8 +5018,8 @@
    "code": "LITE",
    "name": "Lumentum",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "LYB",
@@ -5078,17 +5078,17 @@
    "rows": 2466
   },
   {
-   "inst": "MA",
-   "code": "MA",
-   "name": "Mastercard",
+   "inst": "MAS",
+   "code": "MAS",
+   "name": "Masco",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "MAS",
-   "code": "MAS",
-   "name": "Masco",
+   "inst": "MA",
+   "code": "MA",
+   "name": "Mastercard",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5118,25 +5118,17 @@
    "rows": 2466
   },
   {
-   "inst": "MDT",
-   "code": "MDT",
-   "name": "Medtronic",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "META",
-   "code": "META",
-   "name": "Meta Platforms",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "MRK",
    "code": "MRK",
    "name": "Merck & Co.",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "MDT",
+   "code": "MDT",
+   "name": "Medtronic",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5150,12 +5142,20 @@
    "rows": 2466
   },
   {
+   "inst": "META",
+   "code": "META",
+   "name": "Meta Platforms",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "MTD",
    "code": "MTD",
    "name": "Mettler Toledo",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "MGM",
@@ -5202,13 +5202,21 @@
    "code": "MRNA",
    "name": "Moderna",
    "first_date": "2018-12-07",
-   "last_date": "2026-10-23",
-   "rows": 1980
+   "last_date": "2026-10-26",
+   "rows": 1981
   },
   {
    "inst": "MDLZ",
    "code": "MDLZ",
    "name": "Mondelez International",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
+   "inst": "MNST",
+   "code": "MNST",
+   "name": "Monster Beverage",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5225,14 +5233,6 @@
    "inst": "MCO",
    "code": "MCO",
    "name": "Moody's Corporation",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "MNST",
-   "code": "MNST",
-   "name": "Monster Beverage",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5278,17 +5278,17 @@
    "rows": 2466
   },
   {
-   "inst": "NFLX",
-   "code": "NFLX",
-   "name": "Netflix",
+   "inst": "NTAP",
+   "code": "NTAP",
+   "name": "NetApp",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "NTAP",
-   "code": "NTAP",
-   "name": "NetApp",
+   "inst": "NFLX",
+   "code": "NFLX",
+   "name": "Netflix",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5318,6 +5318,14 @@
    "rows": 2466
   },
   {
+   "inst": "NEE",
+   "code": "NEE",
+   "name": "NextEra Energy",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
+  },
+  {
    "inst": "NKE",
    "code": "NKE",
    "name": "Nike, Inc.",
@@ -5329,14 +5337,6 @@
    "inst": "NI",
    "code": "NI",
    "name": "NiSource",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
-   "inst": "NEE",
-   "code": "NEE",
-   "name": "NextEra Energy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5358,14 +5358,6 @@
    "rows": 2466
   },
   {
-   "inst": "NTRS",
-   "code": "NTRS",
-   "name": "Northern Trust",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "NOC",
    "code": "NOC",
    "name": "Northrop Grumman",
@@ -5374,9 +5366,9 @@
    "rows": 2466
   },
   {
-   "inst": "NRG",
-   "code": "NRG",
-   "name": "NRG Energy",
+   "inst": "NTRS",
+   "code": "NTRS",
+   "name": "Northern Trust",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5385,6 +5377,14 @@
    "inst": "NCLH",
    "code": "NCLH",
    "name": "Norwegian Cruise Line Holdings",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-26",
+   "rows": 2467
+  },
+  {
+   "inst": "NRG",
+   "code": "NRG",
+   "name": "NRG Energy",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5414,17 +5414,17 @@
    "rows": 2466
   },
   {
-   "inst": "ORLY",
-   "code": "ORLY",
-   "name": "O'Reilly Automotive",
+   "inst": "NXPI",
+   "code": "NXPI",
+   "name": "NXP Semiconductors",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "NXPI",
-   "code": "NXPI",
-   "name": "NXP Semiconductors",
+   "inst": "ORLY",
+   "code": "ORLY",
+   "name": "O'Reilly Automotive",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5462,14 +5462,6 @@
    "rows": 2466
   },
   {
-   "inst": "OTIS",
-   "code": "OTIS",
-   "name": "Otis Worldwide",
-   "first_date": "2020-04-03",
-   "last_date": "2026-10-23",
-   "rows": 1648
-  },
-  {
    "inst": "OKE",
    "code": "OKE",
    "name": "Oneok",
@@ -5486,12 +5478,28 @@
    "rows": 2466
   },
   {
+   "inst": "OTIS",
+   "code": "OTIS",
+   "name": "Otis Worldwide",
+   "first_date": "2020-04-03",
+   "last_date": "2026-10-23",
+   "rows": 1648
+  },
+  {
    "inst": "PCAR",
    "code": "PCAR",
    "name": "Paccar",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "PLTR",
+   "code": "PLTR",
+   "name": "Palantir Technologies",
+   "first_date": "2020-09-30",
+   "last_date": "2026-10-26",
+   "rows": 1525
   },
   {
    "inst": "PKG",
@@ -5502,14 +5510,6 @@
    "rows": 2466
   },
   {
-   "inst": "PLTR",
-   "code": "PLTR",
-   "name": "Palantir Technologies",
-   "first_date": "2020-09-30",
-   "last_date": "2026-10-23",
-   "rows": 1524
-  },
-  {
    "inst": "PANW",
    "code": "PANW",
    "name": "Palo Alto Networks",
@@ -5518,17 +5518,17 @@
    "rows": 2466
   },
   {
-   "inst": "PAYX",
-   "code": "PAYX",
-   "name": "Paychex",
+   "inst": "PH",
+   "code": "PH",
+   "name": "Parker Hannifin",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "PH",
-   "code": "PH",
-   "name": "Parker Hannifin",
+   "inst": "PAYX",
+   "code": "PAYX",
+   "name": "Paychex",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5558,17 +5558,17 @@
    "rows": 2466
   },
   {
-   "inst": "PFE",
-   "code": "PFE",
-   "name": "Pfizer",
+   "inst": "PCG",
+   "code": "PCG",
+   "name": "PG&E Corporation",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "PCG",
-   "code": "PCG",
-   "name": "PG&E Corporation",
+   "inst": "PFE",
+   "code": "PFE",
+   "name": "Pfizer",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -5702,22 +5702,6 @@
    "rows": 2466
   },
   {
-   "inst": "Q",
-   "code": "Q",
-   "name": "Qnity Electronics",
-   "first_date": "2025-11-03",
-   "last_date": "2026-10-23",
-   "rows": 245
-  },
-  {
-   "inst": "RL",
-   "code": "RL",
-   "name": "Ralph Lauren Corporation",
-   "first_date": "2021-08-11",
-   "last_date": "2026-10-23",
-   "rows": 1307
-  },
-  {
    "inst": "QCOM",
    "code": "QCOM",
    "name": "Qualcomm",
@@ -5734,12 +5718,20 @@
    "rows": 2466
   },
   {
-   "inst": "RDDT",
-   "code": "RDDT",
-   "name": "Reddit",
-   "first_date": "2024-03-21",
+   "inst": "Q",
+   "code": "Q",
+   "name": "Qnity Electronics",
+   "first_date": "2025-11-03",
    "last_date": "2026-10-23",
-   "rows": 651
+   "rows": 245
+  },
+  {
+   "inst": "RL",
+   "code": "RL",
+   "name": "Ralph Lauren Corporation",
+   "first_date": "2021-08-11",
+   "last_date": "2026-10-23",
+   "rows": 1307
   },
   {
    "inst": "RJF",
@@ -5748,6 +5740,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "RDDT",
+   "code": "RDDT",
+   "name": "Reddit",
+   "first_date": "2024-03-21",
+   "last_date": "2026-10-26",
+   "rows": 652
   },
   {
    "inst": "RTX",
@@ -5806,20 +5806,20 @@
    "rows": 2466
   },
   {
-   "inst": "HOOD",
-   "code": "HOOD",
-   "name": "Robinhood Markets",
-   "first_date": "2021-07-29",
-   "last_date": "2026-10-23",
-   "rows": 1316
-  },
-  {
    "inst": "RVTY",
    "code": "RVTY",
    "name": "Revvity",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "HOOD",
+   "code": "HOOD",
+   "name": "Robinhood Markets",
+   "first_date": "2021-07-29",
+   "last_date": "2026-10-26",
+   "rows": 1317
   },
   {
    "inst": "ROK",
@@ -5870,20 +5870,20 @@
    "rows": 2466
   },
   {
-   "inst": "CRM",
-   "code": "CRM",
-   "name": "Salesforce",
-   "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
-  },
-  {
    "inst": "SNDK",
    "code": "SNDK",
    "name": "Sandisk",
    "first_date": "2025-02-13",
    "last_date": "2026-10-23",
    "rows": 426
+  },
+  {
+   "inst": "CRM",
+   "code": "CRM",
+   "name": "Salesforce",
+   "first_date": "2017-01-03",
+   "last_date": "2026-10-23",
+   "rows": 2466
   },
   {
    "inst": "SBAC",
@@ -5898,8 +5898,8 @@
    "code": "SLB",
    "name": "Schlumberger",
    "first_date": "2017-03-02",
-   "last_date": "2026-10-23",
-   "rows": 2426
+   "last_date": "2026-10-26",
+   "rows": 2427
   },
   {
    "inst": "STX",
@@ -5986,8 +5986,8 @@
    "code": "SOLV",
    "name": "Solventum",
    "first_date": "2024-04-01",
-   "last_date": "2026-10-23",
-   "rows": 645
+   "last_date": "2026-10-26",
+   "rows": 646
   },
   {
    "inst": "SO",
@@ -6146,8 +6146,8 @@
    "code": "TDY",
    "name": "Teledyne Technologies",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "TER",
@@ -6222,14 +6222,6 @@
    "rows": 2466
   },
   {
-   "inst": "TT",
-   "code": "TT",
-   "name": "Trane Technologies",
-   "first_date": "2017-01-03",
-   "last_date": "2022-10-27",
-   "rows": 1466
-  },
-  {
    "inst": "TDG",
    "code": "TDG",
    "name": "TransDigm Group",
@@ -6266,8 +6258,8 @@
    "code": "TWLO",
    "name": "Twilio",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "TYL",
@@ -6298,8 +6290,8 @@
    "code": "UBER",
    "name": "Uber",
    "first_date": "2019-05-10",
-   "last_date": "2026-10-23",
-   "rows": 1875
+   "last_date": "2026-10-26",
+   "rows": 1876
   },
   {
    "inst": "UDR",
@@ -6374,20 +6366,12 @@
    "rows": 2466
   },
   {
-   "inst": "VLTO",
-   "code": "VLTO",
-   "name": "Veralto",
-   "first_date": "2023-10-02",
-   "last_date": "2026-10-23",
-   "rows": 769
-  },
-  {
    "inst": "VEEV",
    "code": "VEEV",
    "name": "Veeva Systems",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "VTR",
@@ -6396,6 +6380,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "VLTO",
+   "code": "VLTO",
+   "name": "Veralto",
+   "first_date": "2023-10-02",
+   "last_date": "2026-10-23",
+   "rows": 769
   },
   {
    "inst": "VRSN",
@@ -6422,20 +6414,20 @@
    "rows": 2466
   },
   {
-   "inst": "VRT",
-   "code": "VRT",
-   "name": "Vertiv",
-   "first_date": "2020-02-10",
-   "last_date": "2026-10-23",
-   "rows": 1686
-  },
-  {
    "inst": "VRTX",
    "code": "VRTX",
    "name": "Vertex Pharmaceuticals",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "VRT",
+   "code": "VRT",
+   "name": "Vertiv",
+   "first_date": "2020-02-10",
+   "last_date": "2026-10-23",
+   "rows": 1686
   },
   {
    "inst": "VTRS",
@@ -6470,14 +6462,6 @@
    "rows": 2378
   },
   {
-   "inst": "VYLR",
-   "code": "VYLR",
-   "name": "Vylor",
-   "first_date": "2026-10-01",
-   "last_date": "2026-10-23",
-   "rows": 17
-  },
-  {
    "inst": "VMRK",
    "code": "VMRK",
    "name": "Vivmark Residential",
@@ -6494,6 +6478,14 @@
    "rows": 2466
   },
   {
+   "inst": "VYLR",
+   "code": "VYLR",
+   "name": "Vylor",
+   "first_date": "2026-10-01",
+   "last_date": "2026-10-26",
+   "rows": 18
+  },
+  {
    "inst": "WRB",
    "code": "WRB",
    "name": "W. R. Berkley Corporation",
@@ -6502,17 +6494,17 @@
    "rows": 2466
   },
   {
-   "inst": "WAB",
-   "code": "WAB",
-   "name": "Wabtec",
+   "inst": "GWW",
+   "code": "GWW",
+   "name": "W. W. Grainger",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "GWW",
-   "code": "GWW",
-   "name": "W. W. Grainger",
+   "inst": "WAB",
+   "code": "WAB",
+   "name": "Wabtec",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -6550,17 +6542,17 @@
    "rows": 2466
   },
   {
-   "inst": "WFC",
-   "code": "WFC",
-   "name": "Wells Fargo",
+   "inst": "WEC",
+   "code": "WEC",
+   "name": "WEC Energy Group",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
   },
   {
-   "inst": "WEC",
-   "code": "WEC",
-   "name": "WEC Energy Group",
+   "inst": "WFC",
+   "code": "WFC",
+   "name": "Wells Fargo",
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
@@ -6626,8 +6618,8 @@
    "code": "WDAY",
    "name": "Workday, Inc.",
    "first_date": "2017-01-03",
-   "last_date": "2026-10-23",
-   "rows": 2466
+   "last_date": "2026-10-26",
+   "rows": 2467
   },
   {
    "inst": "WYNN",
@@ -6684,6 +6676,14 @@
    "first_date": "2017-01-03",
    "last_date": "2026-10-23",
    "rows": 2466
+  },
+  {
+   "inst": "TT",
+   "code": "TT",
+   "name": "Trane Technologies",
+   "first_date": "2017-01-03",
+   "last_date": "2022-10-27",
+   "rows": 1466
   }
  ]
 }

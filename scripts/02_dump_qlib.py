@@ -3,6 +3,7 @@
 
 调用官方 scripts/dump_bin.py(vendored), 产出 data/qlib/{market}/{calendars,instruments,features}
 """
+import json
 import subprocess
 import sys
 from pathlib import Path
