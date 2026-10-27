@@ -1,0 +1,32 @@
+{
+ "market": "cn",
+ "model": "ridge",
+ "config": {
+  "name": "A股·沪深300",
+  "topk": 8,
+  "cost_buy": 0.0008,
+  "cost_sell": 0.0013,
+  "ann_days": 252,
+  "universe_source": "csi300"
+ },
+ "backtest": [
+  "2026-01-05",
+  "2026-10-26"
+ ],
+ "n_calendar_days": 194,
+ "n_universe": 300,
+ "variant": "static",
+ "total_return": -0.1423,
+ "annual_return": -0.1816,
+ "annual_vol": 0.3001,
+ "sharpe": -0.52,
+ "max_drawdown": -0.2703,
+ "calmar": -0.672,
+ "weekly_win_rate": 0.5366,
+ "ic": {
+  "mean_ic": 0.0195,
+  "ic_ir": 0.119,
+  "ic_positive_rate": 0.5312,
+  "n_days": 192
+ }
+}

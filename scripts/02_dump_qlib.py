@@ -22,6 +22,14 @@ def dump_market(market: str):
     split_dir = csv_dir / "split"
     split_dir.mkdir(exist_ok=True)
     df = pd.read_csv(csv_dir / "all.csv", dtype={"symbol": str})
+    # 数据清洗: 前复权 bug 会产生非正价格(如腾讯对大额分红的处理), 单日 ±60% 以上跳变多为坏点
+    # 统一剔除 close<=0 或 open<=0 的行, 对线性模型是生死攸关的(树模型对异常值相对鲁棒)
+    bad = (df["close"] <= 0) | (df["open"] <= 0)
+    n_bad = int(bad.sum())
+    if n_bad:
+        bad_syms = df.loc[bad, "symbol"].value_counts().head(5).to_dict()
+        print(f"[clean] {market}: 剔除非正价格 {n_bad} 行, 涉及标的Top5: {bad_syms}", flush=True)
+        df = df[~bad]
     for sym, g in df.groupby("symbol"):
         g.drop(columns=["symbol"]).to_csv(split_dir / f"{sym.lower()}.csv", index=False)
 

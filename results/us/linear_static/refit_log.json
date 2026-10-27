@@ -2,7 +2,7 @@
  {
   "train_end": "2024-08-22",
   "labels_end": "2025-12-30",
-  "fit_sec": 11.1,
+  "fit_sec": 11.0,
   "refit_date": "2026-01-02"
  }
 ]

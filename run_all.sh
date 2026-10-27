@@ -44,8 +44,16 @@ for m in gold crypto cn us; do
   python scripts/03_run_experiments.py --market "$m" --model linear --variants static,weekly || echo "[warn] linear $m 失败, 不影响主线"
 done
 
+# Ridge 正则化线性(L2, alpha=10)——对照 OLS 爆仓, 检验共线修复
+for m in gold crypto cn us; do
+  python scripts/03_run_experiments.py --market "$m" --model ridge --variants static || echo "[warn] ridge $m 失败, 不影响主线"
+done
+
 # ALSTM 注意力网络对照(GPU, A股静态)
 python scripts/03_run_experiments.py --market cn --model alstm --variants static || echo "[warn] ALSTM 失败, 不影响主线"
+
+# MLP 前馈网络对照(GPU, A股静态)——补全深度谱系
+python scripts/03_run_experiments.py --market cn --model mlp --variants static || echo "[warn] MLP 失败, 不影响主线"
 
 python scripts/04_build_site.py
 echo "ALL_DONE $(date)"

@@ -16,17 +16,17 @@
  "n_calendar_days": 205,
  "n_universe": 503,
  "variant": "static",
- "total_return": -0.991,
- "annual_return": -0.997,
- "annual_vol": 2.6773,
- "sharpe": -1.836,
- "max_drawdown": -1.2217,
- "calmar": -0.816,
- "weekly_win_rate": 0.4651,
+ "total_return": 0.1904,
+ "annual_return": 0.2402,
+ "annual_vol": 0.3125,
+ "sharpe": 0.845,
+ "max_drawdown": -0.1494,
+ "calmar": 1.608,
+ "weekly_win_rate": 0.5814,
  "ic": {
-  "mean_ic": 0.0121,
-  "ic_ir": 0.095,
-  "ic_positive_rate": 0.5714,
+  "mean_ic": 0.0117,
+  "ic_ir": 0.093,
+  "ic_positive_rate": 0.5665,
   "n_days": 203
  }
 }

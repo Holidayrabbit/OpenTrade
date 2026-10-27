@@ -1,0 +1,32 @@
+{
+ "market": "cn",
+ "model": "mlp",
+ "config": {
+  "name": "A股·沪深300",
+  "topk": 8,
+  "cost_buy": 0.0008,
+  "cost_sell": 0.0013,
+  "ann_days": 252,
+  "universe_source": "csi300"
+ },
+ "backtest": [
+  "2026-01-05",
+  "2026-10-26"
+ ],
+ "n_calendar_days": 194,
+ "n_universe": 300,
+ "variant": "static",
+ "total_return": -0.3048,
+ "annual_return": -0.3779,
+ "annual_vol": 0.214,
+ "sharpe": -2.11,
+ "max_drawdown": -0.3283,
+ "calmar": -1.151,
+ "weekly_win_rate": 0.2683,
+ "ic": {
+  "mean_ic": 0.009,
+  "ic_ir": 0.09,
+  "ic_positive_rate": 0.5104,
+  "n_days": 192
+ }
+}

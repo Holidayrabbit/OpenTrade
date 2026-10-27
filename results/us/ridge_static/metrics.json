@@ -1,0 +1,32 @@
+{
+ "market": "us",
+ "model": "ridge",
+ "config": {
+  "name": "美股·标普500",
+  "topk": 8,
+  "cost_buy": 0.0005,
+  "cost_sell": 0.0005,
+  "ann_days": 252,
+  "universe_source": "sp500"
+ },
+ "backtest": [
+  "2026-01-02",
+  "2026-10-26"
+ ],
+ "n_calendar_days": 205,
+ "n_universe": 503,
+ "variant": "static",
+ "total_return": 0.1891,
+ "annual_return": 0.2385,
+ "annual_vol": 0.3159,
+ "sharpe": 0.835,
+ "max_drawdown": -0.1494,
+ "calmar": 1.596,
+ "weekly_win_rate": 0.5349,
+ "ic": {
+  "mean_ic": 0.012,
+  "ic_ir": 0.095,
+  "ic_positive_rate": 0.5665,
+  "n_days": 203
+ }
+}

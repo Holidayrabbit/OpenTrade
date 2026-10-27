@@ -123,6 +123,17 @@ def make_model(kind, n_feat):
         from qlib.contrib.model.linear import LinearModel
 
         return LinearModel(estimator="ols")
+    elif kind == "ridge":
+        from qlib.contrib.model.linear import LinearModel
+
+        return LinearModel(estimator="ridge", alpha=10.0)  # L2正则: 修复OLS共线系数爆炸
+    elif kind == "mlp":
+        from qlib.contrib.model.pytorch_nn import DNNModelPytorch
+
+        # 新版 torch 删除了 ReduceLROnPlateau(verbose=...), 禁用 Qlib 默认 scheduler 兼容
+        return DNNModelPytorch(lr=2e-3, max_steps=300, batch_size=2000, early_stop_rounds=20,
+                               GPU=0, seed=42, scheduler=None,
+                               pt_model_kwargs={"input_dim": n_feat, "layers": (256,)})
     raise ValueError(kind)
 
 
@@ -142,8 +153,8 @@ def fit_at(ds, cal, labels_end, kind, cal_bt_hint=None):
     t0 = time.time()
     if kind == "lgbm":
         model.fit(ds, num_boost_round=1000, early_stopping_rounds=50, verbose_eval=-1)
-    elif kind == "linear":
-        model.fit(ds)  # OLS 无早停/验证集概念
+    elif kind in ("linear", "ridge"):
+        model.fit(ds)  # 线性模型无早停/验证集概念
     else:
         evals = {}
         model.fit(ds, evals_result=evals)
@@ -248,7 +259,7 @@ N_FEATURES = [158]
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--market", required=True, choices=["cn", "us", "crypto", "gold"])
-    ap.add_argument("--model", default="lgbm", choices=["lgbm", "gru", "alstm", "linear"])
+    ap.add_argument("--model", default="lgbm", choices=["lgbm", "gru", "alstm", "linear", "ridge", "mlp"])
     ap.add_argument("--variants", default="buyhold,static,monthly,weekly")
     args = ap.parse_args()
 

@@ -25,8 +25,10 @@ VARIANT_LABELS = {
     "linear_static": "线性回归(基准)",
     "linear_weekly": "线性回归·每周再训练",
     "alstm_static": "ALSTM注意力网络(GPU)",
+    "ridge_static": "Ridge回归(L2正则)",
+    "mlp_static": "MLP前馈网络(GPU)",
 }
-ORDER = ["buyhold", "static", "linear_static", "monthly", "gru_static", "alstm_static", "weekly", "linear_weekly"]
+ORDER = ["buyhold", "static", "linear_static", "ridge_static", "monthly", "gru_static", "alstm_static", "mlp_static", "weekly", "linear_weekly"]
 
 
 def load_variant(market, vdir):
