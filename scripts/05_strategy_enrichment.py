@@ -255,6 +255,7 @@ def main():
             "market": args.market, "strategy": name, "alpha": "lgbm_weekly",
             "config": mcfg, "backtest": [str(cal_bt[0])[:10], str(cal_bt[-1])[:10]], **m,
         }, ensure_ascii=False, indent=1, default=str))
+        (d / "trades.json").write_text("[]")  # 交易明细见 03 的 weekly 变体; 策略层仅记录净值
         log(f"  {name:18s} ret={m['total_return']:+.4f} sharpe={m.get('sharpe')} dd={m['max_drawdown']:+.3f}")
     log(f"{args.market} 策略实验完成 ({time.time() - t0:.0f}s)")
 

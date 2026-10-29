@@ -1,0 +1,24 @@
+{
+ "market": "us",
+ "strategy": "strat_riskparity",
+ "alpha": "lgbm_weekly",
+ "config": {
+  "name": "美股·标普500",
+  "topk": 8,
+  "cost_buy": 0.0005,
+  "cost_sell": 0.0005,
+  "ann_days": 252,
+  "universe_source": "sp500"
+ },
+ "backtest": [
+  "2026-01-02",
+  "2026-10-26"
+ ],
+ "total_return": -0.1145,
+ "annual_return": -0.1395,
+ "annual_vol": 0.2446,
+ "sharpe": -0.492,
+ "max_drawdown": -0.208,
+ "calmar": -0.671,
+ "weekly_win_rate": 0.4419
+}

@@ -1,0 +1,24 @@
+{
+ "market": "gold",
+ "strategy": "strat_riskparity",
+ "alpha": "lgbm_weekly",
+ "config": {
+  "name": "黄金资产组合",
+  "topk": 5,
+  "cost_buy": 0.0005,
+  "cost_sell": 0.0005,
+  "ann_days": 252,
+  "universe_source": "gold_fixed"
+ },
+ "backtest": [
+  "2026-01-02",
+  "2026-10-26"
+ ],
+ "total_return": -0.0714,
+ "annual_return": -0.0846,
+ "annual_vol": 0.2967,
+ "sharpe": -0.149,
+ "max_drawdown": -0.3216,
+ "calmar": -0.263,
+ "weekly_win_rate": 0.4651
+}

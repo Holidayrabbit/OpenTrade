@@ -1,0 +1,24 @@
+{
+ "market": "cn",
+ "strategy": "strat_riskparity",
+ "alpha": "lgbm_weekly",
+ "config": {
+  "name": "A股·沪深300",
+  "topk": 8,
+  "cost_buy": 0.0008,
+  "cost_sell": 0.0013,
+  "ann_days": 252,
+  "universe_source": "csi300"
+ },
+ "backtest": [
+  "2026-01-05",
+  "2026-10-26"
+ ],
+ "total_return": -0.0227,
+ "annual_return": -0.0295,
+ "annual_vol": 0.1419,
+ "sharpe": -0.14,
+ "max_drawdown": -0.1204,
+ "calmar": -0.245,
+ "weekly_win_rate": 0.439
+}

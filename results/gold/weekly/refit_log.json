@@ -2,7 +2,7 @@
  {
   "train_end": "2024-08-23",
   "labels_end": "2025-12-30",
-  "fit_sec": 0.2,
+  "fit_sec": 0.6,
   "refit_date": "2026-01-02"
  },
  {
@@ -62,25 +62,25 @@
  {
   "train_end": "2024-10-17",
   "labels_end": "2026-03-05",
-  "fit_sec": 0.8,
+  "fit_sec": 0.2,
   "refit_date": "2026-03-09"
  },
  {
   "train_end": "2024-10-24",
   "labels_end": "2026-03-12",
-  "fit_sec": 0.3,
+  "fit_sec": 0.2,
   "refit_date": "2026-03-16"
  },
  {
   "train_end": "2024-10-30",
   "labels_end": "2026-03-19",
-  "fit_sec": 0.2,
+  "fit_sec": 0.3,
   "refit_date": "2026-03-23"
  },
  {
   "train_end": "2024-11-05",
   "labels_end": "2026-03-26",
-  "fit_sec": 0.2,
+  "fit_sec": -2.2,
   "refit_date": "2026-03-30"
  },
  {
@@ -116,7 +116,7 @@
  {
   "train_end": "2024-12-11",
   "labels_end": "2026-05-07",
-  "fit_sec": 0.2,
+  "fit_sec": 0.3,
   "refit_date": "2026-05-11"
  },
  {
@@ -146,7 +146,7 @@
  {
   "train_end": "2025-01-10",
   "labels_end": "2026-06-11",
-  "fit_sec": 0.2,
+  "fit_sec": 0.3,
   "refit_date": "2026-06-15"
  },
  {
@@ -164,7 +164,7 @@
  {
   "train_end": "2025-01-29",
   "labels_end": "2026-07-02",
-  "fit_sec": 0.3,
+  "fit_sec": 0.2,
   "refit_date": "2026-07-06"
  },
  {
@@ -176,13 +176,13 @@
  {
   "train_end": "2025-02-10",
   "labels_end": "2026-07-16",
-  "fit_sec": 0.3,
+  "fit_sec": 0.2,
   "refit_date": "2026-07-20"
  },
  {
   "train_end": "2025-02-14",
   "labels_end": "2026-07-23",
-  "fit_sec": 0.2,
+  "fit_sec": 0.3,
   "refit_date": "2026-07-27"
  },
  {
@@ -200,7 +200,7 @@
  {
   "train_end": "2025-03-05",
   "labels_end": "2026-08-13",
-  "fit_sec": 0.2,
+  "fit_sec": 0.3,
   "refit_date": "2026-08-17"
  },
  {
@@ -212,13 +212,13 @@
  {
   "train_end": "2025-03-18",
   "labels_end": "2026-08-27",
-  "fit_sec": 0.3,
+  "fit_sec": 0.2,
   "refit_date": "2026-08-31"
  },
  {
   "train_end": "2025-03-24",
   "labels_end": "2026-09-03",
-  "fit_sec": 0.7,
+  "fit_sec": 0.2,
   "refit_date": "2026-09-07"
  },
  {

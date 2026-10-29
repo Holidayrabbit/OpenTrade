@@ -1,0 +1,24 @@
+{
+ "market": "crypto",
+ "strategy": "strat_timing",
+ "alpha": "lgbm_weekly",
+ "config": {
+  "name": "加密货币·币安Top15",
+  "topk": 5,
+  "cost_buy": 0.001,
+  "cost_sell": 0.001,
+  "ann_days": 365,
+  "universe_source": "binance_top"
+ },
+ "backtest": [
+  "2026-01-01",
+  "2026-10-26"
+ ],
+ "total_return": -0.2646,
+ "annual_return": -0.3137,
+ "annual_vol": 0.2303,
+ "sharpe": -1.519,
+ "max_drawdown": -0.3101,
+ "calmar": -1.012,
+ "weekly_win_rate": 0.1163
+}

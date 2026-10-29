@@ -46,7 +46,10 @@ def load_variant(market, vdir):
     m = json.loads((d / "metrics.json").read_text())
     nav = pd.read_csv(d / "equity.csv", parse_dates=["date"]).set_index("date")["nav"]
     ic = pd.read_csv(d / "ic.csv", parse_dates=["date"]).set_index("date")["ic"] if (d / "ic.csv").exists() else None
-    trades = json.loads((d / "trades.json").read_text())
+    try:
+        trades = json.loads((d / "trades.json").read_text())
+    except Exception:  # noqa: BLE001
+        trades = []
     out = {
         "dir": vdir,
         "label": VARIANT_LABELS.get(vdir, vdir),
