@@ -182,24 +182,59 @@ def main():
         (DOCS / f"data/{k}.json").write_text(json.dumps(v, ensure_ascii=False))
     print("docs/data 写入:", [p.name for p in (DOCS / "data").iterdir()])
 
-    # ---------------- PNG 图表(英文标签, 避免远端缺中文字体)
+    # ---------------- PNG 图表(注册 CJK 字体渲染中文图例; 缺字体自动回退英文标签)
     try:
         import matplotlib
 
         matplotlib.use("Agg")
+        from matplotlib import font_manager
         import matplotlib.pyplot as plt
+
+        cjk_ok = False
+        for fp in [ROOT / "configs" / "fonts" / "NotoSansCJKsc-Regular.otf",
+                   ROOT / "data" / "fonts" / "NotoSansCJKsc-Regular.otf",
+                   Path.home() / "fonts" / "NotoSansCJKsc-Regular.otf"]:
+            if fp.exists():
+                try:
+                    font_manager.fontManager.addfont(str(fp))
+                    cjk_ok = True
+                    break
+                except Exception:  # noqa: BLE001
+                    pass
+        print(f"PNG 中文字体: {'Noto Sans CJK SC 已注册' if cjk_ok else '未找到, 图例回退英文'}", flush=True)
+        EN_LABELS = {
+            "buyhold": "Buy&Hold", "static": "Static (train once)", "monthly": "Monthly retrain",
+            "weekly": "Weekly retrain", "gru_static": "GRU (GPU)", "linear_static": "Linear OLS",
+            "linear_weekly": "Linear weekly", "ridge_static": "Ridge (L2)", "mlp_static": "MLP (GPU)",
+            "alstm_static": "ALSTM (GPU)", "strat_base": "Strat: TopK equal", "strat_dropout": "TopK-Dropout",
+            "strat_riskparity": "Risk parity", "strat_voltarget": "Vol target 20%",
+            "strat_timing": "Trend timing", "strat_combo": "Combo",
+        }
+        MKT_EN = {"cn": "CN CSI300", "us": "US SP500", "crypto": "Crypto BinanceTop15", "gold": "Gold basket"}
+        if cjk_ok:
+            plt.rcParams.update({"font.family": ["Noto Sans CJK SC", "DejaVu Sans"],
+                                 "axes.unicode_minus": False})
+            label = lambda v: VARIANT_LABELS.get(v, v)
+            mkt_name = lambda m: CFG["markets"][m]["name"]
+        else:
+            plt.rcParams.update({"font.family": ["DejaVu Sans"], "axes.unicode_minus": False})
+            label = lambda v: EN_LABELS.get(v, v)
+            mkt_name = lambda m: MKT_EN.get(m, m)
 
         plt.rcParams.update({"figure.dpi": 150, "axes.grid": True, "grid.alpha": 0.3,
                              "axes.spines.top": False, "axes.spines.right": False})
         colors = {"buyhold": "#8a8f98", "static": "#4c8dff", "monthly": "#ffb02e", "weekly": "#00d68f",
-                  "gru_static": "#b47aff"}
+                  "gru_static": "#b47aff", "linear_static": "#7fd3ff", "linear_weekly": "#00b4d8",
+                  "ridge_static": "#ffe08a", "mlp_static": "#c9a2ff", "alstm_static": "#ff8fd0",
+                  "strat_base": "#9aa7ff", "strat_dropout": "#6f8dff", "strat_riskparity": "#4fd1c5",
+                  "strat_voltarget": "#f6ad55", "strat_timing": "#fc8181", "strat_combo": "#ed64a6"}
 
         # 1. 组合净值
         fig, ax = plt.subplots(figsize=(9, 4.5))
         for v in ["buyhold", "static", "monthly", "gru_static", "weekly"]:
             if v in port:
                 nav = port[v]
-                ax.plot(nav.index, nav.values, label=VARIANT_LABELS.get(v, v) or v,
+                ax.plot(nav.index, nav.values, label=label(v),
                         color=colors.get(v), lw=1.8 if v == "weekly" else 1.2)
         ax.set_title("Portfolio (Equal-Weight 4 Markets) 2026 YTD")
         ax.legend(fontsize=8)
@@ -207,21 +242,21 @@ def main():
         fig.savefig(DOCS / "assets" / "portfolio.png")
         plt.close(fig)
 
-        # 2. 各市场 weekly vs static vs buyhold
+        # 2. 各市场全部变体净值
         mkts = [m for m in markets_json if len(markets_json[m]["variants"]) >= 2]
         if mkts:
             fig, axes = plt.subplots(2, 2, figsize=(11, 7))
             for ax, m in zip(axes.flat, mkts):
                 for v, vd in markets_json[m]["variants"].items():
                     s = pd.Series(dict(vd["nav"]), dtype=float)
-                    ax.plot(s.index, s.values, label=vd["label"] or v, color=colors.get(v),
+                    ax.plot(s.index, s.values, label=label(v), color=colors.get(v),
                             lw=1.8 if v == "weekly" else 1.1)
-                ax.set_title(f"{m}: {markets_json[m]['name']}", fontsize=10)
-                ax.legend(fontsize=7)
+                ax.set_title(f"{m}: {mkt_name(m)}", fontsize=10)
+                ax.legend(fontsize=6, ncol=2)
                 ax.tick_params(labelsize=7)
             for ax in axes.flat[len(mkts):]:
                 ax.set_visible(False)
-            fig.suptitle("Per-Market NAV 2026 YTD (weekly-retrain vs static vs buy&hold)", fontsize=11)
+            fig.suptitle("Per-Market NAV 2026 YTD (all variants)", fontsize=11)
             fig.tight_layout()
             fig.savefig(DOCS / "assets" / "markets.png")
             plt.close(fig)
@@ -229,8 +264,8 @@ def main():
         # 3. 增益柱状图
         if len(gains) > 1:
             fig, ax = plt.subplots(figsize=(8, 3.6))
-            names = list(gains)
-            vals = [gains[n]["return_delta"] * 100 for n in names]
+            names = [gains[n]["name"] if cjk_ok and "name" in gains[n] else n for n in gains]
+            vals = [gains[n]["return_delta"] * 100 for n in gains]
             ax.bar(names, vals, color=["#00d68f" if x > 0 else "#ff5c5c" for x in vals])
             ax.axhline(0, color="k", lw=0.8)
             ax.set_title("Weekly-Retrain vs Static: Total Return Delta (pp, 2026 YTD)")
