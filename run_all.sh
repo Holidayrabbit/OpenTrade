@@ -55,5 +55,10 @@ python scripts/03_run_experiments.py --market cn --model alstm --variants static
 # MLP 前馈网络对照(GPU, A股静态)——补全深度谱系
 python scripts/03_run_experiments.py --market cn --model mlp --variants static || echo "[warn] MLP 失败, 不影响主线"
 
+# 策略构建复杂度实验(同一每周LightGBM信号 × 6种组合构建, 复用03落盘信号)
+for m in gold crypto cn us; do
+  python scripts/05_strategy_enrichment.py --market "$m" || echo "[warn] strategy $m 失败, 不影响主线"
+done
+
 python scripts/04_build_site.py
 echo "ALL_DONE $(date)"

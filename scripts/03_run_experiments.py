@@ -363,6 +363,14 @@ def main():
                 "ic_positive_rate": round(float((ic > 0).mean()), 4) if len(ic) else None,
                 "n_days": len(ic),
             }
+            # 周度 LightGBM 信号落盘, 供 05 策略复杂度实验复用(同一 alpha 公平对比不同组合构建)
+            if variant == "weekly" and args.model == "lgbm":
+                sdir = ROOT / "data" / "scores"
+                sdir.mkdir(parents=True, exist_ok=True)
+                pd.to_pickle(
+                    {"scores": scores_by_date, "saved_at": pd.Timestamp.now()},
+                    sdir / f"{args.market}_lgbm_weekly.pkl",
+                )
             vdir = outdir_base / (variant if args.model == "lgbm" else f"{args.model}_{variant}")
             save(vdir, run_meta | {"variant": variant}, nav, trades, ic_summary, ic, refit_log)
             log(f"[{vdir.name}] {metrics(nav, mcfg['ann_days'])} IC={ic_summary} "

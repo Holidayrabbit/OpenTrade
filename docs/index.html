@@ -56,8 +56,11 @@
 <div class="wrap" id="app"><div id="loading">加载实验数据中…</div></div>
 
 <script>
-const COLORS={buyhold:"#8a8f98",static:"#4c8dff",monthly:"#ffb02e",weekly:"#00d68f",gru_static:"#b47aff"};
-const VNAME={buyhold:"等权买入持有",static:"静态模型(年初训练一次)",monthly:"每月再训练",weekly:"每周再训练",gru_static:"GRU神经网络(GPU)"};
+const COLORS={buyhold:"#8a8f98",static:"#4c8dff",monthly:"#ffb02e",weekly:"#00d68f",gru_static:"#b47aff",linear_static:"#7fd3ff",linear_weekly:"#00b4d8",alstm_static:"#ff8fd0",ridge_static:"#ffe08a",mlp_static:"#c9a2ff",strat_base:"#9aa7ff",strat_dropout:"#6f8dff",strat_riskparity:"#4fd1c5",strat_voltarget:"#f6ad55",strat_timing:"#fc8181",strat_combo:"#ed64a6"};
+const FALLBACK_PALETTE=["#63b3ed","#f687b3","#68d391","#d6bcfa","#f6e05e","#76e4f7"];
+const colorOf=v=>COLORS[v]||FALLBACK_PALETTE[(v.charCodeAt(0)+v.length)%FALLBACK_PALETTE.length];
+const VNAME={buyhold:"等权买入持有",static:"静态模型(年初训练一次)",monthly:"每月再训练",weekly:"每周再训练",gru_static:"GRU神经网络(GPU)",linear_static:"线性回归(基准)",linear_weekly:"线性回归·每周再训练",alstm_static:"ALSTM注意力网络(GPU)",ridge_static:"Ridge回归(L2正则)",mlp_static:"MLP前馈网络(GPU)",strat_base:"策略基线:TopK等权",strat_dropout:"TopK-Dropout(降换手)",strat_riskparity:"风险平价加权",strat_voltarget:"波动率目标20%",strat_timing:"趋势择时(30周均线)",strat_combo:"全策略叠加"};
+const nameOf=(v,label)=>label||VNAME[v]||v;
 const MKTNAME={cn:"A股·沪深300",us:"美股·标普500",crypto:"加密货币·币安Top15",gold:"黄金资产组合"};
 const fmtPct=(x,d=1)=>x==null?"–":((x>=0?"+":"")+(x*100).toFixed(d)+"%");
 const fmtNum=(x,d=2)=>x==null?"–":x.toFixed(d);
@@ -74,9 +77,9 @@ function kpiCard(label,ret,sub,extra){
     <div class="sub">${sub||""}</div>${extra||""}</div>`;
 }
 
-function lineSeries(variant,navArr,highlight){
-  return {name:VNAME[variant]||variant,type:"line",data:navArr,showSymbol:false,
-    lineStyle:{width:highlight?2.6:1.3,color:COLORS[variant]||"#ccc"},itemStyle:{color:COLORS[variant]||"#ccc"}};
+function lineSeries(variant,navArr,highlight,label){
+  return {name:nameOf(variant,label),type:"line",data:navArr,showSymbol:false,
+    lineStyle:{width:highlight?2.6:1.3,color:colorOf(variant)},itemStyle:{color:colorOf(variant)}};
 }
 function baseOpt(navArrs,legend=true){
   const dates=navArrs.length?navArrs[0].data.map(x=>x[0]):[];
@@ -96,7 +99,7 @@ function baseOpt(navArrs,legend=true){
 function metricsTable(rows,keys,labels){
   let h=`<table><tr><th>策略</th>${labels.map(l=>`<th>${l}</th>`).join("")}</tr>`;
   for(const r of rows){
-    h+=`<tr><td style="color:${COLORS[r.v]||"#ccc"}">${VNAME[r.v]||r.v}</td>`+
+    h+=`<tr><td style="color:${colorOf(r.v)}">${nameOf(r.v,r.label)}</td>`+
       keys.map(k=>{
         const val=r.m[k];let cls="";
         if(k==="total_return"||k==="annual_return")cls=val>=0?"pos":"neg";
@@ -193,7 +196,7 @@ function render(S,P,M){
       <tr><td>黄金</td><td>伦敦金XAU·COMEX期金·上金所Au99.99·黄金ETF·金矿股(跨4类)</td><td>14</td><td>新浪/东财/上金所(akshare)/腾讯</td></tr>
     </table>
     <p><b>② 特征与标签:</b>每个交易日、每个标的计算 <b>Alpha158</b>(Qlib 官方因子集:158 个价量技术指标,如动量、波动率、量价背离、K线形态等)。标签为 <b>T+1 收盘 → T+2 收盘的收益率</b>(与 Qlib 官方基准一致)。特征归一化的统计量冻结在 2017–2023 区间,保证不泄露未来信息。</p>
-    <p><b>③ 模型训练:</b>LightGBM(梯度提升树,使用 Qlib 官方 CSI300 调参),训练窗口为"数据起点 → 调仓日前两天",窗口末 15% 作为验证集做早停。另跑 GRU 神经网络(60 epoch, GPU)作为模型类型对照。</p>
+    <p><b>③ 模型训练(六档难度梯度):</b>① <b>线性回归 OLS</b>——最笨基准,检验复杂模型是否真有增益;② <b>Ridge 回归</b>——同款线性模型加 L2 正则(α=10);③ <b>LightGBM</b>——梯度提升树(官方 CSI300 调参),主力模型;④ <b>MLP</b>——256 隐层前馈网络(GPU);⑤ <b>GRU</b>——门控循环网络(GPU);⑥ <b>ALSTM</b>——注意力机制 LSTM(GPU)。训练窗口为"数据起点 → 调仓日前两天",窗口末 15% 作验证集早停(线性模型无早停)。</p>
     <p><b>④ 模拟交易(每个调仓周循环):</b>T 日(每周首个交易日)收盘后计算特征 → 模型给全部标的打分 → 取 Top-K(A股/美股 K=8,加密/黄金 K=5)→ 以 T 日收盘价调仓为等权组合 → 扣除交易成本。连续 5 个交易日无行情的持仓按最后已知价强制平仓(处理退市/停牌)。全程无任何未来数据流入。</p>
     <table style="margin:6px 0 10px">
       <tr><th>市场</th><th>买入成本</th><th>卖出成本</th><th>说明</th></tr>
@@ -211,6 +214,7 @@ function render(S,P,M){
       <tr><td>buyhold 买入持有</td><td>不训练,年初等权买入持有</td><td>基准线</td></tr>
     </table>
     <p><b>⑥ 指标口径:</b>总收益 = 期末净值−1(已含全部成本);夏普按各自市场年化天数计算;最大回撤 = 净值曲线从峰值的最大跌幅;<b>IC(信息系数)</b>= 每天模型分数与真实次日涨幅的秩相关系数,衡量"预测能力本身",IC&gt;0 且稳定为正说明模型选股有效——注意 IC 好不代表组合赚钱(还要看市场环境与交易成本)。</p>
+    <p><b>⑥′ 策略构建复杂度实验(strat_* 变体):</b>在<b>完全相同</b>的每周 LightGBM 信号上对比 6 种组合构建方法——<b>base</b>:Top-K 等权一把梭(基准);<b>dropout</b>:持仓跌出前 2K 才卖出、空位从头部补(降换手省成本);<b>riskparity</b>:Top-K 内按 60 日波动率倒数加权(单票≤35%);<b>voltarget</b>:按策略已实现波动率动态调总仓位(目标年化 20%,高波自动减仓);<b>timing</b>:市场等权指数收于 30 周均线上方才持仓、否则持币;<b>combo</b>:dropout 选股+风险平价加权+min(波动率目标,趋势择时) 仓位全叠。检验:在 alpha 不变的前提下,组合构建层的复杂度值多少收益?</p>
     <p><b>⑦ 一键复现:</b>任何 Linux/WSL 机器上 <code>bash deploy/setup_env.sh &amp;&amp; nohup bash run_all.sh &amp;</code> 即可从抓数据到生成本页全套结果(约 2–4 小时,详见 <a href="https://github.com/Holidayrabbit/OpenTrade" target="_blank">GitHub 仓库 README</a>)。</p>
   </div>
 
@@ -229,19 +233,20 @@ function render(S,P,M){
 }
 
 function drawCharts(S,P,M){
+  const VARORDER=["buyhold","static","linear_static","ridge_static","monthly","gru_static","alstm_static","mlp_static","weekly","linear_weekly","strat_base","strat_dropout","strat_riskparity","strat_voltarget","strat_timing","strat_combo"];
   const c1=echarts.init(document.getElementById("chart-portfolio"));
-  const variants=["buyhold","static","monthly","gru_static","weekly"].filter(v=>(P.variants||{})[v]);
+  const variants=VARORDER.filter(v=>(P.variants||{})[v]);
   c1.setOption({...baseOpt(variants.map(v=>({data:(P.variants[v].nav)}))),
-    series:variants.map(v=>lineSeries(v,(P.variants[v].nav),v==="weekly"))});
+    series:variants.map(v=>lineSeries(v,(P.variants[v].nav),v==="weekly",P.variants[v].label))});
 
   function drawMarket(k){
     const m=M[k];if(!m)return;
-    const vs=["buyhold","static","monthly","gru_static","weekly"].filter(v=>m.variants[v]);
+    const vs=VARORDER.filter(v=>m.variants[v]);
     const cm=echarts.init(document.getElementById("chart-market"));
     cm.setOption({...baseOpt(vs.map(v=>({data:m.variants[v].nav}))),
-      series:vs.map(v=>lineSeries(v,m.variants[v].nav,v==="weekly"))});
+      series:vs.map(v=>lineSeries(v,m.variants[v].nav,v==="weekly",m.variants[v].label))});
     const wk=m.variants.weekly||m.variants.static;
-    const rows=vs.map(v=>({v,m:{...m.variants[v].metrics,ic_mean:(m.variants[v].metrics.ic||{}).mean_ic,
+    const rows=vs.map(v=>({v,label:m.variants[v].label,m:{...m.variants[v].metrics,ic_mean:(m.variants[v].metrics.ic||{}).mean_ic,
       ic_pos:(m.variants[v].metrics.ic||{}).ic_positive_rate}}));
     document.getElementById("m-metrics").innerHTML=metricsTable(rows,
       ["total_return","annual_return","sharpe","max_drawdown","weekly_win_rate","ic_mean"],
@@ -251,8 +256,8 @@ function drawCharts(S,P,M){
       const ci=echarts.init(document.getElementById("chart-ic"));
       const dates=m.variants[hasIC[0]].ic_4w_ma.map(x=>x[0]);
       ci.setOption({...baseOpt(hasIC.map(v=>({data:m.variants[v].ic_4w_ma}))),
-        series:hasIC.map(v=>({name:VNAME[v]||v,type:"line",data:m.variants[v].ic_4w_ma,showSymbol:false,
-          lineStyle:{width:v==="weekly"?2.4:1.2,color:COLORS[v]},itemStyle:{color:COLORS[v]}})),
+        series:hasIC.map(v=>({name:nameOf(v,m.variants[v].label),type:"line",data:m.variants[v].ic_4w_ma,showSymbol:false,
+          lineStyle:{width:v==="weekly"?2.4:1.2,color:colorOf(v)},itemStyle:{color:colorOf(v)}})),
         yAxis:{...baseOpt([]).yAxis,axisLabel:{color:"#8a93a6",formatter:v=>v.toFixed(2)}}});
     }
     const tr=(m.variants.weekly?.recent_trades||[]).filter(t=>t.date).slice(-1)[0];

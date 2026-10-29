@@ -27,8 +27,16 @@ VARIANT_LABELS = {
     "alstm_static": "ALSTM注意力网络(GPU)",
     "ridge_static": "Ridge回归(L2正则)",
     "mlp_static": "MLP前馈网络(GPU)",
+    "strat_base": "策略基线:TopK等权",
+    "strat_dropout": "TopK-Dropout(降换手)",
+    "strat_riskparity": "风险平价加权",
+    "strat_voltarget": "波动率目标20%",
+    "strat_timing": "趋势择时(30周均线)",
+    "strat_combo": "全策略叠加",
 }
-ORDER = ["buyhold", "static", "linear_static", "ridge_static", "monthly", "gru_static", "alstm_static", "mlp_static", "weekly", "linear_weekly"]
+ORDER = ["buyhold", "static", "linear_static", "ridge_static", "monthly", "gru_static", "alstm_static", "mlp_static",
+         "weekly", "linear_weekly", "strat_base", "strat_dropout", "strat_riskparity",
+         "strat_voltarget", "strat_timing", "strat_combo"]
 
 
 def load_variant(market, vdir):
